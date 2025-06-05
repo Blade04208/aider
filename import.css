@@ -14,6 +14,25 @@
     --theme-base-color-amount: 100%;
 }
 
+/* --lag fix-- */
+.guilds_c48ade,
+/* server list */
+.chatContent_f75fb0,
+/* main chat messages container */
+.sidebarList_c48ade,
+/* channels sidebar with animated banner */
+.layerContainer_da8173,
+/* app sibling container for overlay elements */
+.app__160d8 {
+    /* app container */
+    contain: strict !important;
+}
+
+.typingDots_b88801,
+.vc-typing-indicator-dots {
+    contain: paint !important;
+}
+
 *,
 *::before,
 *::after {
@@ -78,14 +97,17 @@
 }
 
 .bg__960e4 {
-    background: url(https://blade04208.github.io/aider/src/standard-bg.jpg);
-
+    background: url(https://blade04208.github.io/aider/src/standard-bg.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
 }
 
 
 .base_c48ade {
     border: 1.5px solid rgba(255, 255, 255, 0.15);
     background: linear-gradient(180deg, rgba(13, 13, 13, 0.75) 0.41%, rgba(0, 0, 0, 0.75) 5.78%);
+    /* background: transparent; */
     background-blend-mode: normal, color-dodge;
     backdrop-filter: blur(47.5px);
 }
@@ -98,8 +120,8 @@
 
 .sidebarList_c48ade {
     border-right: 1.5px solid rgba(255, 255, 255, 0.10);
-    background: rgba(0, 0, 0, 0.40);
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.43) inset, 1.5px 0px 0px 0px rgba(0, 0, 0, 0.57);
+    background: rgba(0, 0, 0, 0.40) !important;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.43) inset, 1.5px 0px 0px 0px rgba(0, 0, 0, 0.57) !important;
 }
 
 .page_c48ade,
@@ -115,8 +137,8 @@
 }
 
 .title_f75fb0 {
-    border-bottom: 1.5px solid rgba(255, 255, 255, 0.21);
-    background: radial-gradient(67.42% 100% at 50% 0%, rgba(255, 255, 255, 0.19) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(255, 255, 255, 0.00) 51%), linear-gradient(180deg, rgba(15, 15, 15, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.21) !important;
+    background: radial-gradient(67.42% 100% at 50% 0%, rgba(255, 255, 255, 0.19) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(255, 255, 255, 0.00) 51%), linear-gradient(180deg, rgba(15, 15, 15, 0.75) 0%, rgba(0, 0, 0, 0.75) 100%) !important;
     box-shadow: 0px 0px 0px 1.5px #000, 0px -2.953px 23.627px 2.953px rgba(37, 37, 37, 0.44) inset;
     backdrop-filter: blur(2.5px);
 }
@@ -172,7 +194,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     border-left: 1px solid rgba(255, 255, 255, 0.08);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.00) 50%), linear-gradient(180deg, rgba(88, 101, 242, 0.25) 0%, rgba(232, 126, 253, 0.25) 100%), linear-gradient(90deg, #4B64DD 0%, #E87EFD 100%)!important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.00) 50%), linear-gradient(180deg, rgba(88, 101, 242, 0.25) 0%, rgba(232, 126, 253, 0.25) 100%), linear-gradient(90deg, #4B64DD 0%, #E87EFD 100%) !important;
     background-blend-mode: plus-lighter, lighten, plus-lighter, normal;
     box-shadow: 0px 0px 4px 0px #FFF, 0px 0px 16px 0px #E87EFD, 0px 0px 16px 0px #E87EFD, 0px 1px 4px 0px rgba(255, 255, 255, 0.28) inset, 0px -2px 4px 0px rgba(255, 255, 255, 0.32) inset;
     height: 10px;
@@ -184,14 +206,14 @@
 
 .winButtonClose_c38106 {
     border: 1.5px solid rgba(255, 255, 255, 0.21);
-    background: radial-gradient(122.28% 75% at 50% 100%, rgba(255, 47, 47, 0.75) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.55) 2.5%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(171.19% 105% at 50% -5%, #FF2F2F 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.01) 50%), linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%), linear-gradient(0deg, rgba(255, 47, 47, 0.32) 0%, rgba(255, 47, 47, 0.32) 100%), rgba(0, 0, 0, 0.20);
+    background: url(https://blade04208.github.io/aider/src/controls/close.png), radial-gradient(122.28% 75% at 50% 100%, rgba(255, 47, 47, 0.75) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.55) 2.5%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(171.19% 105% at 50% -5%, #FF2F2F 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.01) 50%), linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%), linear-gradient(0deg, rgba(255, 47, 47, 0.32) 0%, rgba(255, 47, 47, 0.32) 100%), rgba(0, 0, 0, 0.20);
     background-blend-mode: plus-lighter, plus-lighter, normal, normal, normal, normal, normal;
     box-shadow: 0px 0px 0.5px 0.5px rgba(255, 255, 255, 0.47), 0px 0px 2px 2px rgba(255, 47, 47, 0.47), 0px 0px 0px 1px rgba(0, 0, 0, 0.63), 0px -1.5px 0.5px 0px rgba(255, 255, 255, 0.26) inset, 0px 1.5px 0.5px 0px rgba(255, 255, 255, 0.26) inset;
 }
 
 .winButtonMinMax_c38106:has(>svg>rect[height="9"]) {
     border: 1.5px solid rgba(255, 255, 255, 0.21);
-    background: radial-gradient(122.28% 75% at 50% 100%, rgba(175, 255, 47, 0.75) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.55) 2.5%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(171.19% 105% at 50% -5%, #AFFF2F 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.01) 50%), linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%), linear-gradient(0deg, rgba(175, 255, 47, 0.32) 0%, rgba(175, 255, 47, 0.32) 100%), rgba(0, 0, 0, 0.20);
+    background: url(https://blade04208.github.io/aider/src/controls/max.png), radial-gradient(122.28% 75% at 50% 100%, rgba(175, 255, 47, 0.75) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.55) 2.5%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(171.19% 105% at 50% -5%, #AFFF2F 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.01) 50%), linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%), linear-gradient(0deg, rgba(175, 255, 47, 0.32) 0%, rgba(175, 255, 47, 0.32) 100%), rgba(0, 0, 0, 0.20);
     background-blend-mode: plus-lighter, plus-lighter, normal, normal, normal, normal, normal;
     box-shadow: 0px 0px 0.5px 0.5px rgba(255, 255, 255, 0.47), 0px 0px 2px 2px rgba(175, 255, 47, 0.47), 0px 0px 0px 1px rgba(0, 0, 0, 0.63), 0px -1.5px 0.5px 0px rgba(255, 255, 255, 0.26) inset, 0px 1.5px 0.5px 0px rgba(255, 255, 255, 0.26) inset;
     order: -1
@@ -200,14 +222,14 @@
 
 .winButtonMinMax_c38106:has(>svg>rect[height="1"]) {
     border: 1.5px solid rgba(255, 255, 255, 0.21);
-    background: radial-gradient(122.28% 75% at 50% 100%, rgba(255, 175, 47, 0.75) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.55) 2.5%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(171.19% 105% at 50% -5%, #FFAF2F 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.01) 50%), linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%), linear-gradient(0deg, rgba(255, 175, 47, 0.32) 0%, rgba(255, 175, 47, 0.32) 100%), rgba(0, 0, 0, 0.20);
+    background: url(https://blade04208.github.io/aider/src/controls/min.png), radial-gradient(122.28% 75% at 50% 100%, rgba(255, 175, 47, 0.75) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.55) 2.5%, rgba(0, 0, 0, 0.00) 100%), radial-gradient(171.19% 105% at 50% -5%, #FFAF2F 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.01) 50%), linear-gradient(0deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%), linear-gradient(0deg, rgba(255, 175, 47, 0.32) 0%, rgba(255, 175, 47, 0.32) 100%), rgba(0, 0, 0, 0.20);
     background-blend-mode: plus-lighter, plus-lighter, normal, normal, normal, normal, normal;
     box-shadow: 0px 0px 0.5px 0.5px rgba(255, 255, 255, 0.47), 0px 0px 2px 2px rgba(255, 175, 47, 0.47), 0px 0px 0px 1px rgba(0, 0, 0, 0.63), 0px -1.5px 0.5px 0px rgba(255, 255, 255, 0.26) inset, 0px 1.5px 0.5px 0px rgba(255, 255, 255, 0.26) inset;
 }
 
 .winButton_c38106 {
-    height: 24px!important;
-    width: 24px!important;
+    height: 24px !important;
+    width: 24px !important;
 }
 
 .searchBar__97492 {
