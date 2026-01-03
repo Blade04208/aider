@@ -44,8 +44,29 @@ nav._5e434347c823b592-guilds,
     background: color-mix(in srgb, var(--background-base-lower), black 30%);
 }
 
-.cc5dd25190031396-shiftSVG>foreignObject {
-    mask: none;
+.cc5dd25190031396-shiftSVG {
+    contain: none;
+    overflow: visible;
+
+    >foreignObject {
+        mask: none;
+        contain: none;
+        overflow: visible;
+
+        ._6e9f8dce4cc18de3-wrapper::after {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            width: 100%;
+            height: 100%;
+
+
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            font-weight: 450;
+            color: white;
+        }
+    }
 }
 
 ._48112cbe77dc5022-folderGroupBackground {

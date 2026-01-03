@@ -8,20 +8,20 @@
 
 @container style(--aider-chat-avatars: compact) {
     ._5126c0cd07f243a0-message {
-        --custom-message-margin-left-content-cozy: var(--space-md);
+        --custom-message-margin-left-content-cozy: var(--space-xxl);
 
         .c19a557985eb7793-avatar {
             scale: calc(16 / 40);
             top: -8px;
             margin-top: 0px;
-            left: 4px;
+            left: calc(var(--space-xxl) / 1.5);
         }
 
         .c19a557985eb7793-avatarDecoration {
             scale: calc(16 / 40);
             top: -11px;
             margin-top: 0px;
-            left: 0px;
+            left: calc(var(--space-xxl) / 1.5 - 4px);
         }
 
         .c19a557985eb7793-header {

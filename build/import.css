@@ -13,6 +13,8 @@
     --border-faint: color-mix(in oklab,
             var(--custom-theme-base-color),
             blue 90%);
+    /* --font-primary: Arial; */
+    /* waiting for aidak to provide me with helvetica */
 }
 
 
@@ -161,6 +163,7 @@
 
 .a22cb0c66246f5d3-button {
     border-radius: 0px;
+    transition: all 0.15s ease!important;
 
     &.a22cb0c66246f5d3-primary {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-primary-background-default), white 25%), var(--control-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
@@ -180,8 +183,13 @@
         border: 1px solid color-mix(in srgb, color-mix(in oklab, var(--control-secondary-background-default), black 30%), transparent);
         box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, color-mix(in oklab, var(--control-secondary-background-default), white 30%), transparent);
     }
+
+    &:active {
+        transform: translateY(1px);
+        filter: brightness(0.95);
+    }
 }
-/* chat.css */
+/* //////// chat.css //////// */
 :root {
     --aider-chat-avatars: compact;
 }
@@ -192,20 +200,20 @@
 
 @container style(--aider-chat-avatars: compact) {
     ._5126c0cd07f243a0-message {
-        --custom-message-margin-left-content-cozy: var(--space-md);
+        --custom-message-margin-left-content-cozy: var(--space-xxl);
 
         .c19a557985eb7793-avatar {
             scale: calc(16 / 40);
             top: -8px;
             margin-top: 0px;
-            left: 4px;
+            left: calc(var(--space-xxl) / 1.5);
         }
 
         .c19a557985eb7793-avatarDecoration {
             scale: calc(16 / 40);
             top: -11px;
             margin-top: 0px;
-            left: 0px;
+            left: calc(var(--space-xxl) / 1.5 - 4px);
         }
 
         .c19a557985eb7793-header {
@@ -240,7 +248,7 @@
         background: color-mix(in srgb, var(--background-base-lower), black 30%);
     }
 }
-/* sidebar.css */
+/* //////// sidebar.css //////// */
 ._5e434347c823b592-sidebarList {
     background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
     border-radius: 0px;
@@ -287,8 +295,29 @@ nav._5e434347c823b592-guilds,
     background: color-mix(in srgb, var(--background-base-lower), black 30%);
 }
 
-.cc5dd25190031396-shiftSVG>foreignObject {
-    mask: none;
+.cc5dd25190031396-shiftSVG {
+    contain: none;
+    overflow: visible;
+
+    >foreignObject {
+        mask: none;
+        contain: none;
+        overflow: visible;
+
+        ._6e9f8dce4cc18de3-wrapper::after {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            width: 100%;
+            height: 100%;
+
+
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            font-weight: 450;
+            color: white;
+        }
+    }
 }
 
 ._48112cbe77dc5022-folderGroupBackground {
