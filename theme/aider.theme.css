@@ -3,7 +3,7 @@
  * @description aidak theme
  * @author Blade0, Aidak
  * @authorId 1124341362955919371
- * @version 0
+ * @version 0.1
  * @updateUrl https://blade04208.github.io/aider/aider.theme.css
  * @source https://github.com/Blade04208/aider
  * @invite KEcCnVuTV7
@@ -14,4 +14,9 @@
 :root {
     --aider-chat-avatars: compact;
     /* Should Aider's avatars be beside the username?   Syntax: compact | cozy */
+
+    --aider-icons: false;
+    /* Should Aider use its own icons?                  Syntax: true | false 
+       ⚠️ This feature is in-development, and may be subject to being/is broken! ⚠️ */
+    
 }

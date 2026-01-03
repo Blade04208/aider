@@ -17,7 +17,7 @@
 }
 
 
-/* Headerbar --------------------------- */
+/* Subtitle --------------------------- */
 
 
 .f75fb00fb7356cbe-title {
@@ -162,7 +162,7 @@
 
 .a22cb0c66246f5d3-button {
     border-radius: 0px;
-    transition: all 0.15s ease!important;
+    transition: all 0.15s ease !important;
 
     &.a22cb0c66246f5d3-primary {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-primary-background-default), white 25%), var(--control-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
@@ -188,3 +188,5 @@
         filter: brightness(0.95);
     }
 }
+
+
