@@ -1,0 +1,129 @@
+._5e434347c823b592-sidebarList {
+    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+}
+
+
+.e6b7699ce8339e1c-privateChannels,
+._99e7cad8d4c55236-scroller,
+._2637a2609f343032-container {
+    background: transparent;
+}
+
+.e6b7699ce8339e1c-searchBar {
+    display: flex;
+
+    height: auto;
+    padding: var(--space-xs) var(--space-xs);
+    gap: var(--space-sm);
+    align-items: center;
+
+    &::after {
+        content: "Direct Messages";
+        color: var(--text-default);
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: var(--space-xxs);
+        width: calc(100% - 32px * 1.75);
+    }
+
+    .a22cb0c66246f5d3-button {
+        width: 32px;
+        max-width: 32px;
+        min-width: 0px;
+        order: 1;
+    }
+}
+
+/* Guilds -------------- */
+
+nav._5e434347c823b592-guilds,
+._960e4207cea8323e-bg {
+    background: color-mix(in srgb, var(--background-base-lower), black 30%);
+}
+
+.cc5dd25190031396-shiftSVG>foreignObject {
+    mask: none;
+}
+
+._48112cbe77dc5022-folderGroupBackground {
+    border-radius: 0px;
+}
+
+._581051df43c5ebb6-wrapper {
+    overflow: visible;
+    pointer-events: none;
+
+    ._581051df43c5ebb6-item {
+        scale: 0.8;
+        left: 6px;
+        transform: scaleX(0.4) !important;
+        border-radius: 8px;
+        box-shadow: 12px 0px 20px 0.5px white;
+    }
+}
+
+._2ea32c412048f708-unread,
+._972a0d22c8afa7f0-unreadPill {
+    scale: 0.8;
+    left: -5px;
+    transform: scaleX(0.7) !important;
+    border-radius: 8px;
+    box-shadow: 7px 0px 14px 0.5px white;
+}
+
+._2b1f52e43a8f1c02-numberBadge {
+    border: 1px solid var(--red-700);
+    box-shadow: inset 0px 0px 0px 1px var(--red-360), 0px 0px 7px -1px var(--red-500);
+    padding: 0.3px !important;
+    box-sizing: content-box;
+    background: linear-gradient(to bottom, var(--red-400), var(--red-500));
+}
+
+/* Userpanel ------------------------------------ */
+
+._37e49614b9f110a9-container {
+    flex-direction: column;
+    container-type: normal;
+    height: auto;
+    align-items: start;
+    padding: 0;
+
+    ._37e49614b9f110a9-avatarWrapper {
+        padding: var(--space-xs) var(--space-sm) 0;
+    }
+
+    ._37e49614b9f110a9-buttons {
+        gap: 0px;
+        width: 100%;
+
+        ._67645e1530f1195d-button {
+            flex: 1;
+            border-radius: 0px;
+            background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
+            border: 1px solid color-mix(in srgb, var(--background-base-lowest), transparent);
+            box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+            transition: all 0.3s ease;
+
+            &._67645e1530f1195d-redGlow {
+                background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), var(--red-400) 35%), color-mix(in oklab, var(--background-base-lower), var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
+                border: 1px solid color-mix(in srgb, var(--red-800), transparent);
+                box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%), 0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%), 0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
+            }
+
+            &:active {
+                transform: translateY(1px);
+            }
+        }
+
+        ._37e49614b9f110a9-buttonChevron {
+            flex: 0;
+        }
+
+        ._37e49614b9f110a9-micButtonParent {
+            display: contents;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/**
+ * @name aider
+ * @description Glossy, glassy theme based on a twitter design.
+ * @author Blade0, Zeealeid
+ * @authorId 1124341362955919371
+ * @version 1.2
+ * @updateUrl https://blade04208.github.io/aider/aider.theme.css
+ * @source https://github.com/Blade04208/aider
+ * @invite KEcCnVuTV7
+ */
+/* This contains the actual theme, removing will remove the theme, so dont ok thank you */
+@import url(https://blade04208.github.io/aider/build/import.css);
+
+:root {
+    --aider-chat-avatars: compact;
+    /* Should Aider's avatars be beside the username?   Syntax: compact | cozy */
+}

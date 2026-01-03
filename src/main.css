@@ -1,0 +1,182 @@
+/* Basic color patchall styles (thank you very much discord) */
+.theme-dark {
+    --custom-theme-base-color: hsl(0, 0%, 3.75%);
+    --custom-theme-base-color-amount: 100%;
+    --custom-theme-text-color: color-mix(in oklab,
+            var(--custom-theme-base-color),
+            white 85%);
+    --custom-theme-text-color-amount: 100%;
+    --border-subtle: color-mix(in oklab,
+            var(--custom-theme-base-color),
+            white 15%);
+    --border-faint: color-mix(in oklab,
+            var(--custom-theme-base-color),
+            blue 90%);
+}
+
+
+/* Headerbar --------------------------- */
+
+
+.f75fb00fb7356cbe-title {
+    padding: 0px;
+    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+}
+
+._9293f6b2fc12398a-children>div>.f75fb00fb7356cbe-avatar {
+    height: var(--custom-channel-header-height) !important;
+    width: var(--custom-channel-header-height) !important;
+
+    >._44b0c28be7879b7b-svg {
+
+        contain: none !important;
+        overflow: visible !important;
+        mask: none;
+        height: var(--custom-channel-header-height);
+        width: var(--custom-channel-header-height);
+
+        >foreignObject[mask="url(#svg-mask-avatar-status-round-20)"] {
+            scale: 1.25;
+            contain: none !important;
+            overflow: visible !important;
+            mask: none;
+            mask-image: linear-gradient(to right, black, transparent);
+        }
+
+        g {
+            opacity: 0;
+        }
+
+    }
+}
+
+._9293f6b2fc12398a-titleWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xs);
+
+    &::after {
+        line-height: 1;
+        padding: var(--space-xxs) var(--space-xxs) calc(var(--space-xxs) / 1.25);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0px 4px 6px -3px rgba(255, 255, 255, 0.5), inset 0px -1px 2px rgba(0, 0, 0, 0.5);
+        font-weight: 450;
+        color: white;
+    }
+}
+
+/* ~~ */
+._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-dnd)"]) ._9293f6b2fc12398a-titleWrapper::after {
+    content: "DO NOT DISTURB";
+    background: var(--status-danger);
+}
+
+._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[fill="#82838b"]) ._9293f6b2fc12398a-titleWrapper::after {
+    content: "OFFLINE";
+    background: #82838b;
+}
+
+._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-online)"]) ._9293f6b2fc12398a-titleWrapper::after {
+    content: "ONLINE";
+    background: var(--status-positive);
+}
+
+._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-idle)"]) ._9293f6b2fc12398a-titleWrapper::after {
+    content: "IDLE";
+    background: var(--status-warning);
+}
+
+/* ~~ */
+
+._9293f6b2fc12398a-children::after {
+    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+    mask-image: linear-gradient(to left, black, transparent);
+}
+
+._9293f6b2fc12398a-children {
+    &:has(._9293f6b2fc12398a-channelIcon) {
+        ._9293f6b2fc12398a-channelIcon {
+            position: absolute;
+            scale: 3;
+            left: 10px;
+            bottom: 0px;
+            z-index: -1;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 80%);
+        }
+
+        ._9293f6b2fc12398a-titleWrapper {
+            padding-left: calc(var(--space-sm) * 1.5);
+        }
+    }
+
+
+    &:has(._9293f6b2fc12398a-caret) {
+        ._9293f6b2fc12398a-channelIcon:first-of-type {
+            display: none;
+        }
+
+        ._9293f6b2fc12398a-titleWrapper:last-of-type {
+            padding-left: var(--space-xs);
+        }
+    }
+}
+
+
+/* Profiles ------------------------------------------------- */
+
+/* .user-profile-popout {
+    width: fit-content;
+
+    ._5be3ef42f92174b2-body {
+        display: grid;
+        gap: var(--space-xxs);
+
+        ._63ed30c16c7151f2-container {
+            grid-area: 1 / 1 / 3 / 2;
+        }
+
+        div:has(>.f5f93a5c4078d63c-descriptionClamp) {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        ._9d59731d47494e97-container {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .fccfdf3cfff21921-root {
+            grid-area: 3 / 1 / 4 / 3;
+        }
+
+        ._63ed30c16c7151f2-pronounsText {
+            display: none;
+        }
+    }
+} */
+
+
+/* Buttons --------------------------------------- */
+
+.a22cb0c66246f5d3-button {
+    border-radius: 0px;
+
+    &.a22cb0c66246f5d3-primary {
+        background: linear-gradient(to bottom, color-mix(in oklab, var(--control-primary-background-default), white 25%), var(--control-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
+        border: 1px solid color-mix(in srgb, color-mix(in oklab, var(--control-primary-background-default), black 50%), transparent);
+        box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, color-mix(in oklab, var(--control-primary-background-default), white 50%), transparent);
+    }
+
+    &.a22cb0c66246f5d3-critical-primary {
+        background: linear-gradient(to bottom, color-mix(in oklab, var(--control-critical-primary-background-default), white 25%), var(--control-critical-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
+        border: 1px solid color-mix(in srgb, color-mix(in oklab, var(--control-critical-primary-background-default), black 50%), transparent);
+        box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, color-mix(in oklab, var(--control-critical-primary-background-default), white 50%), transparent);
+    }
+
+    &.a22cb0c66246f5d3-secondary,
+    &.a22cb0c66246f5d3-critical-secondary {
+        background: linear-gradient(to bottom, color-mix(in oklab, var(--control-secondary-background-default), white 15%), var(--control-secondary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
+        border: 1px solid color-mix(in srgb, color-mix(in oklab, var(--control-secondary-background-default), black 30%), transparent);
+        box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, color-mix(in oklab, var(--control-secondary-background-default), white 30%), transparent);
+    }
+}

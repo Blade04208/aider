@@ -1,0 +1,58 @@
+:root {
+    --aider-chat-avatars: compact;
+}
+
+.c19a557985eb7793-avatar {
+    border-radius: 0px;
+}
+
+@container style(--aider-chat-avatars: compact) {
+    ._5126c0cd07f243a0-message {
+        --custom-message-margin-left-content-cozy: var(--space-md);
+
+        .c19a557985eb7793-avatar {
+            scale: calc(16 / 40);
+            top: -8px;
+            margin-top: 0px;
+            left: 4px;
+        }
+
+        .c19a557985eb7793-avatarDecoration {
+            scale: calc(16 / 40);
+            top: -11px;
+            margin-top: 0px;
+            left: 0px;
+        }
+
+        .c19a557985eb7793-header {
+            margin-left: 20px;
+        }
+
+        &.c19a557985eb7793-hasReply .c19a557985eb7793-avatar {
+            top: 15px;
+        }
+
+        &:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents {
+            display: flex;
+            align-items: end;
+
+            >.c19a557985eb7793-latin12CompactTimeStamp {
+                position: relative;
+                display: inline;
+                opacity: 1;
+                order: 1;
+                width: min-content;
+                margin-left: var(--space-xs);
+            }
+
+        }
+    }
+}
+
+.f75fb00fb7356cbe-chat {
+    border-top: 0 !important;
+
+    .f75fb00fb7356cbe-chatContent {
+        background: color-mix(in srgb, var(--background-base-lower), black 30%);
+    }
+}
