@@ -51,8 +51,4 @@
 
 .f75fb00fb7356cbe-chat {
     border-top: 0 !important;
-
-    .f75fb00fb7356cbe-chatContent {
-        background: color-mix(in srgb, var(--background-base-lower), black 30%);
-    }
 }
