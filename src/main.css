@@ -1,4 +1,15 @@
 /* Basic color patchall styles (thank you very much discord) */
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    src: url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+}
 .theme-dark {
     --custom-theme-base-color: hsl(0, 0%, 3.75%);
     --custom-theme-base-color-amount: 100%;
@@ -14,7 +25,10 @@
             blue 90%);
     /* --font-primary: Arial; */
     /* waiting for aidak to provide me with helvetica */
+        --font-primary: 'Helvetica Neue', gg sans
 }
+
+
 
 
 /* Subtitle --------------------------- */
