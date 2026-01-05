@@ -169,4 +169,26 @@
             color: white;
         }
     }
+
+    >g>rect {
+        position: absolute;
+        x: 44;
+        y: 10;
+        mask: none;
+        rx: 10;
+        ry: 10;
+        border-radius: 10px;
+        outline: 2px ridge color-mix(in srgb, var(--border-subtle), white 65%);
+        fill: url(https://blade04208.github.io/aider/assets/rect.svg#paint0_radial_1988_138);
+
+        &[mask="url(#svg-mask-status-dnd)"] {}
+    }
+}
+
+
+
+
+
+._20a53846fe2e8513-nameAndDecorators {
+    margin-left: 14px;
 }

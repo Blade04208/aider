@@ -7,7 +7,8 @@
 @container style(--aider-icons: true) {
 
     ._972a0d22c8afa7f0-linkButtonIcon,
-    ._9293f6b2fc12398a-icon, ._5eb9b3cc7c2b1ce8-lottieIcon>svg {
+    ._9293f6b2fc12398a-icon,
+    ._5eb9b3cc7c2b1ce8-lottieIcon>svg {
         background: currentColor;
         mask-size: contain;
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1307.svg);
@@ -128,7 +129,13 @@
 
     /* ~~~~ */
 
-._5eb9b3cc7c2b1ce8-lottieIcon>svg {
+    ._5eb9b3cc7c2b1ce8-lottieIcon>svg:has(>g>g>g>g[transform="matrix(1,0,0,1,0,0)"]>path) {
+        mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);
+        /* Userpanel - Settings */
+    }
 
-}
+    /* ._5eb9b3cc7c2b1ce8-lottieIcon>svg:has(>g>g>g>g>g[transform="matrix(1,0,0,1,0)"]>g>g>path) {
+        mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);
+
+    } */
 }

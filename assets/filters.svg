@@ -1,0 +1,5 @@
+<defs>
+  <filter id="shadow">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="blue" flood-opacity="1"/>
+  </filter>
+</defs>
