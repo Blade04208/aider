@@ -286,6 +286,40 @@
         filter: brightness(0.95);
     }
 }
+
+/* Debug ----------- */
+
+div[id="developer_options_design_tools_tab-tab"] {
+    display: flex;
+    flex-direction: column;
+    &::before {
+        content: "Main Loaded!";
+    }
+
+    >fieldset {
+        display: contents;
+
+        >legend {
+            font-size: 0;
+            order: -1;
+
+            &::before {
+                content: "This page is to figure out which parts of Aider are here, for debug purposes. ";
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+[aria-controls="developer_options_design_tools_tab-tab"], [aria-label="Design Tools"] {
+    font-size: 0px!important;
+    padding-left: 6px;
+    &::before {
+        content: "Aider";
+        font-size: 14px;
+    }
+}
 /* //////// chat.css //////// */
 :root {
     --aider-chat-avatars: compact;
@@ -340,6 +374,12 @@
 
 .f75fb00fb7356cbe-chat {
     border-top: 0 !important;
+}
+
+/* Debug ----------- */
+
+div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
+    content: "Chat Loaded!";
 }
 /* //////// icons.css //////// */
 :root {
@@ -482,6 +522,12 @@
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);
 
     } */
+}
+
+/* Debug ----------- */
+
+div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
+    content: "Icons Loaded!";
 }
 /* //////// sidebar.css //////// */
 ._5e434347c823b592-sidebarList {
@@ -674,4 +720,10 @@
 
 ._20a53846fe2e8513-nameAndDecorators {
     margin-left: 14px;
+}
+
+/* Debug ----------- */
+
+div[id="developer_options_design_tools_tab-tab"]::after {
+    content: "Sidebar Loaded!";
 }

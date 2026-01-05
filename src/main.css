@@ -285,3 +285,37 @@
         filter: brightness(0.95);
     }
 }
+
+/* Debug ----------- */
+
+div[id="developer_options_design_tools_tab-tab"] {
+    display: flex;
+    flex-direction: column;
+    &::before {
+        content: "Main Loaded!";
+    }
+
+    >fieldset {
+        display: contents;
+
+        >legend {
+            font-size: 0;
+            order: -1;
+
+            &::before {
+                content: "This page is to figure out which parts of Aider are here, for debug purposes. ";
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+[aria-controls="developer_options_design_tools_tab-tab"], [aria-label="Design Tools"] {
+    font-size: 0px!important;
+    padding-left: 6px;
+    &::before {
+        content: "Aider";
+        font-size: 14px;
+    }
+}

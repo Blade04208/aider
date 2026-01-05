@@ -189,3 +189,9 @@
 ._20a53846fe2e8513-nameAndDecorators {
     margin-left: 14px;
 }
+
+/* Debug ----------- */
+
+div[id="developer_options_design_tools_tab-tab"]::after {
+    content: "Sidebar Loaded!";
+}

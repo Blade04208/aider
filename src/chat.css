@@ -52,3 +52,9 @@
 .f75fb00fb7356cbe-chat {
     border-top: 0 !important;
 }
+
+/* Debug ----------- */
+
+div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
+    content: "Chat Loaded!";
+}
