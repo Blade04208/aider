@@ -53,6 +53,49 @@
     border-top: 0 !important;
 }
 
+.b8880176888cc928-typing {
+    overflow: visible!important;
+            z-index: 0;
+    .b8880176888cc928-typingDots {
+    overflow: visible!important;
+
+        &::before {
+            width: 48px;
+            height: 24px;
+            z-index: 0;
+            background: linear-gradient(to left, gray, gray, white, gray, gray);
+            content: "";
+            background-size: 200%;
+            animation: typing-glow 2s linear 0s infinite forwards;
+position: relative;
+            filter: blur(8px);
+            top: 16px;
+            left: 8px;
+            /* opacity: 0.5; */
+        }
+        .b8880176888cc928-ellipsis {
+            display: none;
+        }
+    }
+}
+.f75fb00fb7356cbe-form>div:not([class]) {
+    position: relative;
+    z-index: 2;
+}
+._36d072eab2b2e737-chatGradient{
+    display: none;
+}
+
+@keyframes typing-glow {
+    from {
+        background-position: -100% 100%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+
 /* Debug ----------- */
 
 div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
