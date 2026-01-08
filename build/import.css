@@ -24,7 +24,7 @@
             var(--text-primary, white) 15%);
     --border-faint: color-mix(in oklab,
             var(--custom-theme-base-color),
-            blue 90%);
+            white 10%);
     --_aider-border-dark: rgba(0, 0, 0, 0.5);
 
     --font-primary: 'Helvetica Neue', gg sans;
@@ -377,10 +377,11 @@ div[id="developer_options_design_tools_tab-tab"] {
 }
 
 .b8880176888cc928-typing {
-    overflow: visible!important;
-            z-index: 0;
+    overflow: visible !important;
+    z-index: 0;
+
     .b8880176888cc928-typingDots {
-    overflow: visible!important;
+        overflow: visible !important;
 
         &::before {
             width: 48px;
@@ -390,22 +391,25 @@ div[id="developer_options_design_tools_tab-tab"] {
             content: "";
             background-size: 200%;
             animation: typing-glow 2s linear 0s infinite forwards;
-position: relative;
+            position: relative;
             filter: blur(8px);
             top: 16px;
             left: 8px;
             /* opacity: 0.5; */
         }
+
         .b8880176888cc928-ellipsis {
             display: none;
         }
     }
 }
+
 .f75fb00fb7356cbe-form>div:not([class]) {
     position: relative;
     z-index: 2;
 }
-._36d072eab2b2e737-chatGradient{
+
+._36d072eab2b2e737-chatGradient {
     display: none;
 }
 
@@ -418,6 +422,64 @@ position: relative;
         background-position: 100% 100%;
     }
 }
+
+.f75fb00fb7356cbe-form {
+    padding: 4px;
+
+    .f75fb00fb7356cbe-channelTextArea,
+    ._740174f3d6a2c8fe-themedBackground {
+        margin-bottom: 0px;
+        border-radius: 0px;
+        border: 0;
+        background: transparent;
+    }
+
+    ._740174f3d6a2c8fe-inner {
+        --custom-channel-textarea-text-area-height: calc(var(--chat-markup-line-height, 1rem) + 16px);
+        align-items: center;
+
+        ._740174f3d6a2c8fe-textArea {
+            --custom-channel-textarea-text-area-height: var(--chat-markup-line-height, 1rem);
+            padding: 8px !important;
+            background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
+            border: 1px solid var(--_aider-border-dark);
+            box-shadow: 0px 0px 1px 1px inset var(--border-faint), 0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
+            min-height: var(--chat-markup-line-height, 1rem);
+            box-sizing: content-box;
+        }
+
+        >._740174f3d6a2c8fe-buttons {
+            gap: 1px !important;
+
+            >*:not(span, .aa63abf63dbd9cce-separator) {
+                background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+                border: 1px solid var(--_aider-border-dark);
+                box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+                border-radius: 0px;
+                min-height: var(--custom-channel-textarea-text-area-height);
+                min-width: var(--custom-channel-textarea-text-area-height);
+                height: 100%;
+
+                &._740174f3d6a2c8fe-button {
+                    min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
+                    margin-top: -1px;
+                }
+            }
+        }
+
+        ._1b31f471f0bb10ab-placeholder {
+            margin-left: 8px;
+        }
+
+        ._0923f156a0410684-attachWrapper {
+            padding: 0px;
+            min-width: var(--custom-channel-textarea-text-area-height);
+        }
+    }
+}
+
+
+
 
 /* Debug ----------- */
 
@@ -434,11 +496,11 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
 @container style(--aider-icons: true) {
 
     ._972a0d22c8afa7f0-linkButtonIcon,
-    ._9293f6b2fc12398a-icon,
-    ._5eb9b3cc7c2b1ce8-lottieIcon>svg {
+    ._9293f6b2fc12398a-icon/*,
+._5eb9b3cc7c2b1ce8-lottieIcon>svg*/ {
         background: currentColor;
         mask-size: contain;
-        mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1307.svg);
+        /* mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1307.svg); */
     }
 
     ._972a0d22c8afa7f0-linkButtonIcon:has(>path[d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z"]) {
@@ -556,10 +618,9 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
 
     /* ~~~~ */
 
-    ._5eb9b3cc7c2b1ce8-lottieIcon>svg:has(>g>g>g>g[transform="matrix(1,0,0,1,0,0)"]>path) {
+    /* ._5eb9b3cc7c2b1ce8-lottieIcon>svg:has(>g>g>g>g[transform="matrix(1,0,0,1,0,0)"]>path) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);
-        /* Userpanel - Settings */
-    }
+    } */
 
     /* ._5eb9b3cc7c2b1ce8-lottieIcon>svg:has(>g>g>g>g>g[transform="matrix(1,0,0,1,0)"]>g>g>path) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);

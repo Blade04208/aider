@@ -23,7 +23,7 @@
             var(--text-primary, white) 15%);
     --border-faint: color-mix(in oklab,
             var(--custom-theme-base-color),
-            blue 90%);
+            white 10%);
     --_aider-border-dark: rgba(0, 0, 0, 0.5);
 
     --font-primary: 'Helvetica Neue', gg sans;
