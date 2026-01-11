@@ -89,7 +89,10 @@
 }
 
 ._36d072eab2b2e737-chatGradient {
-    display: none;
+    bottom: -4px;
+    height: calc((var(--chat-markup-line-height, 1rem) + 16px) / 2);
+    background: linear-gradient(to bottom, transparent, color-mix(in oklab, var(--background-base-lower), black 15%) 80%) !important;
+
 }
 
 @keyframes typing-glow {
@@ -111,6 +114,7 @@
         border-radius: 0px;
         border: 0;
         background: transparent;
+        overflow: visible;
     }
 
     ._740174f3d6a2c8fe-inner {
@@ -125,12 +129,73 @@
             box-shadow: 0px 0px 1px 1px inset var(--border-faint), 0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
             min-height: var(--chat-markup-line-height, 1rem);
             box-sizing: content-box;
+            max-height: calc(50vh - 16px);
+            overflow-y: scroll;
+
+
+            &::-webkit-scrollbar-thumb,
+            &::-webkit-scrollbar-track {
+                visibility: hidden !important;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: var(--scrollbar-thin-track);
+                border: 2px solid var(--scrollbar-thin-track);
+                border-color: var(--scrollbar-thin-track);
+            }
+
+            &::-webkit-scrollbar {
+                height: 8px;
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-corner {
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-clip: padding-box;
+                background-color: var(--border-subtle);
+                border: 2px solid transparent;
+            }
+
+            &:hover {
+
+                &::-webkit-scrollbar-thumb,
+                &::-webkit-scrollbar-track {
+                    visibility: visible !important;
+                }
+            }
         }
 
         >._740174f3d6a2c8fe-buttons {
             gap: 1px !important;
 
-            >*:not(span, .aa63abf63dbd9cce-separator) {
+            >*:not(span, .aa63abf63dbd9cce-separator)>._740174f3d6a2c8fe-button,
+            >._740174f3d6a2c8fe-button {
+                background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+                border: 1px solid var(--_aider-border-dark);
+                box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+                border-radius: 0px;
+                min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
+                min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    filter: brightness(1.4);
+                }
+
+                &:active {
+                    transform: translateY(1px);
+                    filter: brightness(0.95);
+                }
+            }
+
+            >*:not(span, .aa63abf63dbd9cce-separator)>.e6e74fd4d1221f53-button {
+                /* i hate the activity launcher */
                 background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
@@ -138,10 +203,15 @@
                 min-height: var(--custom-channel-textarea-text-area-height);
                 min-width: var(--custom-channel-textarea-text-area-height);
                 height: 100%;
+                transition: all 0.3s ease;
 
-                &._740174f3d6a2c8fe-button {
-                    min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
-                    margin-top: -1px;
+                &:hover {
+                    filter: brightness(1.4);
+                }
+
+                &:active {
+                    transform: translateY(1px);
+                    filter: brightness(0.95);
                 }
             }
         }
@@ -151,11 +221,38 @@
         }
 
         ._0923f156a0410684-attachWrapper {
-            padding: 0px;
-            min-width: var(--custom-channel-textarea-text-area-height);
+            display: contents;
+
+            ._0923f156a0410684-attachButton {
+                margin-right: 0px;
+
+                >._0923f156a0410684-attachButtonInner {
+                    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+                    border: 1px solid var(--_aider-border-dark);
+                    box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+                    border-radius: 0px;
+                    min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
+                    min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        filter: brightness(1.4);
+                    }
+
+                    &:active {
+                        transform: translateY(1px);
+                        filter: brightness(0.95);
+                    }
+                }
+            }
         }
     }
 }
+
 
 
 

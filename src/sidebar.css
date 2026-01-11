@@ -100,47 +100,60 @@
 }
 
 /* Userpanel ------------------------------------ */
+._5e434347c823b592-panels {
+    border-radius: 0px;
+    border: 0!important;
+    border-top: 1px solid var(--_aider-border-dark)!important;
+    box-shadow: inset 0px 1px 0px 0px var(--border-subtle);
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 2px);
 
-._37e49614b9f110a9-container {
-    flex-direction: column;
-    container-type: normal;
-    height: auto;
-    align-items: start;
-    padding: 0;
+    ._37e49614b9f110a9-container {
+        flex-direction: column;
+        container-type: normal;
+        height: auto;
+        align-items: start;
+        padding: var(--space-xxs);
+        gap: var(--space-xxs);
 
-    ._37e49614b9f110a9-avatarWrapper {
-        padding: var(--space-xs) var(--space-sm) 0;
-    }
-
-    ._37e49614b9f110a9-buttons {
-        gap: 0px;
-        width: 100%;
-
-        ._67645e1530f1195d-button {
-            flex: 1;
-            border-radius: 0px;
-            background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
-            border: 1px solid color-mix(in srgb, var(--background-base-lowest), transparent);
-            box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-            transition: all 0.3s ease;
-
-            &._67645e1530f1195d-redGlow {
-                background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), var(--red-400) 35%), color-mix(in oklab, var(--background-base-lower), var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
-                border: 1px solid color-mix(in srgb, var(--red-800), transparent);
-                box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%), 0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%), 0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
-            }
-
-            &:active {
-                transform: translateY(1px);
-            }
+        ._37e49614b9f110a9-avatarWrapper {
+            padding: var(--space-xs) calc(var(--space-xs) * 1.25);
+            width: calc(100% + var(--space-xs));
+            box-sizing: border-box;
         }
 
-        ._37e49614b9f110a9-buttonChevron {
-            flex: 0;
-        }
+        ._37e49614b9f110a9-buttons {
+            margin: 0 var(--space-xxs) var(--space-xxs);
+            gap: 0px;
+            width: calc(100% - var(--space-xxs) * 2);
 
-        ._37e49614b9f110a9-micButtonParent {
-            display: contents;
+            ._67645e1530f1195d-button {
+                flex: 1;
+                border-radius: 0px;
+                background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
+                border: 1px solid color-mix(in srgb, var(--background-base-lowest), transparent);
+                box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+                transition: all 0.3s ease;
+
+                &._67645e1530f1195d-redGlow {
+                    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), var(--red-400) 35%), color-mix(in oklab, var(--background-base-lower), var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
+                    border: 1px solid color-mix(in srgb, var(--red-800), transparent);
+                    box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%), 0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%), 0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
+                }
+
+                &:active {
+                    transform: translateY(1px);
+                }
+            }
+
+            ._37e49614b9f110a9-buttonChevron {
+                flex: 0;
+            }
+
+            ._37e49614b9f110a9-micButtonParent {
+                display: contents;
+            }
         }
     }
 }
@@ -168,6 +181,9 @@
             font-weight: 450;
             color: white;
         }
+        ._44b0c28be7879b7b-avatar {
+            border-radius: 0px;
+        }
     }
 
     >g>rect {
@@ -184,10 +200,12 @@
     y: 3;
 }
 
-
-
 ._20a53846fe2e8513-nameAndDecorators {
     margin-left: 14px;
+}
+
+._5e434347c823b592-sidebar::after {
+    display: none;
 }
 
 /* Debug ----------- */
@@ -195,3 +213,4 @@
 div[id="developer_options_design_tools_tab-tab"]::after {
     content: "Sidebar Loaded!";
 }
+
