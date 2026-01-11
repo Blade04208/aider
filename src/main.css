@@ -25,8 +25,14 @@
             var(--custom-theme-base-color),
             white 10%);
     --_aider-border-dark: rgba(0, 0, 0, 0.5);
-
     --font-primary: 'Helvetica Neue', gg sans;
+    --radius-xxs: 0;
+    --radius-xs: 0;
+    --radius-sm: 0;
+    --radius-md: 0;
+    --radius-lg: 0;
+    --radius-xl: 0;
+    --radius-xxl: 0;
 
     nav._5e434347c823b592-guilds,
     ._960e4207cea8323e-bg {
@@ -55,6 +61,13 @@
 
     --font-primary: 'Helvetica Neue', gg sans;
     --_aider-border-dark: rgba(0, 0, 0, 0.2);
+    --radius-xxs: 0;
+    --radius-xs: 0;
+    --radius-sm: 0;
+    --radius-md: 0;
+    --radius-lg: 0;
+    --radius-xl: 0;
+    --radius-xxl: 0;
 
     nav._5e434347c823b592-guilds,
     ._960e4207cea8323e-bg {
@@ -291,6 +304,7 @@
 div[id="developer_options_design_tools_tab-tab"] {
     display: flex;
     flex-direction: column;
+
     &::before {
         content: "Main Loaded!";
     }
@@ -311,9 +325,11 @@ div[id="developer_options_design_tools_tab-tab"] {
 }
 
 
-[aria-controls="developer_options_design_tools_tab-tab"], [aria-label="Design Tools"] {
-    font-size: 0px!important;
+[aria-controls="developer_options_design_tools_tab-tab"],
+[aria-label="Design Tools"] {
+    font-size: 0px !important;
     padding-left: 6px;
+
     &::before {
         content: "Aider";
         font-size: 14px;

@@ -26,8 +26,14 @@
             var(--custom-theme-base-color),
             white 10%);
     --_aider-border-dark: rgba(0, 0, 0, 0.5);
-
     --font-primary: 'Helvetica Neue', gg sans;
+    --radius-xxs: 0;
+    --radius-xs: 0;
+    --radius-sm: 0;
+    --radius-md: 0;
+    --radius-lg: 0;
+    --radius-xl: 0;
+    --radius-xxl: 0;
 
     nav._5e434347c823b592-guilds,
     ._960e4207cea8323e-bg {
@@ -56,6 +62,13 @@
 
     --font-primary: 'Helvetica Neue', gg sans;
     --_aider-border-dark: rgba(0, 0, 0, 0.2);
+    --radius-xxs: 0;
+    --radius-xs: 0;
+    --radius-sm: 0;
+    --radius-md: 0;
+    --radius-lg: 0;
+    --radius-xl: 0;
+    --radius-xxl: 0;
 
     nav._5e434347c823b592-guilds,
     ._960e4207cea8323e-bg {
@@ -292,6 +305,7 @@
 div[id="developer_options_design_tools_tab-tab"] {
     display: flex;
     flex-direction: column;
+
     &::before {
         content: "Main Loaded!";
     }
@@ -312,9 +326,11 @@ div[id="developer_options_design_tools_tab-tab"] {
 }
 
 
-[aria-controls="developer_options_design_tools_tab-tab"], [aria-label="Design Tools"] {
-    font-size: 0px!important;
+[aria-controls="developer_options_design_tools_tab-tab"],
+[aria-label="Design Tools"] {
+    font-size: 0px !important;
     padding-left: 6px;
+
     &::before {
         content: "Aider";
         font-size: 14px;
@@ -834,6 +850,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
 }
 
+
 /* Userpanel ------------------------------------ */
 ._5e434347c823b592-panels {
     border-radius: 0px;
@@ -849,8 +866,8 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
         container-type: normal;
         height: auto;
         align-items: start;
-        padding: var(--space-xxs);
-        gap: var(--space-xxs);
+        padding: 4px;
+        gap: 4px;
 
         ._37e49614b9f110a9-avatarWrapper {
             padding: var(--space-xs) calc(var(--space-xs) * 1.25);
@@ -859,9 +876,9 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
         }
 
         ._37e49614b9f110a9-buttons {
-            margin: 0 var(--space-xxs) var(--space-xxs);
+            /* margin: 0 var(--space-xxs) var(--space-xxs); */
             gap: 0px;
-            width: calc(100% - var(--space-xxs) * 2);
+            width: calc(100%);
 
             ._67645e1530f1195d-button {
                 flex: 1;

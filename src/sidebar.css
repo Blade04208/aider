@@ -99,6 +99,7 @@
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
 }
 
+
 /* Userpanel ------------------------------------ */
 ._5e434347c823b592-panels {
     border-radius: 0px;
@@ -114,8 +115,8 @@
         container-type: normal;
         height: auto;
         align-items: start;
-        padding: var(--space-xxs);
-        gap: var(--space-xxs);
+        padding: 4px;
+        gap: 4px;
 
         ._37e49614b9f110a9-avatarWrapper {
             padding: var(--space-xs) calc(var(--space-xs) * 1.25);
@@ -124,9 +125,9 @@
         }
 
         ._37e49614b9f110a9-buttons {
-            margin: 0 var(--space-xxs) var(--space-xxs);
+            /* margin: 0 var(--space-xxs) var(--space-xxs); */
             gap: 0px;
-            width: calc(100% - var(--space-xxs) * 2);
+            width: calc(100%);
 
             ._67645e1530f1195d-button {
                 flex: 1;
