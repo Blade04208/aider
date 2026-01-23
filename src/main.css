@@ -34,12 +34,12 @@
     --radius-xl: 0;
     --radius-xxl: 0;
 
-    nav._5e434347c823b592-guilds,
-    ._960e4207cea8323e-bg {
+    nav.guilds__5e434,
+    .bg__960e4 {
         background: color-mix(in oklab, var(--background-base-lower), black 20%);
     }
 
-    .f75fb00fb7356cbe-chatContent {
+    .chatContent_f75fb0 {
         background: color-mix(in oklab, var(--background-base-lower), black 15%);
     }
 }
@@ -69,12 +69,12 @@
     --radius-xl: 0;
     --radius-xxl: 0;
 
-    nav._5e434347c823b592-guilds,
-    ._960e4207cea8323e-bg {
+    nav.guilds__5e434,
+    .bg__960e4 {
         background: color-mix(in oklab, var(--background-base-lower), black 7.5%);
     }
 
-    .f75fb00fb7356cbe-chatContent {
+    .chatContent_f75fb0 {
         background: color-mix(in oklab, var(--background-base-lower), black 7.5%);
     }
 }
@@ -84,18 +84,18 @@
 /* Subtitle --------------------------- */
 
 
-.f75fb00fb7356cbe-title {
+.title_f75fb0 {
     padding: 0px;
     background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
-._9293f6b2fc12398a-children>div>.f75fb00fb7356cbe-avatar {
+.children__9293f>div>.avatar_f75fb0 {
     height: var(--custom-channel-header-height) !important;
     width: var(--custom-channel-header-height) !important;
 
-    >._44b0c28be7879b7b-svg {
+    >.svg__44b0c {
 
         contain: none !important;
         overflow: visible !important;
@@ -118,7 +118,7 @@
     }
 }
 
-._9293f6b2fc12398a-titleWrapper {
+.titleWrapper__9293f {
     display: flex;
     flex-direction: row;
     gap: var(--space-xs);
@@ -134,36 +134,36 @@
 }
 
 /* ~~ */
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-dnd)"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-dnd)"]) .titleWrapper__9293f::after {
     content: "DO NOT DISTURB";
     background: var(--status-danger);
 }
 
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[fill="#82838b"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[fill="#82838b"]) .titleWrapper__9293f::after {
     content: "OFFLINE";
     background: #82838b;
 }
 
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-online)"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-online)"]) .titleWrapper__9293f::after {
     content: "ONLINE";
     background: var(--status-positive);
 }
 
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-idle)"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-idle)"]) .titleWrapper__9293f::after {
     content: "IDLE";
     background: var(--status-warning);
 }
 
 /* ~~ */
 
-._9293f6b2fc12398a-children::after {
+.children__9293f::after {
     background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
     mask-image: linear-gradient(to left, black, transparent);
 }
 
-._9293f6b2fc12398a-children {
-    &:has(._9293f6b2fc12398a-channelIcon) {
-        ._9293f6b2fc12398a-channelIcon {
+.children__9293f {
+    &:has(.channelIcon__9293f) {
+        .channelIcon__9293f {
             position: absolute;
             scale: 3;
             left: 10px;
@@ -172,32 +172,40 @@
             mask-image: linear-gradient(to bottom, var(--_aider-border-dark), transparent 80%);
         }
 
-        ._9293f6b2fc12398a-titleWrapper {
+        .titleWrapper__9293f {
             padding-left: calc(var(--space-sm) * 1.5);
         }
     }
 
 
-    &:has(._9293f6b2fc12398a-caret) {
-        ._9293f6b2fc12398a-channelIcon:first-of-type {
+    &:has(.caret__9293f) {
+        .channelIcon__9293f:first-of-type {
             display: none;
         }
 
-        ._9293f6b2fc12398a-titleWrapper:last-of-type {
+        .titleWrapper__9293f:last-of-type {
             padding-left: var(--space-xs);
         }
     }
 }
 
 
+.searchBar_c322aa {
+    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
+    border: 1px solid color-mix(in oklab, var(--_aider-border-dark), transparent 90%);
+    box-shadow: 0px 0px 1px 1px inset var(--border-faint), 0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
+
+}
+
+
 /* Profiles ------------------------------------------------- */
-.c0bea05627c5dc35-outer {
+.outer_c0bea0 {
     overflow: visible;
     border-radius: 0px;
     box-shadow: var(--shadow-high);
     border: 1px solid var(--aider-border-dark);
 
-    .c0bea05627c5dc35-inner {
+    .inner_c0bea0 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -205,12 +213,12 @@
         overflow: visible;
         border-radius: 0px;
 
-        ._5be3ef42f92174b2-header,
-        ._5be3ef42f92174b2-body {
+        .header__5be3e,
+        .body__5be3e {
             display: contents;
         }
 
-        ._68edb95846a37624-mask {
+        .mask__68edb {
             position: absolute;
             /* display: none; */
             left: 0px;
@@ -218,32 +226,32 @@
             z-index: 0;
         }
 
-        ._75742e4cc9019aeb-avatar {
+        .avatar__75742 {
             position: relative;
             inset: 0;
             width: calc(80px + var(--space-xs));
         }
 
-        .ab86098b36386ff7-referenceContainer {
+        .referenceContainer_ab8609 {
             display: none;
         }
 
-        ._63ed30c16c7151f2-container {
+        .container__63ed3 {
             width: calc(100% - 80px - var(--space-md));
             z-index: 1;
         }
 
-        ._5be3ef42f92174b2-footer {
+        .footer__5be3e {
             width: 100%;
             padding: 0px;
             padding-bottom: calc(var(--space-xs) * 1.25);
         }
 
-        ._9d59731d47494e97-container {
+        .container__9d597 {
             width: 100%;
         }
 
-        ._68edb95846a37624-mask>foreignObject {
+        .mask__68edb>foreignObject {
             mask: none;
             mask-image: linear-gradient(to bottom, black, transparent);
         }
@@ -270,24 +278,24 @@
 
 /* Buttons --------------------------------------- */
 
-.a22cb0c66246f5d3-button {
+.button_a22cb0 {
     border-radius: 0px;
     transition: all 0.15s ease !important;
 
-    &.a22cb0c66246f5d3-primary {
+    &.primary_a22cb0 {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-primary-background-default), white 25%), var(--control-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
         border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-primary-background-default), black 50%), transparent);
         box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-primary-background-default), white 50%), transparent);
     }
 
-    &.a22cb0c66246f5d3-critical-primary {
+    &.critical-primary_a22cb0 {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-critical-primary-background-default), white 25%), var(--control-critical-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
         border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-critical-primary-background-default), black 50%), transparent);
         box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-critical-primary-background-default), white 50%), transparent);
     }
 
-    &.a22cb0c66246f5d3-secondary,
-    &.a22cb0c66246f5d3-critical-secondary {
+    &.secondary_a22cb0,
+    &.critical-secondary_a22cb0 {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-secondary-background-default), white 15%), var(--control-secondary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
         border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-secondary-background-default), black 30%), transparent);
         box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-secondary-background-default), white 30%), transparent);

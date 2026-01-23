@@ -35,12 +35,12 @@
     --radius-xl: 0;
     --radius-xxl: 0;
 
-    nav._5e434347c823b592-guilds,
-    ._960e4207cea8323e-bg {
+    nav.guilds__5e434,
+    .bg__960e4 {
         background: color-mix(in oklab, var(--background-base-lower), black 20%);
     }
 
-    .f75fb00fb7356cbe-chatContent {
+    .chatContent_f75fb0 {
         background: color-mix(in oklab, var(--background-base-lower), black 15%);
     }
 }
@@ -70,12 +70,12 @@
     --radius-xl: 0;
     --radius-xxl: 0;
 
-    nav._5e434347c823b592-guilds,
-    ._960e4207cea8323e-bg {
+    nav.guilds__5e434,
+    .bg__960e4 {
         background: color-mix(in oklab, var(--background-base-lower), black 7.5%);
     }
 
-    .f75fb00fb7356cbe-chatContent {
+    .chatContent_f75fb0 {
         background: color-mix(in oklab, var(--background-base-lower), black 7.5%);
     }
 }
@@ -85,18 +85,18 @@
 /* Subtitle --------------------------- */
 
 
-.f75fb00fb7356cbe-title {
+.title_f75fb0 {
     padding: 0px;
     background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
-._9293f6b2fc12398a-children>div>.f75fb00fb7356cbe-avatar {
+.children__9293f>div>.avatar_f75fb0 {
     height: var(--custom-channel-header-height) !important;
     width: var(--custom-channel-header-height) !important;
 
-    >._44b0c28be7879b7b-svg {
+    >.svg__44b0c {
 
         contain: none !important;
         overflow: visible !important;
@@ -119,7 +119,7 @@
     }
 }
 
-._9293f6b2fc12398a-titleWrapper {
+.titleWrapper__9293f {
     display: flex;
     flex-direction: row;
     gap: var(--space-xs);
@@ -135,36 +135,36 @@
 }
 
 /* ~~ */
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-dnd)"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-dnd)"]) .titleWrapper__9293f::after {
     content: "DO NOT DISTURB";
     background: var(--status-danger);
 }
 
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[fill="#82838b"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[fill="#82838b"]) .titleWrapper__9293f::after {
     content: "OFFLINE";
     background: #82838b;
 }
 
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-online)"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-online)"]) .titleWrapper__9293f::after {
     content: "ONLINE";
     background: var(--status-positive);
 }
 
-._9293f6b2fc12398a-children:has(>div>.f75fb00fb7356cbe-avatar>._44b0c28be7879b7b-svg>g>rect[mask="url(#svg-mask-status-idle)"]) ._9293f6b2fc12398a-titleWrapper::after {
+.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-idle)"]) .titleWrapper__9293f::after {
     content: "IDLE";
     background: var(--status-warning);
 }
 
 /* ~~ */
 
-._9293f6b2fc12398a-children::after {
+.children__9293f::after {
     background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
     mask-image: linear-gradient(to left, black, transparent);
 }
 
-._9293f6b2fc12398a-children {
-    &:has(._9293f6b2fc12398a-channelIcon) {
-        ._9293f6b2fc12398a-channelIcon {
+.children__9293f {
+    &:has(.channelIcon__9293f) {
+        .channelIcon__9293f {
             position: absolute;
             scale: 3;
             left: 10px;
@@ -173,32 +173,40 @@
             mask-image: linear-gradient(to bottom, var(--_aider-border-dark), transparent 80%);
         }
 
-        ._9293f6b2fc12398a-titleWrapper {
+        .titleWrapper__9293f {
             padding-left: calc(var(--space-sm) * 1.5);
         }
     }
 
 
-    &:has(._9293f6b2fc12398a-caret) {
-        ._9293f6b2fc12398a-channelIcon:first-of-type {
+    &:has(.caret__9293f) {
+        .channelIcon__9293f:first-of-type {
             display: none;
         }
 
-        ._9293f6b2fc12398a-titleWrapper:last-of-type {
+        .titleWrapper__9293f:last-of-type {
             padding-left: var(--space-xs);
         }
     }
 }
 
 
+.searchBar_c322aa {
+    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
+    border: 1px solid color-mix(in oklab, var(--_aider-border-dark), transparent 90%);
+    box-shadow: 0px 0px 1px 1px inset var(--border-faint), 0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
+
+}
+
+
 /* Profiles ------------------------------------------------- */
-.c0bea05627c5dc35-outer {
+.outer_c0bea0 {
     overflow: visible;
     border-radius: 0px;
     box-shadow: var(--shadow-high);
     border: 1px solid var(--aider-border-dark);
 
-    .c0bea05627c5dc35-inner {
+    .inner_c0bea0 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -206,12 +214,12 @@
         overflow: visible;
         border-radius: 0px;
 
-        ._5be3ef42f92174b2-header,
-        ._5be3ef42f92174b2-body {
+        .header__5be3e,
+        .body__5be3e {
             display: contents;
         }
 
-        ._68edb95846a37624-mask {
+        .mask__68edb {
             position: absolute;
             /* display: none; */
             left: 0px;
@@ -219,32 +227,32 @@
             z-index: 0;
         }
 
-        ._75742e4cc9019aeb-avatar {
+        .avatar__75742 {
             position: relative;
             inset: 0;
             width: calc(80px + var(--space-xs));
         }
 
-        .ab86098b36386ff7-referenceContainer {
+        .referenceContainer_ab8609 {
             display: none;
         }
 
-        ._63ed30c16c7151f2-container {
+        .container__63ed3 {
             width: calc(100% - 80px - var(--space-md));
             z-index: 1;
         }
 
-        ._5be3ef42f92174b2-footer {
+        .footer__5be3e {
             width: 100%;
             padding: 0px;
             padding-bottom: calc(var(--space-xs) * 1.25);
         }
 
-        ._9d59731d47494e97-container {
+        .container__9d597 {
             width: 100%;
         }
 
-        ._68edb95846a37624-mask>foreignObject {
+        .mask__68edb>foreignObject {
             mask: none;
             mask-image: linear-gradient(to bottom, black, transparent);
         }
@@ -271,24 +279,24 @@
 
 /* Buttons --------------------------------------- */
 
-.a22cb0c66246f5d3-button {
+.button_a22cb0 {
     border-radius: 0px;
     transition: all 0.15s ease !important;
 
-    &.a22cb0c66246f5d3-primary {
+    &.primary_a22cb0 {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-primary-background-default), white 25%), var(--control-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
         border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-primary-background-default), black 50%), transparent);
         box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-primary-background-default), white 50%), transparent);
     }
 
-    &.a22cb0c66246f5d3-critical-primary {
+    &.critical-primary_a22cb0 {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-critical-primary-background-default), white 25%), var(--control-critical-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
         border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-critical-primary-background-default), black 50%), transparent);
         box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-critical-primary-background-default), white 50%), transparent);
     }
 
-    &.a22cb0c66246f5d3-secondary,
-    &.a22cb0c66246f5d3-critical-secondary {
+    &.secondary_a22cb0,
+    &.critical-secondary_a22cb0 {
         background: linear-gradient(to bottom, color-mix(in oklab, var(--control-secondary-background-default), white 15%), var(--control-secondary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
         border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-secondary-background-default), black 30%), transparent);
         box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-secondary-background-default), white 30%), transparent);
@@ -341,41 +349,41 @@ div[id="developer_options_design_tools_tab-tab"] {
     --aider-chat-avatars: compact;
 }
 
-.c19a557985eb7793-avatar {
+.avatar_c19a55 {
     border-radius: 0px;
 }
 
 @container style(--aider-chat-avatars: compact) {
-    ._5126c0cd07f243a0-message {
+    .message__5126c {
         --custom-message-margin-left-content-cozy: var(--space-xxl);
 
-        .c19a557985eb7793-avatar {
+        .avatar_c19a55 {
             scale: calc(16 / 40);
             top: -8px;
             margin-top: 0px;
             left: calc(var(--space-xxl) / 1.5);
         }
 
-        .c19a557985eb7793-avatarDecoration {
+        .avatarDecoration_c19a55 {
             scale: calc(16 / 40);
             top: -11px;
             margin-top: 0px;
             left: calc(var(--space-xxl) / 1.5 - 4px);
         }
 
-        .c19a557985eb7793-header {
+        .header_c19a55 {
             margin-left: 20px;
         }
 
-        &.c19a557985eb7793-hasReply .c19a557985eb7793-avatar {
+        &.hasReply_c19a55 .avatar_c19a55 {
             top: 15px;
         }
 
-        &:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents {
+        &:not(.groupStart__5126c)>.contents_c19a55 {
             display: flex;
             align-items: end;
 
-            >.c19a557985eb7793-latin12CompactTimeStamp {
+            >.latin12CompactTimeStamp_c19a55 {
                 position: relative;
                 display: inline;
                 opacity: 1;
@@ -390,15 +398,15 @@ div[id="developer_options_design_tools_tab-tab"] {
 
 /* Chatbar --------------------- */
 
-.f75fb00fb7356cbe-chat {
+.chat_f75fb0 {
     border-top: 0 !important;
 }
 
-.b8880176888cc928-typing {
+.typing_b88801 {
     overflow: visible !important;
     z-index: 0;
 
-    .b8880176888cc928-typingDots {
+    .typingDots_b88801 {
         overflow: visible !important;
 
         &::before {
@@ -416,18 +424,18 @@ div[id="developer_options_design_tools_tab-tab"] {
             /* opacity: 0.5; */
         }
 
-        .b8880176888cc928-ellipsis {
+        .ellipsis_b88801 {
             display: none;
         }
     }
 }
 
-.f75fb00fb7356cbe-form>div:not([class]) {
+.form_f75fb0>div:not([class]) {
     position: relative;
     z-index: 2;
 }
 
-._36d072eab2b2e737-chatGradient {
+.chatGradient__36d07 {
     bottom: -4px;
     height: calc((var(--chat-markup-line-height, 1rem) + 16px) / 2);
     background: linear-gradient(to bottom, transparent, color-mix(in oklab, var(--background-base-lower), black 15%) 80%) !important;
@@ -444,11 +452,11 @@ div[id="developer_options_design_tools_tab-tab"] {
     }
 }
 
-.f75fb00fb7356cbe-form {
+.form_f75fb0 {
     padding: 4px;
 
-    .f75fb00fb7356cbe-channelTextArea,
-    ._740174f3d6a2c8fe-themedBackground {
+    .channelTextArea_f75fb0,
+    .themedBackground__74017 {
         margin-bottom: 0px;
         border-radius: 0px;
         border: 0;
@@ -456,11 +464,11 @@ div[id="developer_options_design_tools_tab-tab"] {
         overflow: visible;
     }
 
-    ._740174f3d6a2c8fe-inner {
+    .inner__74017 {
         --custom-channel-textarea-text-area-height: calc(var(--chat-markup-line-height, 1rem) + 16px);
         align-items: center;
 
-        ._740174f3d6a2c8fe-textArea {
+        .textArea__74017 {
             --custom-channel-textarea-text-area-height: var(--chat-markup-line-height, 1rem);
             padding: 8px !important;
             background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
@@ -507,11 +515,11 @@ div[id="developer_options_design_tools_tab-tab"] {
             }
         }
 
-        >._740174f3d6a2c8fe-buttons {
+        >.buttons__74017 {
             gap: 1px !important;
 
-            >*:not(span, .aa63abf63dbd9cce-separator)>._740174f3d6a2c8fe-button,
-            >._740174f3d6a2c8fe-button {
+            >*:not(span, .separator_aa63ab)>.button__74017,
+            >.button__74017 {
                 background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
@@ -533,7 +541,7 @@ div[id="developer_options_design_tools_tab-tab"] {
                 }
             }
 
-            >*:not(span, .aa63abf63dbd9cce-separator)>.e6e74fd4d1221f53-button {
+            >*:not(span, .separator_aa63ab)>.button_e6e74f {
                 /* i hate the activity launcher */
                 background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
@@ -555,17 +563,17 @@ div[id="developer_options_design_tools_tab-tab"] {
             }
         }
 
-        ._1b31f471f0bb10ab-placeholder {
+        .placeholder__1b31f {
             margin-left: 8px;
         }
 
-        ._0923f156a0410684-attachWrapper {
+        .attachWrapper__0923f {
             display: contents;
 
-            ._0923f156a0410684-attachButton {
+            .attachButton__0923f {
                 margin-right: 0px;
 
-                >._0923f156a0410684-attachButtonInner {
+                >.attachButtonInner__0923f {
                     background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                     border: 1px solid var(--_aider-border-dark);
                     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
@@ -601,6 +609,14 @@ div[id="developer_options_design_tools_tab-tab"] {
 div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
     content: "Chat Loaded!";
 }
+
+.popover_f84418,
+.menu_c1e9c4 {
+    border-radius: 0px;
+    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 7.5%), color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px) !important;
+    border: 1px solid var(--_aider-border-dark);
+    box-shadow: 0px 0px 1px 1px inset var(--border-subtle), 2px 2px 10px black !important;
+}
 /* //////// icons.css //////// */
 :root {
     /* --aider-icons: true; */
@@ -610,134 +626,137 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
 
 @container style(--aider-icons: true) {
 
-    ._972a0d22c8afa7f0-linkButtonIcon,
-    ._9293f6b2fc12398a-icon/*,
-._5eb9b3cc7c2b1ce8-lottieIcon>svg*/ {
+    .linkButtonIcon__972a0,
+    .icon__9293f
+
+    /*,
+.lottieIcon__5eb9b>svg*/
+        {
         background: currentColor;
         mask-size: contain;
         /* mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1307.svg); */
     }
 
-    ._972a0d22c8afa7f0-linkButtonIcon:has(>path[d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z"]) {
+    .linkButtonIcon__972a0:has(>path[d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-993.svg);
         /* DMs - Friends */
     }
 
 
-    ._972a0d22c8afa7f0-linkButtonIcon:has(>path[d="M16.23 12c0 1.29-.95 2.25-2.22 2.25A2.18 2.18 0 0 1 11.8 12c0-1.29.95-2.25 2.22-2.25 1.27 0 2.22.96 2.22 2.25ZM23 12c0 5.01-4 9-8.99 9a8.93 8.93 0 0 1-8.75-6.9H3.34l-.9-4.2H5.3c.26-.96.68-1.89 1.21-2.7H1.89L1 3h12.74C19.13 3 23 6.99 23 12Zm-4.26 0c0-2.67-2.1-4.8-4.73-4.8A4.74 4.74 0 0 0 9.28 12c0 2.67 2.1 4.8 4.73 4.8a4.74 4.74 0 0 0 4.73-4.8Z"]) {
+    .linkButtonIcon__972a0:has(>path[d="M16.23 12c0 1.29-.95 2.25-2.22 2.25A2.18 2.18 0 0 1 11.8 12c0-1.29.95-2.25 2.22-2.25 1.27 0 2.22.96 2.22 2.25ZM23 12c0 5.01-4 9-8.99 9a8.93 8.93 0 0 1-8.75-6.9H3.34l-.9-4.2H5.3c.26-.96.68-1.89 1.21-2.7H1.89L1 3h12.74C19.13 3 23 6.99 23 12Zm-4.26 0c0-2.67-2.1-4.8-4.73-4.8A4.74 4.74 0 0 0 9.28 12c0 2.67 2.1 4.8 4.73 4.8a4.74 4.74 0 0 0 4.73-4.8Z"]) {
         background: transparent;
         mask-image: none;
         /* DMs - Nitro */
     }
 
-    ._972a0d22c8afa7f0-linkButtonIcon:has(>path[d="M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v3.98a3.07 3.07 0 0 1-.3 1.35A2.97 2.97 0 0 1 4.98 10c-2 0-3.44-1.9-2.9-3.83l.55-1.98ZM10 2a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3 3 3 0 0 0 3-2.97V3a1 1 0 0 0-1-1h-4ZM17 2a1 1 0 0 0-1 1v3.98a2.43 2.43 0 0 0 0 .05A2.95 2.95 0 0 0 19.02 10c2 0 3.44-1.9 2.9-3.83l-.55-1.98A3 3 0 0 0 18.47 2H17Z"]) {
+    .linkButtonIcon__972a0:has(>path[d="M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v3.98a3.07 3.07 0 0 1-.3 1.35A2.97 2.97 0 0 1 4.98 10c-2 0-3.44-1.9-2.9-3.83l.55-1.98ZM10 2a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3 3 3 0 0 0 3-2.97V3a1 1 0 0 0-1-1h-4ZM17 2a1 1 0 0 0-1 1v3.98a2.43 2.43 0 0 0 0 .05A2.95 2.95 0 0 0 19.02 10c2 0 3.44-1.9 2.9-3.83l-.55-1.98A3 3 0 0 0 18.47 2H17Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-231.svg);
         /* DMs - Shop */
     }
 
-    ._972a0d22c8afa7f0-linkButtonIcon:has(>path[d="M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1 0 0 0 1-1.73c-.6-.35-1.24-.64-1.9-.87.54-.3 1.05-.65 1.52-1.07a3.98 3.98 0 0 0 5.49-1.8.77.77 0 0 0-.24-.95 3.98 3.98 0 0 0-2.02-.76A4 4 0 0 0 23 10.47a.76.76 0 0 0-.71-.71 4.06 4.06 0 0 0-1.6.22 3.99 3.99 0 0 0 .54-5.35.77.77 0 0 0-.95-.24c-.75.36-1.37.95-1.77 1.67V6a4 4 0 0 0-4.9-3.9.77.77 0 0 0-.6.72 4 4 0 0 0 3.7 4.17c.89 1.3 1.3 2.95 1.3 4.51 0 3.66-2.75 6.5-6 6.5s-6-2.84-6-6.5c0-1.56.41-3.21 1.3-4.51A4 4 0 0 0 11 2.82a.77.77 0 0 0-.6-.72 4.01 4.01 0 0 0-4.9 3.96A4.02 4.02 0 0 0 3.73 4.4a.77.77 0 0 0-.95.24 3.98 3.98 0 0 0 .55 5.35 4 4 0 0 0-1.6-.22.76.76 0 0 0-.72.71l-.01.28a4 4 0 0 0 2.65 3.77c-.75.06-1.45.33-2.02.76-.3.22-.4.62-.24.95a4 4 0 0 0 5.49 1.8c.47.42.98.78 1.53 1.07-.67.23-1.3.52-1.91.87a1 1 0 1 0 1 1.73Z"]) {
+    .linkButtonIcon__972a0:has(>path[d="M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1 0 0 0 1-1.73c-.6-.35-1.24-.64-1.9-.87.54-.3 1.05-.65 1.52-1.07a3.98 3.98 0 0 0 5.49-1.8.77.77 0 0 0-.24-.95 3.98 3.98 0 0 0-2.02-.76A4 4 0 0 0 23 10.47a.76.76 0 0 0-.71-.71 4.06 4.06 0 0 0-1.6.22 3.99 3.99 0 0 0 .54-5.35.77.77 0 0 0-.95-.24c-.75.36-1.37.95-1.77 1.67V6a4 4 0 0 0-4.9-3.9.77.77 0 0 0-.6.72 4 4 0 0 0 3.7 4.17c.89 1.3 1.3 2.95 1.3 4.51 0 3.66-2.75 6.5-6 6.5s-6-2.84-6-6.5c0-1.56.41-3.21 1.3-4.51A4 4 0 0 0 11 2.82a.77.77 0 0 0-.6-.72 4.01 4.01 0 0 0-4.9 3.96A4.02 4.02 0 0 0 3.73 4.4a.77.77 0 0 0-.95.24 3.98 3.98 0 0 0 .55 5.35 4 4 0 0 0-1.6-.22.76.76 0 0 0-.72.71l-.01.28a4 4 0 0 0 2.65 3.77c-.75.06-1.45.33-2.02.76-.3.22-.4.62-.24.95a4 4 0 0 0 5.49 1.8c.47.42.98.78 1.53 1.07-.67.23-1.3.52-1.91.87a1 1 0 1 0 1 1.73Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1393.svg);
         /* DMs - Shop */
     }
 
     /* ~~~~ */
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M2 7.4A5.4 5.4 0 0 1 7.4 2c.36 0 .7.22.83.55l1.93 4.64a1 1 0 0 1-.43 1.25L7 10a8.52 8.52 0 0 0 7 7l1.12-2.24a1 1 0 0 1 1.19-.51l5.06 1.56c.38.11.63.46.63.85C22 19.6 19.6 22 16.66 22h-.37C8.39 22 2 15.6 2 7.71V7.4ZM13 3a1 1 0 0 1 1-1 8 8 0 0 1 8 8 1 1 0 1 1-2 0 6 6 0 0 0-6-6 1 1 0 0 1-1-1Z"]) {
+    .icon__9293f:has(>path[d="M2 7.4A5.4 5.4 0 0 1 7.4 2c.36 0 .7.22.83.55l1.93 4.64a1 1 0 0 1-.43 1.25L7 10a8.52 8.52 0 0 0 7 7l1.12-2.24a1 1 0 0 1 1.19-.51l5.06 1.56c.38.11.63.46.63.85C22 19.6 19.6 22 16.66 22h-.37C8.39 22 2 15.6 2 7.71V7.4ZM13 3a1 1 0 0 1 1-1 8 8 0 0 1 8 8 1 1 0 1 1-2 0 6 6 0 0 0-6-6 1 1 0 0 1-1-1Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-322.svg);
         /* Subtitle - Call (voice) */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-2.12a1 1 0 0 0 .55.9l3 1.5a1 1 0 0 0 1.45-.9V7.62a1 1 0 0 0-1.45-.9l-3 1.5a1 1 0 0 0-.55.9V7a3 3 0 0 0-3-3H4Z"]) {
+    .icon__9293f:has(>path[d="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-2.12a1 1 0 0 0 .55.9l3 1.5a1 1 0 0 0 1.45-.9V7.62a1 1 0 0 0-1.45-.9l-3 1.5a1 1 0 0 0-.55.9V7a3 3 0 0 0-3-3H4Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1088.svg);
         /* Subtitle - Call (video) */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38ZM9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z"]) {
+    .icon__9293f:has(>path[d="M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38ZM9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-832.svg);
         /* Subtitle - Pins */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM16.62 13.17c-.22.29-.65.37-.92.14-.34-.3-.7-.57-1.09-.82-.52-.33-.7-1.05-.47-1.63.11-.27.2-.57.26-.87.11-.54.55-1 1.1-.92 1.6.2 3.04.92 4.15 1.98.3.27-.25.95-.65.95a3 3 0 0 0-2.38 1.17ZM15.19 15.61c.13.16.02.39-.19.39a3 3 0 0 0-1.52 5.59c.2.12.26.41.02.41h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5a7.5 7.5 0 0 1 13.19-4.89ZM9.5 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM15.5 22Z"]) {
+    .icon__9293f:has(>path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM16.62 13.17c-.22.29-.65.37-.92.14-.34-.3-.7-.57-1.09-.82-.52-.33-.7-1.05-.47-1.63.11-.27.2-.57.26-.87.11-.54.55-1 1.1-.92 1.6.2 3.04.92 4.15 1.98.3.27-.25.95-.65.95a3 3 0 0 0-2.38 1.17ZM15.19 15.61c.13.16.02.39-.19.39a3 3 0 0 0-1.52 5.59c.2.12.26.41.02.41h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5a7.5 7.5 0 0 1 13.19-4.89ZM9.5 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM15.5 22Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-997.svg);
         /* Subtitle - Add to DM */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]) {
+    .icon__9293f:has(>path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1000.svg);
         /* Subtitle - User Profile Sidebar */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]) {
+    .icon__9293f:has(>path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1000.svg);
         /* Subtitle - User Profile Sidebar */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36ZM15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z"]) {
+    .icon__9293f:has(>path[d="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36ZM15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1383.svg);
         /* Subtitle - Threads */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M9.7 2.89c.18-.07.32-.24.37-.43a2 2 0 0 1 3.86 0c.05.2.19.36.38.43A7 7 0 0 1 19 9.5v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-4.05 0-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3 3 0 0 1 .77-2l1.1-1.23a.5.5 0 0 0 .13-.33V9.5a7 7 0 0 1 4.7-6.61ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.86 24.86 0 0 1-5.64 0Z"]) {
+    .icon__9293f:has(>path[d="M9.7 2.89c.18-.07.32-.24.37-.43a2 2 0 0 1 3.86 0c.05.2.19.36.38.43A7 7 0 0 1 19 9.5v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-4.05 0-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3 3 0 0 1 .77-2l1.1-1.23a.5.5 0 0 0 .13-.33V9.5a7 7 0 0 1 4.7-6.61ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.86 24.86 0 0 1-5.64 0Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-738.svg);
         /* Subtitle - Notifications (on) */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20ZM3.13 16.13c.11.27.46.28.66.08L15.73 4.27a.47.47 0 0 0-.07-.74 6.97 6.97 0 0 0-1.35-.64.62.62 0 0 1-.38-.43 2 2 0 0 0-3.86 0 .62.62 0 0 1-.38.43A7 7 0 0 0 5 9.5v2.09a.5.5 0 0 1-.13.33l-1.1 1.22A3 3 0 0 0 3 15.15v.28c0 .24.04.48.13.7ZM18.64 9.36c.13-.13.36-.05.36.14v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-.46 0-.9-.01-1.33-.03a.48.48 0 0 1-.3-.83l8.27-8.28ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.84 24.84 0 0 1-5.64 0Z"]) {
+    .icon__9293f:has(>path[d="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20ZM3.13 16.13c.11.27.46.28.66.08L15.73 4.27a.47.47 0 0 0-.07-.74 6.97 6.97 0 0 0-1.35-.64.62.62 0 0 1-.38-.43 2 2 0 0 0-3.86 0 .62.62 0 0 1-.38.43A7 7 0 0 0 5 9.5v2.09a.5.5 0 0 1-.13.33l-1.1 1.22A3 3 0 0 0 3 15.15v.28c0 .24.04.48.13.7ZM18.64 9.36c.13-.13.36-.05.36.14v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-.46 0-.9-.01-1.33-.03a.48.48 0 0 1-.3-.83l8.27-8.28ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.84 24.84 0 0 1-5.64 0Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-742.svg);
         /* Subtitle - Notifications (off) */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]) {
+    .icon__9293f:has(>path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-993.svg);
         /* Subtitle - Show Memberlist */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M10.99 3.16A1 1 0 1 0 9 2.84L8.15 8H4a1 1 0 0 0 0 2h3.82l-.67 4H3a1 1 0 1 0 0 2h3.82l-.8 4.84a1 1 0 0 0 1.97.32L8.85 16h4.97l-.8 4.84a1 1 0 0 0 1.97.32l.86-5.16H20a1 1 0 1 0 0-2h-3.82l.67-4H21a1 1 0 1 0 0-2h-3.82l.8-4.84a1 1 0 1 0-1.97-.32L15.15 8h-4.97l.8-4.84ZM14.15 14l.67-4H9.85l-.67 4h4.97Z"]) {
+    .icon__9293f:has(>path[d="M10.99 3.16A1 1 0 1 0 9 2.84L8.15 8H4a1 1 0 0 0 0 2h3.82l-.67 4H3a1 1 0 1 0 0 2h3.82l-.8 4.84a1 1 0 0 0 1.97.32L8.85 16h4.97l-.8 4.84a1 1 0 0 0 1.97.32l.86-5.16H20a1 1 0 1 0 0-2h-3.82l.67-4H21a1 1 0 1 0 0-2h-3.82l.8-4.84a1 1 0 1 0-1.97-.32L15.15 8h-4.97l.8-4.84ZM14.15 14l.67-4H9.85l-.67 4h4.97Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-900.svg);
         /* Subtitle - Text */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M11.45 8c.35 0 .6.35.55.7-.02.2-.02.4 0 .6.04.35-.2.7-.55.7h-1.6l-.67 4h4.97l.26-1.55c.05-.27.31-.45.59-.45h.92c.31 0 .55.28.5.58L16.18 14H20a1 1 0 1 1 0 2h-4.15l-.86 5.16a1 1 0 0 1-1.98-.32l.8-4.84H8.86l-.86 5.16A1 1 0 0 1 6 20.84L6.82 16H3a1 1 0 1 1 0-2h4.15l.67-4H4a1 1 0 0 1 0-2h4.15l.86-5.16a1 1 0 1 1 1.98.32L10.19 8h1.26Z"]) {
+    .icon__9293f:has(>path[d="M11.45 8c.35 0 .6.35.55.7-.02.2-.02.4 0 .6.04.35-.2.7-.55.7h-1.6l-.67 4h4.97l.26-1.55c.05-.27.31-.45.59-.45h.92c.31 0 .55.28.5.58L16.18 14H20a1 1 0 1 1 0 2h-4.15l-.86 5.16a1 1 0 0 1-1.98-.32l.8-4.84H8.86l-.86 5.16A1 1 0 0 1 6 20.84L6.82 16H3a1 1 0 1 1 0-2h4.15l.67-4H4a1 1 0 0 1 0-2h4.15l.86-5.16a1 1 0 1 1 1.98.32L10.19 8h1.26Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-798.svg);
         /* Subtitle - NSFW Text */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M18.91 12.98a5.45 5.45 0 0 1 2.18 6.2c-.1.33-.09.68.1.96l.83 1.32a1 1 0 0 1-.84 1.54h-5.5A5.6 5.6 0 0 1 10 17.5a5.6 5.6 0 0 1 5.68-5.5c1.2 0 2.32.36 3.23.98Z"]) {
+    .icon__9293f:has(>path[d="M18.91 12.98a5.45 5.45 0 0 1 2.18 6.2c-.1.33-.09.68.1.96l.83 1.32a1 1 0 0 1-.84 1.54h-5.5A5.6 5.6 0 0 1 10 17.5a5.6 5.6 0 0 1 5.68-5.5c1.2 0 2.32.36 3.23.98Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-315.svg);
         /* Subtitle - Forum */
     }
 
     /* ~~~~ */
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M5.1 1a2.1 2.1 0 0 1 1.8 3.14h14.05c.84 0 1.34.94.87 1.63L19.1 9.85c-.23.35-.23.8 0 1.16l2.72 4.08c.47.7-.03 1.62-.87 1.62H6.15v5.24a1.05 1.05 0 0 1-2.1 0V4.91A2.1 2.1 0 0 1 5.1 1ZM16.3 7.6c-.4-.42-1.07-.42-1.48 0l-3.45 3.44-1.35-1.35a1.05 1.05 0 0 0-1.48 1.48l2.1 2.1c.4.4 1.06.4 1.47 0l4.2-4.2c.4-.4.4-1.07 0-1.48Z"]) {
+    .icon__9293f:has(>path[d="M5.1 1a2.1 2.1 0 0 1 1.8 3.14h14.05c.84 0 1.34.94.87 1.63L19.1 9.85c-.23.35-.23.8 0 1.16l2.72 4.08c.47.7-.03 1.62-.87 1.62H6.15v5.24a1.05 1.05 0 0 1-2.1 0V4.91A2.1 2.1 0 0 1 5.1 1ZM16.3 7.6c-.4-.42-1.07-.42-1.48 0l-3.45 3.44-1.35-1.35a1.05 1.05 0 0 0-1.48 1.48l2.1 2.1c.4.4 1.06.4 1.47 0l4.2-4.2c.4-.4.4-1.07 0-1.48Z"]) {
         background: transparent;
         mask-image: none;
         /* Titlebar - Checkpoint */
     }
 
-    ._9293f6b2fc12398a-icon:has(>path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"]) {
+    .icon__9293f:has(>path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"]) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-777.svg);
         /* Titlebar - Help */
     }
 
-    .vc-toolbox-btn>._9293f6b2fc12398a-icon {
+    .vc-toolbox-btn>.icon__9293f {
         background: transparent;
         mask-image: none;
         /* Titlebar - Vencord Toolbox */
     }
 
-    ._99e7cad8d4c55236-privateChannelRecipientsInviteButtonIcon {
+    .privateChannelRecipientsInviteButtonIcon__99e7c {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-834.svg);
         /* Titlebar - Help */
     }
 
     /* ~~~~ */
 
-    /* ._5eb9b3cc7c2b1ce8-lottieIcon>svg:has(>g>g>g>g[transform="matrix(1,0,0,1,0,0)"]>path) {
+    /* .lottieIcon__5eb9b>svg:has(>g>g>g>g[transform="matrix(1,0,0,1,0,0)"]>path) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);
     } */
 
-    /* ._5eb9b3cc7c2b1ce8-lottieIcon>svg:has(>g>g>g>g>g[transform="matrix(1,0,0,1,0)"]>g>g>path) {
+    /* .lottieIcon__5eb9b>svg:has(>g>g>g>g>g[transform="matrix(1,0,0,1,0)"]>g>g>path) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);
 
     } */
@@ -749,7 +768,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
     content: "Icons Loaded!";
 }
 /* //////// sidebar.css //////// */
-._5e434347c823b592-sidebarList {
+.sidebarList__5e434 {
     background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
@@ -757,13 +776,13 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
 }
 
 
-.e6b7699ce8339e1c-privateChannels,
-._99e7cad8d4c55236-scroller,
-._2637a2609f343032-container {
+.privateChannels_e6b769,
+.scroller__99e7c,
+.container__2637a {
     background: transparent;
 }
 
-.e6b7699ce8339e1c-searchBar {
+.searchBar_e6b769 {
     display: flex;
 
     height: auto;
@@ -780,7 +799,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
         width: calc(100% - 32px * 1.75);
     }
 
-    .a22cb0c66246f5d3-button {
+    .button_a22cb0 {
         width: 32px;
         max-width: 32px;
         min-width: 0px;
@@ -791,7 +810,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
 /* Guilds -------------- */
 
 
-.cc5dd25190031396-shiftSVG {
+.shiftSVG_cc5dd2 {
     contain: none;
     overflow: visible;
 
@@ -800,7 +819,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
         contain: none;
         overflow: visible;
 
-        ._6e9f8dce4cc18de3-wrapper::after {
+        .wrapper__6e9f8::after {
             content: "";
             position: absolute;
             inset: -1px;
@@ -816,15 +835,15 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
     }
 }
 
-._48112cbe77dc5022-folderGroupBackground {
+.folderGroupBackground__48112 {
     border-radius: 0px;
 }
 
-._581051df43c5ebb6-wrapper {
+.wrapper__58105 {
     overflow: visible;
     pointer-events: none;
 
-    ._581051df43c5ebb6-item {
+    .item__58105 {
         scale: 0.8;
         left: 6px;
         transform: scaleX(0.4) !important;
@@ -833,8 +852,8 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
     }
 }
 
-._2ea32c412048f708-unread,
-._972a0d22c8afa7f0-unreadPill {
+.unread__2ea32,
+.unreadPill__972a0 {
     scale: 0.8;
     left: -5px;
     transform: scaleX(0.7) !important;
@@ -842,7 +861,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
     box-shadow: 7px 0px 14px 0.5px white;
 }
 
-._2b1f52e43a8f1c02-numberBadge {
+.numberBadge__2b1f5 {
     border: 1px solid var(--red-700);
     box-shadow: inset 0px 0px 0px 1px var(--red-360), 0px 0px 7px -1px var(--red-500);
     padding: 0.3px !important;
@@ -852,7 +871,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
 
 
 /* Userpanel ------------------------------------ */
-._5e434347c823b592-panels {
+.panels__5e434 {
     border-radius: 0px;
     border: 0 !important;
     border-top: 1px solid var(--_aider-border-dark) !important;
@@ -861,7 +880,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
     left: 0px;
     width: calc(100% - 2px);
 
-    ._37e49614b9f110a9-container {
+    .container__37e49 {
         flex-direction: column;
         container-type: normal;
         height: auto;
@@ -869,18 +888,18 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
         padding: 4px;
         gap: 4px;
 
-        ._37e49614b9f110a9-avatarWrapper {
+        .avatarWrapper__37e49 {
             padding: var(--space-xs) calc(var(--space-xs) * 1.25);
             width: calc(100% + var(--space-xs));
             box-sizing: border-box;
         }
 
-        ._37e49614b9f110a9-buttons {
+        .buttons__37e49 {
             /* margin: 0 var(--space-xxs) var(--space-xxs); */
             gap: 0px;
             width: calc(100%);
 
-            ._67645e1530f1195d-button {
+            .button__67645 {
                 flex: 1;
                 border-radius: 0px;
                 background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
@@ -888,7 +907,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                 transition: all 0.3s ease;
 
-                &._67645e1530f1195d-redGlow {
+                &.redGlow__67645 {
                     background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), var(--red-400) 35%), color-mix(in oklab, var(--background-base-lower), var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
                     border: 1px solid color-mix(in srgb, var(--red-800), transparent);
                     box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%), 0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%), 0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
@@ -899,11 +918,11 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
                 }
             }
 
-            ._37e49614b9f110a9-buttonChevron {
+            .buttonChevron__37e49 {
                 flex: 0;
             }
 
-            ._37e49614b9f110a9-micButtonParent {
+            .micButtonParent__37e49 {
                 display: contents;
             }
         }
@@ -911,7 +930,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
 }
 
 /* Avatars -------------- */
-._44b0c28be7879b7b-mask {
+.mask__44b0c {
     overflow: visible;
     contain: none;
 
@@ -934,7 +953,7 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
             color: white;
         }
 
-        ._44b0c28be7879b7b-avatar {
+        .avatar__44b0c {
             border-radius: 0px;
         }
     }
@@ -949,26 +968,61 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
 }
 
 
-._20a53846fe2e8513-layout:has(._20a53846fe2e8513-content>._20a53846fe2e8513-subText) ._20a53846fe2e8513-avatar>._44b0c28be7879b7b-wrapper>._44b0c28be7879b7b-mask>g>rect,
-._91a9d7f7e5248a56-layout:has(._91a9d7f7e5248a56-content>._91a9d7f7e5248a56-subText>div) ._91a9d7f7e5248a56-avatar>._44b0c28be7879b7b-wrapper>._44b0c28be7879b7b-mask>g>rect {
+.layout__20a53:has(.content__20a53>.subText__20a53) .avatar__20a53>.wrapper__44b0c>.mask__44b0c>g>rect,
+.layout__91a9d:has(.content__91a9d>.subText__91a9d>div) .avatar__91a9d>.wrapper__44b0c>.mask__44b0c>g>rect {
     y: 3;
 }
 
-._37e49614b9f110a9-avatarWrapper ._37e49614b9f110a9-avatar>._44b0c28be7879b7b-mask>g>rect {
+.avatarWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
     y: 1.5;
 }
-._20a53846fe2e8513-nameAndDecorators,
-._91a9d7f7e5248a56-nameAndDecorators {
+
+.nameAndDecorators__20a53,
+.nameAndDecorators__91a9d {
     margin-left: 14px;
 }
 
 
-._37e49614b9f110a9-panelTitleContainer {
+.panelTitleContainer__37e49 {
     margin-left: 18px;
 }
 
-._5e434347c823b592-sidebar::after {
+.sidebar__5e434::after {
     display: none;
+}
+
+
+/* channel selected */
+
+.selectedChannel_c69b6d {
+    margin-left: 0px;
+    padding-left: 8px;
+
+    &::before {
+        content: "";
+        background-color: var(--brand-400);
+        border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+        height: 8px;
+        inset-inline-start: calc(var(--space-xs) * -1 + 1px);
+        margin-top: -4px;
+        position: absolute;
+        top: 50%;
+        width: 4px;
+        scale: 0.8;
+        left: 3px;
+        transform: scaleX(0.7) !important;
+        border-radius: 8px;
+        box-shadow: 9px 0px 18px 1px var(--brand-500);
+    }
+
+    .link__2ea32 {
+        /* background: transparent !important; */
+        box-shadow: 0px -5px 20px inset color-mix(in oklab, transparent 90%, var(--brand-500));
+
+        >.linkTop__2ea32>* {
+            filter: drop-shadow(0px 0px 5px var(--brand-700)) drop-shadow(0px 0px 1px var(--brand-800));
+        }
+    }
 }
 
 /* Debug ----------- */
