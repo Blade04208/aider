@@ -61,9 +61,12 @@
 
     .typingDots_b88801 {
         overflow: visible !important;
-
+width: fit-content;
+flex: 0;
+position: relative;
+margin-left: 0px;
         &::before {
-            width: 48px;
+            width: 100%;
             height: 24px;
             z-index: 0;
             background: linear-gradient(to left, gray, gray, white, gray, gray);
@@ -74,7 +77,13 @@
             filter: blur(8px);
             top: 16px;
             left: 8px;
-            /* opacity: 0.5; */
+            opacity: 0.5;
+            position: absolute;
+        }
+        >span {
+            position: relative;
+            left: 0px;
+            margin-left: 8px;
         }
 
         .ellipsis_b88801 {
