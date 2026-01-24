@@ -2,41 +2,41 @@
     --aider-chat-avatars: compact;
 }
 
-.c19a557985eb7793-avatar {
+.avatar_c19a55 {
     border-radius: 0px;
 }
 
 @container style(--aider-chat-avatars: compact) {
-    ._5126c0cd07f243a0-message {
+    .message__5126c {
         --custom-message-margin-left-content-cozy: var(--space-xxl);
 
-        .c19a557985eb7793-avatar {
+        .avatar_c19a55 {
             scale: calc(16 / 40);
             top: -8px;
             margin-top: 0px;
             left: calc(var(--space-xxl) / 1.5);
         }
 
-        .c19a557985eb7793-avatarDecoration {
+        .avatarDecoration_c19a55 {
             scale: calc(16 / 40);
             top: -11px;
             margin-top: 0px;
             left: calc(var(--space-xxl) / 1.5 - 4px);
         }
 
-        .c19a557985eb7793-header {
+        .header_c19a55 {
             margin-left: 20px;
         }
 
-        &.c19a557985eb7793-hasReply .c19a557985eb7793-avatar {
+        &.hasReply_c19a55 .avatar_c19a55 {
             top: 15px;
         }
 
-        &:not(._5126c0cd07f243a0-groupStart)>.c19a557985eb7793-contents {
+        &:not(.groupStart__5126c)>.contents_c19a55 {
             display: flex;
             align-items: end;
 
-            >.c19a557985eb7793-latin12CompactTimeStamp {
+            >.latin12CompactTimeStamp_c19a55 {
                 position: relative;
                 display: inline;
                 opacity: 1;
@@ -51,15 +51,15 @@
 
 /* Chatbar --------------------- */
 
-.f75fb00fb7356cbe-chat {
+.chat_f75fb0 {
     border-top: 0 !important;
 }
 
-.b8880176888cc928-typing {
+.typing_b88801 {
     overflow: visible !important;
     z-index: 0;
 
-    .b8880176888cc928-typingDots {
+    .typingDots_b88801 {
         overflow: visible !important;
 
         &::before {
@@ -77,18 +77,18 @@
             /* opacity: 0.5; */
         }
 
-        .b8880176888cc928-ellipsis {
+        .ellipsis_b88801 {
             display: none;
         }
     }
 }
 
-.f75fb00fb7356cbe-form>div:not([class]) {
+.form_f75fb0>div:not([class]) {
     position: relative;
     z-index: 2;
 }
 
-._36d072eab2b2e737-chatGradient {
+.chatGradient__36d07 {
     bottom: -4px;
     height: calc((var(--chat-markup-line-height, 1rem) + 16px) / 2);
     background: linear-gradient(to bottom, transparent, color-mix(in oklab, var(--background-base-lower), black 15%) 80%) !important;
@@ -105,11 +105,11 @@
     }
 }
 
-.f75fb00fb7356cbe-form {
+.form_f75fb0 {
     padding: 4px;
 
-    .f75fb00fb7356cbe-channelTextArea,
-    ._740174f3d6a2c8fe-themedBackground {
+    .channelTextArea_f75fb0,
+    .themedBackground__74017 {
         margin-bottom: 0px;
         border-radius: 0px;
         border: 0;
@@ -117,11 +117,11 @@
         overflow: visible;
     }
 
-    ._740174f3d6a2c8fe-inner {
+    .inner__74017 {
         --custom-channel-textarea-text-area-height: calc(var(--chat-markup-line-height, 1rem) + 16px);
         align-items: center;
 
-        ._740174f3d6a2c8fe-textArea {
+        .textArea__74017 {
             --custom-channel-textarea-text-area-height: var(--chat-markup-line-height, 1rem);
             padding: 8px !important;
             background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
@@ -168,11 +168,11 @@
             }
         }
 
-        >._740174f3d6a2c8fe-buttons {
+        >.buttons__74017 {
             gap: 1px !important;
 
-            >*:not(span, .aa63abf63dbd9cce-separator)>._740174f3d6a2c8fe-button,
-            >._740174f3d6a2c8fe-button {
+            >*:not(span, .separator_aa63ab)>.button__74017,
+            >.button__74017 {
                 background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
@@ -194,7 +194,7 @@
                 }
             }
 
-            >*:not(span, .aa63abf63dbd9cce-separator)>.e6e74fd4d1221f53-button {
+            >*:not(span, .separator_aa63ab)>.button_e6e74f {
                 /* i hate the activity launcher */
                 background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
@@ -216,17 +216,17 @@
             }
         }
 
-        ._1b31f471f0bb10ab-placeholder {
+        .placeholder__1b31f {
             margin-left: 8px;
         }
 
-        ._0923f156a0410684-attachWrapper {
+        .attachWrapper__0923f {
             display: contents;
 
-            ._0923f156a0410684-attachButton {
+            .attachButton__0923f {
                 margin-right: 0px;
 
-                >._0923f156a0410684-attachButtonInner {
+                >.attachButtonInner__0923f {
                     background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                     border: 1px solid var(--_aider-border-dark);
                     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
@@ -263,8 +263,8 @@ div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
     content: "Chat Loaded!";
 }
 
-.f84418acfdbdfe54-popover,
-.c1e9c47c23f12ca3-menu {
+.popover_f84418,
+.menu_c1e9c4 {
     border-radius: 0px;
     background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 7.5%), color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px) !important;
     border: 1px solid var(--_aider-border-dark);

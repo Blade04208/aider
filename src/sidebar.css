@@ -1,4 +1,4 @@
-._5e434347c823b592-sidebarList {
+.sidebarList__5e434 {
     background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
@@ -6,13 +6,13 @@
 }
 
 
-.e6b7699ce8339e1c-privateChannels,
-._99e7cad8d4c55236-scroller,
-._2637a2609f343032-container {
+.privateChannels_e6b769,
+.scroller__99e7c,
+.container__2637a {
     background: transparent;
 }
 
-.e6b7699ce8339e1c-searchBar {
+.searchBar_e6b769 {
     display: flex;
 
     height: auto;
@@ -29,7 +29,7 @@
         width: calc(100% - 32px * 1.75);
     }
 
-    .a22cb0c66246f5d3-button {
+    .button_a22cb0 {
         width: 32px;
         max-width: 32px;
         min-width: 0px;
@@ -40,7 +40,7 @@
 /* Guilds -------------- */
 
 
-.cc5dd25190031396-shiftSVG {
+.shiftSVG_cc5dd2 {
     contain: none;
     overflow: visible;
 
@@ -49,7 +49,7 @@
         contain: none;
         overflow: visible;
 
-        ._6e9f8dce4cc18de3-wrapper::after {
+        .wrapper__6e9f8::after {
             content: "";
             position: absolute;
             inset: -1px;
@@ -65,15 +65,15 @@
     }
 }
 
-._48112cbe77dc5022-folderGroupBackground {
+.folderGroupBackground__48112 {
     border-radius: 0px;
 }
 
-._581051df43c5ebb6-wrapper {
+.wrapper__58105 {
     overflow: visible;
     pointer-events: none;
 
-    ._581051df43c5ebb6-item {
+    .item__58105 {
         scale: 0.8;
         left: 6px;
         transform: scaleX(0.4) !important;
@@ -82,8 +82,8 @@
     }
 }
 
-._2ea32c412048f708-unread,
-._972a0d22c8afa7f0-unreadPill {
+.unread__2ea32,
+.unreadPill__972a0 {
     scale: 0.8;
     left: -5px;
     transform: scaleX(0.7) !important;
@@ -91,7 +91,7 @@
     box-shadow: 7px 0px 14px 0.5px white;
 }
 
-._2b1f52e43a8f1c02-numberBadge {
+.numberBadge__2b1f5 {
     border: 1px solid var(--red-700);
     box-shadow: inset 0px 0px 0px 1px var(--red-360), 0px 0px 7px -1px var(--red-500);
     padding: 0.3px !important;
@@ -101,7 +101,7 @@
 
 
 /* Userpanel ------------------------------------ */
-._5e434347c823b592-panels {
+.panels__5e434 {
     border-radius: 0px;
     border: 0 !important;
     border-top: 1px solid var(--_aider-border-dark) !important;
@@ -110,7 +110,7 @@
     left: 0px;
     width: calc(100% - 2px);
 
-    ._37e49614b9f110a9-container {
+    .container__37e49 {
         flex-direction: column;
         container-type: normal;
         height: auto;
@@ -118,18 +118,18 @@
         padding: 4px;
         gap: 4px;
 
-        ._37e49614b9f110a9-avatarWrapper {
+        .avatarWrapper__37e49 {
             padding: var(--space-xs) calc(var(--space-xs) * 1.25);
             width: calc(100% + var(--space-xs));
             box-sizing: border-box;
         }
 
-        ._37e49614b9f110a9-buttons {
+        .buttons__37e49 {
             /* margin: 0 var(--space-xxs) var(--space-xxs); */
             gap: 0px;
             width: calc(100%);
 
-            ._67645e1530f1195d-button {
+            .button__67645 {
                 flex: 1;
                 border-radius: 0px;
                 background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
@@ -137,7 +137,7 @@
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                 transition: all 0.3s ease;
 
-                &._67645e1530f1195d-redGlow {
+                &.redGlow__67645 {
                     background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), var(--red-400) 35%), color-mix(in oklab, var(--background-base-lower), var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
                     border: 1px solid color-mix(in srgb, var(--red-800), transparent);
                     box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%), 0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%), 0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
@@ -148,11 +148,11 @@
                 }
             }
 
-            ._37e49614b9f110a9-buttonChevron {
+            .buttonChevron__37e49 {
                 flex: 0;
             }
 
-            ._37e49614b9f110a9-micButtonParent {
+            .micButtonParent__37e49 {
                 display: contents;
             }
         }
@@ -160,7 +160,7 @@
 }
 
 /* Avatars -------------- */
-._44b0c28be7879b7b-mask {
+.mask__44b0c {
     overflow: visible;
     contain: none;
 
@@ -183,7 +183,7 @@
             color: white;
         }
 
-        ._44b0c28be7879b7b-avatar {
+        .avatar__44b0c {
             border-radius: 0px;
         }
     }
@@ -198,33 +198,33 @@
 }
 
 
-._20a53846fe2e8513-layout:has(._20a53846fe2e8513-content>._20a53846fe2e8513-subText) ._20a53846fe2e8513-avatar>._44b0c28be7879b7b-wrapper>._44b0c28be7879b7b-mask>g>rect,
-._91a9d7f7e5248a56-layout:has(._91a9d7f7e5248a56-content>._91a9d7f7e5248a56-subText>div) ._91a9d7f7e5248a56-avatar>._44b0c28be7879b7b-wrapper>._44b0c28be7879b7b-mask>g>rect {
+.layout__20a53:has(.content__20a53>.subText__20a53) .avatar__20a53>.wrapper__44b0c>.mask__44b0c>g>rect,
+.layout__91a9d:has(.content__91a9d>.subText__91a9d>div) .avatar__91a9d>.wrapper__44b0c>.mask__44b0c>g>rect {
     y: 3;
 }
 
-._37e49614b9f110a9-avatarWrapper ._37e49614b9f110a9-avatar>._44b0c28be7879b7b-mask>g>rect {
+.avatarWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
     y: 1.5;
 }
 
-._20a53846fe2e8513-nameAndDecorators,
-._91a9d7f7e5248a56-nameAndDecorators {
+.nameAndDecorators__20a53,
+.nameAndDecorators__91a9d {
     margin-left: 14px;
 }
 
 
-._37e49614b9f110a9-panelTitleContainer {
+.panelTitleContainer__37e49 {
     margin-left: 18px;
 }
 
-._5e434347c823b592-sidebar::after {
+.sidebar__5e434::after {
     display: none;
 }
 
 
 /* channel selected */
 
-.c69b6db0641110f6-selectedChannel {
+.selectedChannel_c69b6d {
     margin-left: 0px;
     padding-left: 8px;
 
@@ -245,11 +245,11 @@
         box-shadow: 9px 0px 18px 1px var(--brand-500);
     }
 
-    ._2ea32c412048f708-link {
+    .link__2ea32 {
         /* background: transparent !important; */
         box-shadow: 0px -5px 20px inset color-mix(in oklab, transparent 90%, var(--brand-500));
 
-        >._2ea32c412048f708-linkTop>* {
+        >.linkTop__2ea32>* {
             filter: drop-shadow(0px 0px 5px var(--brand-700)) drop-shadow(0px 0px 1px var(--brand-800));
         }
     }
