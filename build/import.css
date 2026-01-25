@@ -234,7 +234,7 @@
         }
 
         .referenceContainer_ab8609 {
-            display: none;
+            position: absolute;
         }
 
         .container__63ed3 {
@@ -252,9 +252,47 @@
             width: 100%;
         }
 
-        .mask__68edb>foreignObject {
-            mask: none;
-            mask-image: linear-gradient(to bottom, black, transparent);
+        .mask__68edb {
+            >foreignObject {
+                mask: none;
+                mask-image: linear-gradient(to bottom, black, transparent);
+            }
+        }
+
+        .container_ab8609 {
+            top: -30px;
+            z-index: 3;
+            left: -10px;
+
+            .outer_ab8609 {
+                max-height: calc(1rem + 20px);
+                transition: 0.3s ease max-height;
+
+                &::before {
+                    top: unset;
+                    bottom: -7px;
+                    left: -2px;
+                }
+
+                &::after {
+                    top: unset;
+                    bottom: -22px;
+                    left: 8px
+                }
+
+                .content_ab8609 {
+                    max-height: 1rem !important;
+                    overflow: hidden;
+                }
+
+                &:hover {
+                    max-height: calc(8rem + 20px);
+
+                    .content_ab8609 {
+                        max-height: 8rem !important;
+                    }
+                }
+            }
         }
 
         &::after {
@@ -274,8 +312,29 @@
             height: 100%;
             box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
         }
+
+        .wrapper_da5890 {
+            position: absolute;
+            right: -16px;
+            top: 8px;
+            flex-direction: column;
+
+            >span>.bannerButton_fb7f94 {
+                background: color-mix(in oklab, var(--profile-gradient-modal-background-color), transparent 75%);
+                box-shadow: inset 0px 0px 4px var(--profile-gradient-modal-background-color);
+                backdrop-filter: blur(4px);
+                /* border: 1px solid color-mix(in oklab, var(--border-subtle), transparent 50%); */
+                padding: 1px;
+                box-sizing: content-box;
+
+                >svg {
+                    /* color: var(--text-default); */
+                }
+            }
+        }
     }
 }
+
 
 /* Buttons --------------------------------------- */
 
@@ -408,10 +467,11 @@ div[id="developer_options_design_tools_tab-tab"] {
 
     .typingDots_b88801 {
         overflow: visible !important;
-width: fit-content;
-flex: 0;
-position: relative;
-margin-left: 0px;
+        width: fit-content;
+        flex: 0;
+        position: relative;
+        margin-left: 0px;
+
         &::before {
             width: 100%;
             height: 24px;
@@ -427,6 +487,7 @@ margin-left: 0px;
             opacity: 0.5;
             position: absolute;
         }
+
         >span {
             position: relative;
             left: 0px;
@@ -609,9 +670,24 @@ margin-left: 0px;
     }
 }
 
+.botTag__5d473.botTag__82f07.px__82f07 {
+    border-radius: 20px;
+    padding: 1px 5px 0px;
+        border: 1px solid var(--brand-700);
+        margin-left: 6px;
+    box-shadow: inset 0px 0px 0px 1px var(--brand-360), 0px 0px 7px -1px color-mix(in oklab,var(--brand-500), transparent);
+    box-sizing: content-box;
+    background: linear-gradient(to bottom, var(--brand-400), var(--brand-500));
+    .botTagVerified__82f07 {
+        margin-top: -1px;
+    }
+}
 
-
-
+.chipletContainerInner__10651 {
+    border-radius: 0px;
+    background: var(--background-surface-highest);
+    outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%) dashed;
+}
 
 /* Debug ----------- */
 
