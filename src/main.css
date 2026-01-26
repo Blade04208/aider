@@ -402,3 +402,19 @@ div[id="developer_options_design_tools_tab-tab"] {
         font-size: 14px;
     }
 }
+
+
+.peopleListItem_cc6179[data-list-item-id="people___827937695623806987"] {
+  .username__0a06e {
+    font-size: 0px;
+    height: 18px;
+    &::after {
+      font-size: 16px;
+      content: "goofus";
+      position: relative;
+    }
+  }
+  .avatar__0a06e g {
+    display: none;
+  }
+}
