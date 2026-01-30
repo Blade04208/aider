@@ -37,6 +37,23 @@
     }
 }
 
+.scroller__629e4 {
+    padding-inline-end: 0px!important;
+    padding: 0px!important;
+    margin: 0px!important;
+    &::-webkit-scrollbar {
+        width: 0px!important;
+        height: 0px!important;
+    }
+    .wrapper__2ea32 {
+padding: 0px;
+margin: 0px;
+.link__2ea32 {
+    padding-left: calc(var(--space-sm) * 1.25);
+}
+    }
+}
+
 /* Guilds -------------- */
 
 
@@ -85,7 +102,8 @@
 .unread__2ea32,
 .unreadPill__972a0 {
     scale: 0.8;
-    left: -5px;
+    /* left: -5px; */
+    margin: -4px 0px 0px 12px;
     transform: scaleX(0.7) !important;
     border-radius: 8px;
     box-shadow: 7px 0px 14px 0.5px white;
@@ -225,28 +243,9 @@
 /* channel selected */
 
 .selectedChannel_c69b6d {
-    margin-left: 0px;
-    padding-left: 8px;
-
-    &::before {
-        content: "";
-        background-color: var(--brand-400);
-        border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
-        height: 8px;
-        inset-inline-start: calc(var(--space-xs) * -1 + 1px);
-        margin-top: -4px;
-        position: absolute;
-        top: 50%;
-        width: 4px;
-        scale: 0.8;
-        left: 3px;
-        transform: scaleX(0.7) !important;
-        border-radius: 8px;
-        box-shadow: 9px 0px 18px 1px var(--brand-500);
-    }
 
     .link__2ea32 {
-        /* background: transparent !important; */
+        background: color-mix(in oklab, transparent 95%, var(--brand-500)) !important;
         box-shadow: 0px -5px 20px inset color-mix(in oklab, transparent 90%, var(--brand-500));
 
         >.linkTop__2ea32>* {
