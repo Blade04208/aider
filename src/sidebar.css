@@ -15,7 +15,7 @@
 .searchBar_e6b769 {
     display: flex;
 
-    height: auto;
+    height: 46px;
     padding: var(--space-xs) var(--space-xs);
     gap: var(--space-sm);
     align-items: center;
@@ -23,7 +23,7 @@
     &::after {
         content: "Direct Messages";
         color: var(--text-default);
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         margin-left: var(--space-xxs);
         width: calc(100% - 32px * 1.75);
@@ -38,19 +38,22 @@
 }
 
 .scroller__629e4 {
-    padding-inline-end: 0px!important;
-    padding: 0px!important;
-    margin: 0px!important;
+    padding-inline-end: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+
     &::-webkit-scrollbar {
-        width: 0px!important;
-        height: 0px!important;
+        width: 0px !important;
+        height: 0px !important;
     }
+
     .wrapper__2ea32 {
-padding: 0px;
-margin: 0px;
-.link__2ea32 {
-    padding-left: calc(var(--space-sm) * 1.25);
-}
+        padding: 0px;
+        margin: 0px;
+
+        .link__2ea32 {
+            padding-left: calc(var(--space-sm) * 1.25);
+        }
     }
 }
 
@@ -215,7 +218,6 @@ margin: 0px;
     }
 }
 
-
 .layout__20a53:has(.content__20a53>.subText__20a53) .avatar__20a53>.wrapper__44b0c>.mask__44b0c>g>rect,
 .layout__91a9d:has(.content__91a9d>.subText__91a9d>div) .avatar__91a9d>.wrapper__44b0c>.mask__44b0c>g>rect {
     y: 3;
@@ -246,7 +248,7 @@ margin: 0px;
 
     .link__2ea32 {
         background: color-mix(in oklab, transparent 95%, var(--brand-500)) !important;
-        box-shadow: 0px -5px 20px inset color-mix(in oklab, transparent 90%, var(--brand-500));
+        box-shadow: 0px -20px 20px -5px inset color-mix(in oklab, transparent 87.5%, var(--brand-500));
 
         >.linkTop__2ea32>* {
             filter: drop-shadow(0px 0px 5px var(--brand-700)) drop-shadow(0px 0px 1px var(--brand-800));
@@ -256,6 +258,12 @@ margin: 0px;
 
 /* Debug ----------- */
 
-div[id="developer_options_design_tools_tab-tab"]::after {
-    content: "Sidebar Loaded!";
+[data-debug-key="layout_debugging"] {
+>.stack_dbd263 {
+    display: none;
+}
+    &::before {
+        content: "Sidebar Loaded!";
+        order: 1;
+    }
 }

@@ -144,6 +144,12 @@
 
 /* Debug ----------- */
 
-div[id="developer_options_design_tools_tab-tab"]>fieldset::after {
-    content: "Icons Loaded!";
+[data-debug-key="highlight_void_components"] {
+>.stack_dbd263 {
+    display: none;
+}
+    &::before {
+        content: "Icons Loaded!";
+        order: 1;
+    }
 }

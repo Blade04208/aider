@@ -285,8 +285,14 @@
 
 /* Debug ----------- */
 
-div[id="developer_options_design_tools_tab-tab"]>fieldset::before {
-    content: "Chat Loaded!";
+[data-debug-key="highlight_mana_components"] {
+>.stack_dbd263 {
+    display: none;
+}
+    &::before {
+        content: "Chat Loaded!";
+        order: 1;
+    }
 }
 
 .popover_f84418,
