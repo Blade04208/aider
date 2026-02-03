@@ -105,7 +105,7 @@
 
 .upperContainer__9293f,
 .children__9293f {
-    overflow: visible;
+    /* overflow: visible; */
 
     >.iconWrapper__9293f {
         left: 4px !important;
@@ -359,8 +359,9 @@
 }
 
 
-/* Buttons --------------------------------------- */
+/* Components --------------------------------------- */
 
+/* Buttons */
 .button_a22cb0 {
     border-radius: 0px;
     transition: all 0.15s ease !important;
@@ -389,6 +390,30 @@
         filter: brightness(0.95);
     }
 }
+/* Dropdowns */
+.selectField__0edde {
+    &.isFocused__0edde {
+        outline: 0!important;
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            background: radial-gradient(ellipse at bottom, color-mix(in oklab, var(--brand-600), transparent 80%), color-mix(in oklab, var(--brand-800), transparent 90%));
+            border: 2px solid var(--brand-700);
+            border-image: radial-gradient(ellipse at bottom, color-mix(in oklab, var(--brand-500), transparent 25%), color-mix(in oklab, var(--brand-800), transparent 90%) 40%) 1;
+            z-index: 0;
+            transition: opacity 0.3s ease;
+            @starting-style {
+                opacity: 0;
+            }
+        }
+        >* {
+            z-index: 1;
+        }
+    }
+}
+
 
 /* Settings ------------------------------------------- */
 
@@ -457,7 +482,70 @@
     }
 }
 
+/* Guildinvites ------------------- */
+.container_d3846c {
+    border-radius: 0px;
+    box-shadow: var(--shadow-high);
 
+    .container_dca174 {
+        background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2 + 120px)) !important;
+        border-radius: 0px;
+        border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
+        box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            /* background: red; */
+            z-index: 2;
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            inset: -1px;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.svg__2338f {
+    contain: none;
+    overflow: visible;
+
+    >foreignObject {
+        mask: none;
+        contain: none;
+        overflow: visible;
+
+        .avatarWrapper_dca174 {
+            &::after {
+                content: "";
+                position: absolute;
+                inset: -1px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+
+                border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
+                box-shadow: inset 0px 5.25px 5.25px -3.5px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+                font-weight: 450;
+                color: white;
+            }
+
+            img {
+                position: relative;
+                width: 72px;
+                height: 72px;
+                inset: -4px;
+            }
+        }
+    }
+}
 
 
 /* Debug ----------- */
@@ -482,8 +570,10 @@ div[data-debug-key="design_tools"] {
         }
     }
 }
+
 [data-list-item-id="settings-sidebar___design_tools"] {
-    font-size: 0px!important;
+    font-size: 0px !important;
+
     &::after {
         font-size: 16px;
         content: "Aider";
@@ -500,9 +590,10 @@ div[data-debug-key="design_tools"] {
 }
 
 [data-debug-key="css_debugging"] {
->.stack_dbd263 {
-    display: none;
-}
+    >.stack_dbd263 {
+        display: none;
+    }
+
     &::before {
         content: "Main Loaded!";
         order: 1;
