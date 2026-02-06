@@ -468,7 +468,7 @@
     border: 0px;
 }
 
-.container_d4630c>.content_e9e3ed {
+.container__23ba6>.content_e9e3ed {
     background: color-mix(in oklab, var(--background-base-lower), black 5%);
     border-right: 1px solid var(--_aider-border-dark);
     border-bottom: 1px solid var(--_aider-border-dark);
