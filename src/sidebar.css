@@ -1,10 +1,14 @@
 .sidebarList__5e434 {
-    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
+    background: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), white 5%),
+        var(--background-base-lower)
+            calc(var(--custom-channel-header-height) / 2)
+    ) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
-
 
 .privateChannels_e6b769,
 .scroller__99e7c,
@@ -59,12 +63,11 @@
 
 /* Guilds -------------- */
 
-
 .shiftSVG_cc5dd2 {
     contain: none;
     overflow: visible;
 
-    >foreignObject {
+    > foreignObject {
         mask: none;
         contain: none;
         overflow: visible;
@@ -76,9 +79,11 @@
             width: 100%;
             height: 100%;
 
-
             border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
-            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+                inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
             font-weight: 450;
             color: white;
         }
@@ -114,12 +119,13 @@
 
 .numberBadge__2b1f5 {
     border: 1px solid var(--red-700);
-    box-shadow: inset 0px 0px 0px 1px var(--red-360), 0px 0px 7px -1px var(--red-500);
+    box-shadow:
+        inset 0px 0px 0px 1px var(--red-360),
+        0px 0px 7px -1px var(--red-500);
     padding: 0.3px !important;
     box-sizing: content-box;
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
 }
-
 
 /* Userpanel ------------------------------------ */
 .panels__5e434 {
@@ -153,15 +159,45 @@
             .button__67645 {
                 flex: 1;
                 border-radius: 0px;
-                background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
-                border: 1px solid color-mix(in srgb, var(--background-base-lowest), transparent);
+                background: linear-gradient(
+                    to bottom,
+                    color-mix(in oklab, var(--background-base-lower), white 5%),
+                    var(--background-base-lower)
+                        calc(var(--custom-channel-header-height) / 2)
+                ) !important;
+                border: 1px solid
+                    color-mix(
+                        in srgb,
+                        var(--background-base-lowest),
+                        transparent
+                    );
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                 transition: all 0.3s ease;
 
                 &.redGlow__67645 {
-                    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), var(--red-400) 35%), color-mix(in oklab, var(--background-base-lower), var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
-                    border: 1px solid color-mix(in srgb, var(--red-800), transparent);
-                    box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%), 0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%), 0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
+                    background: linear-gradient(
+                        to bottom,
+                        color-mix(
+                            in oklab,
+                            var(--background-base-lower),
+                            var(--red-400) 35%
+                        ),
+                        color-mix(
+                                in oklab,
+                                var(--background-base-lower),
+                                var(--red-600) 35%
+                            )
+                            calc(var(--custom-channel-header-height) / 2)
+                    ) !important;
+                    border: 1px solid
+                        color-mix(in srgb, var(--red-800), transparent);
+                    box-shadow:
+                        0px 0px 1px 1px inset
+                            color-mix(in srgb, var(--red-300), transparent 80%),
+                        0px -4px 10px -2px
+                            color-mix(in srgb, var(--red-500), transparent 60%),
+                        0px -5px 10px -7px
+                            color-mix(in srgb, var(--red-360), transparent 60%);
                 }
 
                 &:active {
@@ -185,7 +221,7 @@
     overflow: visible;
     contain: none;
 
-    >foreignObject {
+    > foreignObject {
         mask: none;
         overflow: visible;
         contain: none;
@@ -197,9 +233,11 @@
             width: 100%;
             height: 100%;
 
-
             border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
-            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+                inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
             font-weight: 450;
             color: white;
         }
@@ -209,7 +247,7 @@
         }
     }
 
-    >g>rect {
+    > g > rect {
         position: absolute;
         x: 44;
         y: 10;
@@ -218,12 +256,22 @@
     }
 }
 
-.layout__20a53:has(.content__20a53>.subText__20a53) .avatar__20a53>.wrapper__44b0c>.mask__44b0c>g>rect,
-.layout__91a9d:has(.content__91a9d>.subText__91a9d>div) .avatar__91a9d>.wrapper__44b0c>.mask__44b0c>g>rect {
+.layout__20a53:has(.content__20a53 > .subText__20a53)
+    .avatar__20a53
+    > .wrapper__44b0c
+    > .mask__44b0c
+    > g
+    > rect,
+.layout__91a9d:has(.content__91a9d > .subText__91a9d > div)
+    .avatar__91a9d
+    > .wrapper__44b0c
+    > .mask__44b0c
+    > g
+    > rect {
     y: 3;
 }
 
-.avatarWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
+.avatarWrapper__37e49 .avatar__37e49 > .mask__44b0c > g > rect {
     y: 1.5;
 }
 
@@ -231,7 +279,6 @@
 .nameAndDecorators__91a9d {
     margin-left: 14px;
 }
-
 
 .panelTitleContainer__37e49 {
     margin-left: 18px;
@@ -241,17 +288,21 @@
     display: none;
 }
 
-
 /* channel selected */
 
 .selectedChannel_c69b6d {
-
     .link__2ea32 {
-        background: color-mix(in oklab, transparent 95%, var(--brand-500)) !important;
-        box-shadow: 0px -20px 20px -5px inset color-mix(in oklab, transparent 87.5%, var(--brand-500));
+        background: color-mix(
+            in oklab,
+            transparent 95%,
+            var(--brand-500)
+        ) !important;
+        box-shadow: 0px -20px 20px -5px inset
+            color-mix(in oklab, transparent 87.5%, var(--brand-500));
 
-        >.linkTop__2ea32>* {
-            filter: drop-shadow(0px 0px 5px var(--brand-700)) drop-shadow(0px 0px 1px var(--brand-800));
+        > .linkTop__2ea32 > * {
+            filter: drop-shadow(0px 0px 5px var(--brand-700))
+                drop-shadow(0px 0px 1px var(--brand-800));
         }
     }
 }
@@ -259,9 +310,9 @@
 /* Debug ----------- */
 
 [data-debug-key="layout_debugging"] {
->.stack_dbd263 {
-    display: none;
-}
+    > .stack_dbd263 {
+        display: none;
+    }
     &::before {
         content: "Sidebar Loaded!";
         order: 1;

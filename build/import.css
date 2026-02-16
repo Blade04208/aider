@@ -1,32 +1,38 @@
 /* main.css */
 /* Basic color patchall styles (thank you very much discord) */
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 
 @font-face {
-    font-family: 'Helvetica Neue';
+    font-family: "Helvetica Neue";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-smooth: always;
-    src: url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+    src: url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 }
 
 .theme-dark {
     --custom-theme-base-color: hsl(0, 0%, 3.75%);
     --custom-theme-base-color-amount: 100%;
-    --custom-theme-text-color: color-mix(in oklab,
-            var(--custom-theme-base-color),
-            var(--text-primary, white) 85%);
+    --custom-theme-text-color: color-mix(
+        in oklab,
+        var(--custom-theme-base-color),
+        var(--text-primary, white) 85%
+    );
     --custom-theme-text-color-amount: 100%;
-    --border-subtle: color-mix(in oklab,
-            var(--custom-theme-base-color),
-            var(--text-primary, white) 15%);
-    --border-faint: color-mix(in oklab,
-            var(--custom-theme-base-color),
-            white 10%);
+    --border-subtle: color-mix(
+        in oklab,
+        var(--custom-theme-base-color),
+        var(--text-primary, white) 15%
+    );
+    --border-faint: color-mix(
+        in oklab,
+        var(--custom-theme-base-color),
+        white 10%
+    );
     --_aider-border-dark: rgba(0, 0, 0, 0.5);
-    --font-primary: 'Helvetica Neue', gg sans;
+    --font-primary: "Helvetica Neue", gg sans;
     --radius-xxs: 0;
     --radius-xs: 0;
     --radius-sm: 0;
@@ -37,30 +43,43 @@
 
     nav.guilds__5e434,
     .bg__960e4 {
-        background: color-mix(in oklab, var(--background-base-lower), black 20%);
+        background: color-mix(
+            in oklab,
+            var(--background-base-lower),
+            black 20%
+        );
     }
 
     .chatContent_f75fb0 {
-        background: color-mix(in oklab, var(--background-base-lower), black 15%);
+        background: color-mix(
+            in oklab,
+            var(--background-base-lower),
+            black 15%
+        );
     }
 }
-
 
 .theme-light {
     --custom-theme-base-color: hsl(0, 0%, 3.75%);
     --custom-theme-base-color-amount: 7.5%;
-    --custom-theme-text-color: color-mix(in oklab,
-            var(--custom-theme-base-color),
-            black 85%);
+    --custom-theme-text-color: color-mix(
+        in oklab,
+        var(--custom-theme-base-color),
+        black 85%
+    );
     --custom-theme-text-color-amount: 100%;
-    --border-subtle: color-mix(in oklab,
-            var(--custom-theme-base-color),
-            white 90%);
-    --border-faint: color-mix(in oklab,
-            var(--custom-theme-base-color),
-            blue 90%);
+    --border-subtle: color-mix(
+        in oklab,
+        var(--custom-theme-base-color),
+        white 90%
+    );
+    --border-faint: color-mix(
+        in oklab,
+        var(--custom-theme-base-color),
+        blue 90%
+    );
 
-    --font-primary: 'Helvetica Neue', gg sans;
+    --font-primary: "Helvetica Neue", gg sans;
     --_aider-border-dark: rgba(0, 0, 0, 0.2);
     --radius-xxs: 0;
     --radius-xs: 0;
@@ -72,29 +91,42 @@
 
     nav.guilds__5e434,
     .bg__960e4 {
-        background: color-mix(in oklab, var(--background-base-lower), black 7.5%);
+        background: color-mix(
+            in oklab,
+            var(--background-base-lower),
+            black 7.5%
+        );
     }
 
     .chatContent_f75fb0 {
-        background: color-mix(in oklab, var(--background-base-lower), black 7.5%);
+        background: color-mix(
+            in oklab,
+            var(--background-base-lower),
+            black 7.5%
+        );
     }
 }
 
-
-
 /* Subtitle --------------------------- */
-
 
 .title_f75fb0 {
     padding: 0px;
-    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+    background: linear-gradient(
+        to top,
+        var(--background-base-lower),
+        color-mix(in oklab, var(--background-base-lower), white 5%)
+    ) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
 .container__9293f,
 .contentHeader_e9e3ed {
-    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+    background: linear-gradient(
+        to top,
+        var(--background-base-lower),
+        color-mix(in oklab, var(--background-base-lower), white 5%)
+    ) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
@@ -107,24 +139,23 @@
 .children__9293f {
     /* overflow: visible; */
 
-    >.iconWrapper__9293f {
+    > .iconWrapper__9293f {
         left: 4px !important;
     }
 }
 
-.children__9293f>div>.avatar_f75fb0 {
+.children__9293f > div > .avatar_f75fb0 {
     height: var(--custom-channel-header-height) !important;
     width: var(--custom-channel-header-height) !important;
 
-    >.svg__44b0c {
-
+    > .svg__44b0c {
         contain: none !important;
         overflow: visible !important;
         mask: none;
         height: var(--custom-channel-header-height);
         width: var(--custom-channel-header-height);
 
-        >foreignObject[mask="url(#svg-mask-avatar-status-round-20)"] {
+        > foreignObject[mask="url(#svg-mask-avatar-status-round-20)"] {
             scale: 1.25;
             contain: none !important;
             overflow: visible !important;
@@ -135,7 +166,6 @@
         g {
             opacity: 0;
         }
-
     }
 }
 
@@ -148,29 +178,55 @@
         line-height: 1;
         padding: var(--space-xxs) var(--space-xxs) calc(var(--space-xxs) / 1.25);
         border: 1px solid var(--_aider-border-dark);
-        box-shadow: inset 0px 4px 6px -3px rgba(255, 255, 255, 0.5), inset 0px -1px 2px var(--_aider-border-dark);
+        box-shadow:
+            inset 0px 4px 6px -3px rgba(255, 255, 255, 0.5),
+            inset 0px -1px 2px var(--_aider-border-dark);
         font-weight: 450;
         color: white;
     }
 }
 
 /* ~~ */
-.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-dnd)"]) .titleWrapper__9293f::after {
+.children__9293f:has(
+        > div
+            > .avatar_f75fb0
+            > .svg__44b0c
+            > g
+            > rect[mask="url(#svg-mask-status-dnd)"]
+    )
+    .titleWrapper__9293f::after {
     content: "DO NOT DISTURB";
     background: var(--status-danger);
 }
 
-.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[fill="#82838b"]) .titleWrapper__9293f::after {
+.children__9293f:has(
+        > div > .avatar_f75fb0 > .svg__44b0c > g > rect[fill="#82838b"]
+    )
+    .titleWrapper__9293f::after {
     content: "OFFLINE";
     background: #82838b;
 }
 
-.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-online)"]) .titleWrapper__9293f::after {
+.children__9293f:has(
+        > div
+            > .avatar_f75fb0
+            > .svg__44b0c
+            > g
+            > rect[mask="url(#svg-mask-status-online)"]
+    )
+    .titleWrapper__9293f::after {
     content: "ONLINE";
     background: var(--status-positive);
 }
 
-.children__9293f:has(>div>.avatar_f75fb0>.svg__44b0c>g>rect[mask="url(#svg-mask-status-idle)"]) .titleWrapper__9293f::after {
+.children__9293f:has(
+        > div
+            > .avatar_f75fb0
+            > .svg__44b0c
+            > g
+            > rect[mask="url(#svg-mask-status-idle)"]
+    )
+    .titleWrapper__9293f::after {
     content: "IDLE";
     background: var(--status-warning);
 }
@@ -178,28 +234,34 @@
 /* ~~ */
 
 .children__9293f::after {
-    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+    background: linear-gradient(
+        to top,
+        var(--background-base-lower),
+        color-mix(in oklab, var(--background-base-lower), white 5%)
+    ) !important;
     mask-image: linear-gradient(to left, black, transparent);
 }
 
 .children__9293f {
-    &:has(.channelIcon__9293f, >.iconWrapper__9293f) {
-
+    &:has(.channelIcon__9293f, > .iconWrapper__9293f) {
         .channelIcon__9293f,
-        >.iconWrapper__9293f {
+        > .iconWrapper__9293f {
             position: absolute;
             scale: 3;
             left: 10px;
             bottom: 0px;
             z-index: -1;
-            mask-image: linear-gradient(to bottom, var(--_aider-border-dark), transparent 80%);
+            mask-image: linear-gradient(
+                to bottom,
+                var(--_aider-border-dark),
+                transparent 80%
+            );
         }
 
         .titleWrapper__9293f {
             padding-left: calc(var(--space-sm) * 1.5);
         }
     }
-
 
     &:has(.caret__9293f) {
         .channelIcon__9293f:first-of-type {
@@ -212,15 +274,19 @@
     }
 }
 
-
 .searchBar_c322aa,
 .wrapper__72c38 {
-    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
-    border: 1px solid color-mix(in oklab, var(--_aider-border-dark), transparent 90%);
-    box-shadow: 0px 0px 1px 1px inset var(--border-faint), 0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
-
+    background: linear-gradient(
+        to top,
+        var(--background-base-lower),
+        color-mix(in oklab, var(--background-base-lower), black 5%)
+    ) !important;
+    border: 1px solid
+        color-mix(in oklab, var(--_aider-border-dark), transparent 90%);
+    box-shadow:
+        0px 0px 1px 1px inset var(--border-faint),
+        0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
 }
-
 
 /* Profiles ------------------------------------------------- */
 .outer_c0bea0.user-profile-popout {
@@ -267,7 +333,7 @@
             .usernameRow__63ed3 {
                 display: flex;
 
-                >.clickableUsername__63ed3 {
+                > .clickableUsername__63ed3 {
                     display: inline-block;
                     width: 100%;
 
@@ -283,7 +349,7 @@
             }
         }
 
-        .mask__44b0c>g>rect {
+        .mask__44b0c > g > rect {
             x: 93;
             y: 4;
         }
@@ -299,7 +365,7 @@
         }
 
         .mask__68edb {
-            >foreignObject {
+            > foreignObject {
                 mask: none;
                 mask-image: linear-gradient(to bottom, black, transparent);
             }
@@ -323,7 +389,7 @@
                 &::after {
                     top: unset;
                     bottom: -22px;
-                    left: 8px
+                    left: 8px;
                 }
 
                 .content_ab8609 {
@@ -356,7 +422,10 @@
             inset: -1px;
             width: 100%;
             height: 100%;
-            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+                inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
         }
 
         .wrapper__0c74f {
@@ -365,15 +434,20 @@
             top: 8px;
             flex-direction: column;
 
-            >span>.bannerButton_fb7f94 {
-                background: color-mix(in oklab, var(--profile-gradient-modal-background-color), transparent 75%);
-                box-shadow: inset 0px 0px 4px var(--profile-gradient-modal-background-color);
+            > span > .bannerButton_fb7f94 {
+                background: color-mix(
+                    in oklab,
+                    var(--profile-gradient-modal-background-color),
+                    transparent 75%
+                );
+                box-shadow: inset 0px 0px 4px
+                    var(--profile-gradient-modal-background-color);
                 backdrop-filter: blur(4px);
                 /* border: 1px solid color-mix(in oklab, var(--border-subtle), transparent 50%); */
                 padding: 1px;
                 box-sizing: content-box;
 
-                >svg {
+                > svg {
                     /* color: var(--text-default); */
                 }
             }
@@ -423,7 +497,7 @@
             .usernameRow__63ed3 {
                 display: flex;
 
-                >.clickableUsername__63ed3 {
+                > .clickableUsername__63ed3 {
                     display: inline-block;
                     width: 100%;
 
@@ -439,7 +513,7 @@
             }
         }
 
-        .mask__44b0c>g>rect {
+        .mask__44b0c > g > rect {
             x: 93;
             y: 4;
         }
@@ -455,7 +529,7 @@
         }
 
         .mask__68edb {
-            >foreignObject {
+            > foreignObject {
                 mask: none;
                 mask-image: linear-gradient(to bottom, black, transparent);
             }
@@ -498,7 +572,6 @@
             }
         }
 
-
         &::after {
             content: "";
             position: absolute;
@@ -514,7 +587,10 @@
             inset: -1px;
             width: 100%;
             height: 100%;
-            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+                inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
         }
 
         .wrapper__0c74f {
@@ -523,15 +599,20 @@
             top: 8px;
             flex-direction: column;
 
-            >span>.bannerButton_fb7f94 {
-                background: color-mix(in oklab, var(--profile-gradient-modal-background-color), transparent 75%);
-                box-shadow: inset 0px 0px 4px var(--profile-gradient-modal-background-color);
+            > span > .bannerButton_fb7f94 {
+                background: color-mix(
+                    in oklab,
+                    var(--profile-gradient-modal-background-color),
+                    transparent 75%
+                );
+                box-shadow: inset 0px 0px 4px
+                    var(--profile-gradient-modal-background-color);
                 backdrop-filter: blur(4px);
                 /* border: 1px solid color-mix(in oklab, var(--border-subtle), transparent 50%); */
                 padding: 1px;
                 box-sizing: content-box;
 
-                >svg {
+                > svg {
                     /* color: var(--text-default); */
                 }
             }
@@ -547,22 +628,103 @@
     transition: all 0.15s ease !important;
 
     &.primary_a22cb0 {
-        background: linear-gradient(to bottom, color-mix(in oklab, var(--control-primary-background-default), white 25%), var(--control-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
-        border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-primary-background-default), black 50%), transparent);
-        box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-primary-background-default), white 50%), transparent);
+        background: linear-gradient(
+            to bottom,
+            color-mix(
+                in oklab,
+                var(--control-primary-background-default),
+                white 25%
+            ),
+            var(--control-primary-background-default)
+                calc(var(--custom-channel-header-height) / 2)
+        ) !important;
+        border: 1px solid
+            color-mix(
+                in oklab,
+                color-mix(
+                    in oklab,
+                    var(--control-primary-background-default),
+                    black 50%
+                ),
+                transparent
+            );
+        box-shadow: 0px 0px 1px 1px inset
+            color-mix(
+                in oklab,
+                color-mix(
+                    in oklab,
+                    var(--control-primary-background-default),
+                    white 50%
+                ),
+                transparent
+            );
     }
 
     &.critical-primary_a22cb0 {
-        background: linear-gradient(to bottom, color-mix(in oklab, var(--control-critical-primary-background-default), white 25%), var(--control-critical-primary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
-        border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-critical-primary-background-default), black 50%), transparent);
-        box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-critical-primary-background-default), white 50%), transparent);
+        background: linear-gradient(
+            to bottom,
+            color-mix(
+                in oklab,
+                var(--control-critical-primary-background-default),
+                white 25%
+            ),
+            var(--control-critical-primary-background-default)
+                calc(var(--custom-channel-header-height) / 2)
+        ) !important;
+        border: 1px solid
+            color-mix(
+                in oklab,
+                color-mix(
+                    in oklab,
+                    var(--control-critical-primary-background-default),
+                    black 50%
+                ),
+                transparent
+            );
+        box-shadow: 0px 0px 1px 1px inset
+            color-mix(
+                in oklab,
+                color-mix(
+                    in oklab,
+                    var(--control-critical-primary-background-default),
+                    white 50%
+                ),
+                transparent
+            );
     }
 
     &.secondary_a22cb0,
     &.critical-secondary_a22cb0 {
-        background: linear-gradient(to bottom, color-mix(in oklab, var(--control-secondary-background-default), white 15%), var(--control-secondary-background-default) calc(var(--custom-channel-header-height) / 2)) !important;
-        border: 1px solid color-mix(in oklab, color-mix(in oklab, var(--control-secondary-background-default), black 30%), transparent);
-        box-shadow: 0px 0px 1px 1px inset color-mix(in oklab, color-mix(in oklab, var(--control-secondary-background-default), white 30%), transparent);
+        background: linear-gradient(
+            to bottom,
+            color-mix(
+                in oklab,
+                var(--control-secondary-background-default),
+                white 15%
+            ),
+            var(--control-secondary-background-default)
+                calc(var(--custom-channel-header-height) / 2)
+        ) !important;
+        border: 1px solid
+            color-mix(
+                in oklab,
+                color-mix(
+                    in oklab,
+                    var(--control-secondary-background-default),
+                    black 30%
+                ),
+                transparent
+            );
+        box-shadow: 0px 0px 1px 1px inset
+            color-mix(
+                in oklab,
+                color-mix(
+                    in oklab,
+                    var(--control-secondary-background-default),
+                    white 30%
+                ),
+                transparent
+            );
     }
 
     &:active {
@@ -581,9 +743,18 @@
             position: absolute;
             width: calc(100% - 2px);
             height: calc(100% - 2px);
-            background: radial-gradient(ellipse at bottom, color-mix(in oklab, var(--brand-600), transparent 80%), color-mix(in oklab, var(--brand-800), transparent 90%));
+            background: radial-gradient(
+                ellipse at bottom,
+                color-mix(in oklab, var(--brand-600), transparent 80%),
+                color-mix(in oklab, var(--brand-800), transparent 90%)
+            );
             border: 2px solid var(--brand-700);
-            border-image: radial-gradient(ellipse at bottom, color-mix(in oklab, var(--brand-500), transparent 25%), color-mix(in oklab, var(--brand-800), transparent 90%) 40%) 1;
+            border-image: radial-gradient(
+                    ellipse at bottom,
+                    color-mix(in oklab, var(--brand-500), transparent 25%),
+                    color-mix(in oklab, var(--brand-800), transparent 90%) 40%
+                )
+                1;
             z-index: 0;
             transition: opacity 0.3s ease;
 
@@ -592,12 +763,11 @@
             }
         }
 
-        >* {
+        > * {
             z-index: 1;
         }
     }
 }
-
 
 /* Settings ------------------------------------------- */
 
@@ -605,12 +775,17 @@
     position: relative;
     padding-top: 127px;
 
-    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
+    background: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), white 5%),
+        var(--background-base-lower)
+            calc(var(--custom-channel-header-height) / 2)
+    ) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 
-    &:has(.fixedContent__409aa>.emptySearchResultsContainer_cf016e) {
+    &:has(.fixedContent__409aa > .emptySearchResultsContainer_cf016e) {
         padding-top: 217px;
     }
 
@@ -628,7 +803,12 @@
         .searchBarContainer__409aa {
             border: 1px solid var(--border-subtle);
             border-right: none !important;
-            background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2));
+            background: linear-gradient(
+                to bottom,
+                color-mix(in oklab, var(--background-base-lower), white 5%),
+                var(--background-base-lower)
+                    calc(var(--custom-channel-header-height) / 2)
+            );
             order: -1;
             height: 48px;
             padding: 1px 5px;
@@ -639,8 +819,15 @@
             }
         }
 
-        >div:not(.searchBarContainer__409aa, .emptySearchResultsContainer_cf016e) {
-            background: linear-gradient(to top, color-mix(in oklab, var(--background-base-lower), black 15%), color-mix(in oklab, var(--background-base-lower), white 1%)) !important;
+        > div:not(
+                .searchBarContainer__409aa,
+                .emptySearchResultsContainer_cf016e
+            ) {
+            background: linear-gradient(
+                to top,
+                color-mix(in oklab, var(--background-base-lower), black 15%),
+                color-mix(in oklab, var(--background-base-lower), white 1%)
+            ) !important;
             border: 1px solid var(--_aider-border-dark);
             box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
             padding: 10px 5px 0px;
@@ -653,7 +840,7 @@
     border: 0px;
 }
 
-.container__23ba6>.content_e9e3ed {
+.container__23ba6 > .content_e9e3ed {
     background: color-mix(in oklab, var(--background-base-lower), black 5%);
     border-right: 1px solid var(--_aider-border-dark);
     border-bottom: 1px solid var(--_aider-border-dark);
@@ -672,7 +859,12 @@
     box-shadow: var(--shadow-high);
 
     .container_dca174 {
-        background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2 + 120px)) !important;
+        background: linear-gradient(
+            to bottom,
+            color-mix(in oklab, var(--background-base-lower), white 5%),
+            var(--background-base-lower)
+                calc(var(--custom-channel-header-height) / 2 + 120px)
+        ) !important;
         border-radius: 0px;
         border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
         box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
@@ -692,7 +884,10 @@
             inset: -1px;
             width: 100%;
             height: 100%;
-            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+                inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
         }
     }
 }
@@ -701,7 +896,7 @@
     contain: none;
     overflow: visible;
 
-    >foreignObject {
+    > foreignObject {
         mask: none;
         contain: none;
         overflow: visible;
@@ -716,7 +911,10 @@
                 z-index: 1;
 
                 border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
-                box-shadow: inset 0px 5.25px 5.25px -3.5px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+                box-shadow:
+                    inset 0px 5.25px 5.25px -3.5px rgba(255, 255, 255, 0.25),
+                    inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                    inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
                 font-weight: 450;
                 color: white;
             }
@@ -730,7 +928,50 @@
         }
     }
 }
+/* Modals ------------------*/
+.container__8a031 {
+    background: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), white 5%),
+        var(--background-base-lower)
+            calc(var(--custom-channel-header-height) / 2)
+    ) !important;
+    border-radius: 0px;
+    border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
+    box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+}
+div[role="dialog"] > .recentMentionsPopout__95796 {
+    background: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), white 5%),
+        var(--background-base-lower)
+            calc(var(--custom-channel-header-height) / 2)
+    ) !important;
+    border-radius: 0px;
+    border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
+    box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+    /* WE LOVE THE INBOX */
+    > *,
+    .messagesPopout_e8b59,
+    .messageContainer__95796 {
+        background: transparent;
+    }
+    .channelHeader__35a7e {
+        background: linear-gradient(
+            to bottom,
+            var(--background-base-lower) 25%,
+            transparent
+        );
+        padding: var(--space-sm) var(--space-sm) var(--space-xl) !important;
+        box-sizing: content-box;
+        filter: drop-shadow(0px 2px 4px black);
+    }
+}
 
+.scrim__40128 {
+    backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
+    background: transparent;
+}
 
 /* Debug ----------- */
 
@@ -738,9 +979,8 @@ div[data-debug-key="design_tools"] {
     display: flex;
     flex-direction: column;
 
-    >.stack_dbd263 {
+    > .stack_dbd263 {
         display: contents;
-
 
         .headerTitle__450f6 {
             display: flex;
@@ -764,7 +1004,7 @@ div[data-debug-key="design_tools"] {
     }
 }
 
-[data-debug-key="design_tools"] .headerTitle__450f6>h1 {
+[data-debug-key="design_tools"] .headerTitle__450f6 > h1 {
     font-size: 0px !important;
 
     &::before {
@@ -774,7 +1014,7 @@ div[data-debug-key="design_tools"] {
 }
 
 [data-debug-key="css_debugging"] {
-    >.stack_dbd263 {
+    > .stack_dbd263 {
         display: none;
     }
 
@@ -783,6 +1023,7 @@ div[data-debug-key="design_tools"] {
         order: 1;
     }
 }
+
 /* //////// chat.css //////// */
 :root {
     --aider-chat-avatars: compact;
@@ -818,11 +1059,11 @@ div[data-debug-key="design_tools"] {
             top: 15px;
         }
 
-        &:not(.groupStart__5126c)>.contents_c19a55 {
+        &:not(.groupStart__5126c) > .contents_c19a55 {
             display: flex;
             align-items: end;
 
-            >.latin12CompactTimeStamp_c19a55 {
+            > .latin12CompactTimeStamp_c19a55 {
                 position: relative;
                 display: inline;
                 opacity: 1;
@@ -830,7 +1071,6 @@ div[data-debug-key="design_tools"] {
                 width: min-content;
                 margin-left: var(--space-xs);
             }
-
         }
     }
 }
@@ -868,7 +1108,7 @@ div[data-debug-key="design_tools"] {
             position: absolute;
         }
 
-        >span {
+        > span {
             position: relative;
             left: 0px;
             margin-left: 8px;
@@ -880,7 +1120,7 @@ div[data-debug-key="design_tools"] {
     }
 }
 
-.form_f75fb0>div:not([class]) {
+.form_f75fb0 > div:not([class]) {
     position: relative;
     z-index: 2;
 }
@@ -888,8 +1128,11 @@ div[data-debug-key="design_tools"] {
 .chatGradient__36d07 {
     bottom: -4px;
     height: calc((var(--chat-markup-line-height, 1rem) + 16px) / 2);
-    background: linear-gradient(to bottom, transparent, color-mix(in oklab, var(--background-base-lower), black 15%) 80%) !important;
-
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        color-mix(in oklab, var(--background-base-lower), black 15%) 80%
+    ) !important;
 }
 
 @keyframes typing-glow {
@@ -915,20 +1158,30 @@ div[data-debug-key="design_tools"] {
     }
 
     .inner__74017 {
-        --custom-channel-textarea-text-area-height: calc(var(--chat-markup-line-height, 1rem) + 16px);
+        --custom-channel-textarea-text-area-height: calc(
+            var(--chat-markup-line-height, 1rem) + 16px
+        );
         align-items: center;
 
         .textArea__74017 {
-            --custom-channel-textarea-text-area-height: var(--chat-markup-line-height, 1rem);
+            --custom-channel-textarea-text-area-height: var(
+                --chat-markup-line-height,
+                1rem
+            );
             padding: 8px !important;
-            background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
+            background: linear-gradient(
+                to top,
+                var(--background-base-lower),
+                color-mix(in oklab, var(--background-base-lower), black 5%)
+            ) !important;
             border: 1px solid var(--_aider-border-dark);
-            box-shadow: 0px 0px 1px 1px inset var(--border-faint), 0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
+            box-shadow:
+                0px 0px 1px 1px inset var(--border-faint),
+                0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
             min-height: var(--chat-markup-line-height, 1rem);
             box-sizing: content-box;
             max-height: calc(50vh - 16px);
             overflow-y: scroll;
-
 
             &::-webkit-scrollbar-thumb,
             &::-webkit-scrollbar-track {
@@ -957,7 +1210,6 @@ div[data-debug-key="design_tools"] {
             }
 
             &:hover {
-
                 &::-webkit-scrollbar-thumb,
                 &::-webkit-scrollbar-track {
                     visibility: visible !important;
@@ -965,17 +1217,25 @@ div[data-debug-key="design_tools"] {
             }
         }
 
-        >.buttons__74017 {
+        > .buttons__74017 {
             gap: 1px !important;
 
-            >*:not(span, .separator_aa63ab)>.button__74017,
-            >.button__74017 {
-                background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+            > *:not(span, .separator_aa63ab) > .button__74017,
+            > .button__74017 {
+                background: linear-gradient(
+                    to top,
+                    var(--background-base-lower),
+                    color-mix(in oklab, var(--background-base-lower), white 5%)
+                ) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                 border-radius: 0px;
-                min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
-                min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
+                min-height: calc(
+                    var(--custom-channel-textarea-text-area-height) + 2px
+                );
+                min-width: calc(
+                    var(--custom-channel-textarea-text-area-height) + 2px
+                );
                 height: 100%;
                 align-items: center;
                 justify-content: center;
@@ -991,9 +1251,13 @@ div[data-debug-key="design_tools"] {
                 }
             }
 
-            >*:not(span, .separator_aa63ab)>.button_e6e74f {
+            > *:not(span, .separator_aa63ab) > .button_e6e74f {
                 /* i hate the activity launcher */
-                background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+                background: linear-gradient(
+                    to top,
+                    var(--background-base-lower),
+                    color-mix(in oklab, var(--background-base-lower), white 5%)
+                ) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                 border-radius: 0px;
@@ -1023,13 +1287,25 @@ div[data-debug-key="design_tools"] {
             .attachButton__0923f {
                 margin-right: 0px;
 
-                >.attachButtonInner__0923f {
-                    background: linear-gradient(to top, var(--background-base-lower), color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
+                > .attachButtonInner__0923f {
+                    background: linear-gradient(
+                        to top,
+                        var(--background-base-lower),
+                        color-mix(
+                            in oklab,
+                            var(--background-base-lower),
+                            white 5%
+                        )
+                    ) !important;
                     border: 1px solid var(--_aider-border-dark);
                     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                     border-radius: 0px;
-                    min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
-                    min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
+                    min-height: calc(
+                        var(--custom-channel-textarea-text-area-height) + 2px
+                    );
+                    min-width: calc(
+                        var(--custom-channel-textarea-text-area-height) + 2px
+                    );
                     box-sizing: border-box;
                     display: flex;
                     align-items: center;
@@ -1053,9 +1329,11 @@ div[data-debug-key="design_tools"] {
 .botTag__5d473.botTag__82f07.px__82f07 {
     border-radius: 20px;
     padding: 1px 5px 0px;
-        border: 1px solid var(--brand-700);
-        margin-left: 6px;
-    box-shadow: inset 0px 0px 0px 1px var(--brand-360), 0px 0px 7px -1px color-mix(in oklab,var(--brand-500), transparent);
+    border: 1px solid var(--brand-700);
+    margin-left: 6px;
+    box-shadow:
+        inset 0px 0px 0px 1px var(--brand-360),
+        0px 0px 7px -1px color-mix(in oklab, var(--brand-500), transparent);
     box-sizing: content-box;
     background: linear-gradient(to bottom, var(--brand-400), var(--brand-500));
     .botTagVerified__82f07 {
@@ -1066,15 +1344,16 @@ div[data-debug-key="design_tools"] {
 .chipletContainerInner__10651 {
     border-radius: 0px;
     background: var(--background-surface-highest);
-    outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%) dashed;
+    outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%)
+        dashed;
 }
 
 /* Debug ----------- */
 
 [data-debug-key="highlight_mana_components"] {
->.stack_dbd263 {
-    display: none;
-}
+    > .stack_dbd263 {
+        display: none;
+    }
     &::before {
         content: "Chat Loaded!";
         order: 1;
@@ -1084,133 +1363,173 @@ div[data-debug-key="design_tools"] {
 .popover_f84418,
 .menu_c1e9c4 {
     border-radius: 0px;
-    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 7.5%), color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px) !important;
+    background: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), white 7.5%),
+        color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px
+    ) !important;
     border: 1px solid var(--_aider-border-dark);
-    box-shadow: 0px 0px 1px 1px inset var(--border-subtle), 2px 2px 10px black !important;
+    box-shadow:
+        0px 0px 1px 1px inset var(--border-subtle),
+        2px 2px 10px black !important;
 }
+
 /* //////// icons.css //////// */
 :root {
     /* --aider-icons: true; */
 }
 
-
-
 @container style(--aider-icons: true) {
-
     .linkButtonIcon__972a0,
     .icon__9293f
 
     /*,
-.lottieIcon__5eb9b>svg*/
-        {
+.lottieIcon__5eb9b>svg*/ {
         background: currentColor;
         mask-size: contain;
         /* mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1307.svg); */
     }
 
-    .linkButtonIcon__972a0:has(>path[d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z"]) {
+    .linkButtonIcon__972a0:has(
+        > path[d="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56 1.33 1.25C6.12 8.65 9.46 12 13 12h1a8 8 0 0 1 8 8 2 2 0 0 1-2 2 .21.21 0 0 1-.2-.15 7.65 7.65 0 0 0-1.32-2.3c-.15-.2-.42-.06-.39.17l.25 2c.02.15-.1.28-.25.28H9a2 2 0 0 1-2-2v-2.22c0-1.57-.67-3.05-1.53-4.37A15.85 15.85 0 0 1 3 5Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-993.svg);
         /* DMs - Friends */
     }
 
-
-    .linkButtonIcon__972a0:has(>path[d="M16.23 12c0 1.29-.95 2.25-2.22 2.25A2.18 2.18 0 0 1 11.8 12c0-1.29.95-2.25 2.22-2.25 1.27 0 2.22.96 2.22 2.25ZM23 12c0 5.01-4 9-8.99 9a8.93 8.93 0 0 1-8.75-6.9H3.34l-.9-4.2H5.3c.26-.96.68-1.89 1.21-2.7H1.89L1 3h12.74C19.13 3 23 6.99 23 12Zm-4.26 0c0-2.67-2.1-4.8-4.73-4.8A4.74 4.74 0 0 0 9.28 12c0 2.67 2.1 4.8 4.73 4.8a4.74 4.74 0 0 0 4.73-4.8Z"]) {
+    .linkButtonIcon__972a0:has(
+        > path[d="M16.23 12c0 1.29-.95 2.25-2.22 2.25A2.18 2.18 0 0 1 11.8 12c0-1.29.95-2.25 2.22-2.25 1.27 0 2.22.96 2.22 2.25ZM23 12c0 5.01-4 9-8.99 9a8.93 8.93 0 0 1-8.75-6.9H3.34l-.9-4.2H5.3c.26-.96.68-1.89 1.21-2.7H1.89L1 3h12.74C19.13 3 23 6.99 23 12Zm-4.26 0c0-2.67-2.1-4.8-4.73-4.8A4.74 4.74 0 0 0 9.28 12c0 2.67 2.1 4.8 4.73 4.8a4.74 4.74 0 0 0 4.73-4.8Z"]
+    ) {
         background: transparent;
         mask-image: none;
         /* DMs - Nitro */
     }
 
-    .linkButtonIcon__972a0:has(>path[d="M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v3.98a3.07 3.07 0 0 1-.3 1.35A2.97 2.97 0 0 1 4.98 10c-2 0-3.44-1.9-2.9-3.83l.55-1.98ZM10 2a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3 3 3 0 0 0 3-2.97V3a1 1 0 0 0-1-1h-4ZM17 2a1 1 0 0 0-1 1v3.98a2.43 2.43 0 0 0 0 .05A2.95 2.95 0 0 0 19.02 10c2 0 3.44-1.9 2.9-3.83l-.55-1.98A3 3 0 0 0 18.47 2H17Z"]) {
+    .linkButtonIcon__972a0:has(
+        > path[d="M2.63 4.19A3 3 0 0 1 5.53 2H7a1 1 0 0 1 1 1v3.98a3.07 3.07 0 0 1-.3 1.35A2.97 2.97 0 0 1 4.98 10c-2 0-3.44-1.9-2.9-3.83l.55-1.98ZM10 2a1 1 0 0 0-1 1v4a3 3 0 0 0 3 3 3 3 0 0 0 3-2.97V3a1 1 0 0 0-1-1h-4ZM17 2a1 1 0 0 0-1 1v3.98a2.43 2.43 0 0 0 0 .05A2.95 2.95 0 0 0 19.02 10c2 0 3.44-1.9 2.9-3.83l-.55-1.98A3 3 0 0 0 18.47 2H17Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-231.svg);
         /* DMs - Shop */
     }
 
-    .linkButtonIcon__972a0:has(>path[d="M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1 0 0 0 1-1.73c-.6-.35-1.24-.64-1.9-.87.54-.3 1.05-.65 1.52-1.07a3.98 3.98 0 0 0 5.49-1.8.77.77 0 0 0-.24-.95 3.98 3.98 0 0 0-2.02-.76A4 4 0 0 0 23 10.47a.76.76 0 0 0-.71-.71 4.06 4.06 0 0 0-1.6.22 3.99 3.99 0 0 0 .54-5.35.77.77 0 0 0-.95-.24c-.75.36-1.37.95-1.77 1.67V6a4 4 0 0 0-4.9-3.9.77.77 0 0 0-.6.72 4 4 0 0 0 3.7 4.17c.89 1.3 1.3 2.95 1.3 4.51 0 3.66-2.75 6.5-6 6.5s-6-2.84-6-6.5c0-1.56.41-3.21 1.3-4.51A4 4 0 0 0 11 2.82a.77.77 0 0 0-.6-.72 4.01 4.01 0 0 0-4.9 3.96A4.02 4.02 0 0 0 3.73 4.4a.77.77 0 0 0-.95.24 3.98 3.98 0 0 0 .55 5.35 4 4 0 0 0-1.6-.22.76.76 0 0 0-.72.71l-.01.28a4 4 0 0 0 2.65 3.77c-.75.06-1.45.33-2.02.76-.3.22-.4.62-.24.95a4 4 0 0 0 5.49 1.8c.47.42.98.78 1.53 1.07-.67.23-1.3.52-1.91.87a1 1 0 1 0 1 1.73Z"]) {
+    .linkButtonIcon__972a0:has(
+        > path[d="M7.5 21.7a8.95 8.95 0 0 1 9 0 1 1 0 0 0 1-1.73c-.6-.35-1.24-.64-1.9-.87.54-.3 1.05-.65 1.52-1.07a3.98 3.98 0 0 0 5.49-1.8.77.77 0 0 0-.24-.95 3.98 3.98 0 0 0-2.02-.76A4 4 0 0 0 23 10.47a.76.76 0 0 0-.71-.71 4.06 4.06 0 0 0-1.6.22 3.99 3.99 0 0 0 .54-5.35.77.77 0 0 0-.95-.24c-.75.36-1.37.95-1.77 1.67V6a4 4 0 0 0-4.9-3.9.77.77 0 0 0-.6.72 4 4 0 0 0 3.7 4.17c.89 1.3 1.3 2.95 1.3 4.51 0 3.66-2.75 6.5-6 6.5s-6-2.84-6-6.5c0-1.56.41-3.21 1.3-4.51A4 4 0 0 0 11 2.82a.77.77 0 0 0-.6-.72 4.01 4.01 0 0 0-4.9 3.96A4.02 4.02 0 0 0 3.73 4.4a.77.77 0 0 0-.95.24 3.98 3.98 0 0 0 .55 5.35 4 4 0 0 0-1.6-.22.76.76 0 0 0-.72.71l-.01.28a4 4 0 0 0 2.65 3.77c-.75.06-1.45.33-2.02.76-.3.22-.4.62-.24.95a4 4 0 0 0 5.49 1.8c.47.42.98.78 1.53 1.07-.67.23-1.3.52-1.91.87a1 1 0 1 0 1 1.73Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1393.svg);
         /* DMs - Shop */
     }
 
     /* ~~~~ */
 
-    .icon__9293f:has(>path[d="M2 7.4A5.4 5.4 0 0 1 7.4 2c.36 0 .7.22.83.55l1.93 4.64a1 1 0 0 1-.43 1.25L7 10a8.52 8.52 0 0 0 7 7l1.12-2.24a1 1 0 0 1 1.19-.51l5.06 1.56c.38.11.63.46.63.85C22 19.6 19.6 22 16.66 22h-.37C8.39 22 2 15.6 2 7.71V7.4ZM13 3a1 1 0 0 1 1-1 8 8 0 0 1 8 8 1 1 0 1 1-2 0 6 6 0 0 0-6-6 1 1 0 0 1-1-1Z"]) {
+    .icon__9293f:has(
+        > path[d="M2 7.4A5.4 5.4 0 0 1 7.4 2c.36 0 .7.22.83.55l1.93 4.64a1 1 0 0 1-.43 1.25L7 10a8.52 8.52 0 0 0 7 7l1.12-2.24a1 1 0 0 1 1.19-.51l5.06 1.56c.38.11.63.46.63.85C22 19.6 19.6 22 16.66 22h-.37C8.39 22 2 15.6 2 7.71V7.4ZM13 3a1 1 0 0 1 1-1 8 8 0 0 1 8 8 1 1 0 1 1-2 0 6 6 0 0 0-6-6 1 1 0 0 1-1-1Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-322.svg);
         /* Subtitle - Call (voice) */
     }
 
-    .icon__9293f:has(>path[d="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-2.12a1 1 0 0 0 .55.9l3 1.5a1 1 0 0 0 1.45-.9V7.62a1 1 0 0 0-1.45-.9l-3 1.5a1 1 0 0 0-.55.9V7a3 3 0 0 0-3-3H4Z"]) {
+    .icon__9293f:has(
+        > path[d="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-2.12a1 1 0 0 0 .55.9l3 1.5a1 1 0 0 0 1.45-.9V7.62a1 1 0 0 0-1.45-.9l-3 1.5a1 1 0 0 0-.55.9V7a3 3 0 0 0-3-3H4Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1088.svg);
         /* Subtitle - Call (video) */
     }
 
-    .icon__9293f:has(>path[d="M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38ZM9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z"]) {
+    .icon__9293f:has(
+        > path[d="M19.38 11.38a3 3 0 0 0 4.24 0l.03-.03a.5.5 0 0 0 0-.7L13.35.35a.5.5 0 0 0-.7 0l-.03.03a3 3 0 0 0 0 4.24L13 5l-2.92 2.92-3.65-.34a2 2 0 0 0-1.6.58l-.62.63a1 1 0 0 0 0 1.42l9.58 9.58a1 1 0 0 0 1.42 0l.63-.63a2 2 0 0 0 .58-1.6l-.34-3.64L19 11l.38.38ZM9.07 17.07a.5.5 0 0 1-.08.77l-5.15 3.43a.5.5 0 0 1-.63-.06l-.42-.42a.5.5 0 0 1-.06-.63L6.16 15a.5.5 0 0 1 .77-.08l2.14 2.14Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-832.svg);
         /* Subtitle - Pins */
     }
 
-    .icon__9293f:has(>path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM16.62 13.17c-.22.29-.65.37-.92.14-.34-.3-.7-.57-1.09-.82-.52-.33-.7-1.05-.47-1.63.11-.27.2-.57.26-.87.11-.54.55-1 1.1-.92 1.6.2 3.04.92 4.15 1.98.3.27-.25.95-.65.95a3 3 0 0 0-2.38 1.17ZM15.19 15.61c.13.16.02.39-.19.39a3 3 0 0 0-1.52 5.59c.2.12.26.41.02.41h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5a7.5 7.5 0 0 1 13.19-4.89ZM9.5 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM15.5 22Z"]) {
+    .icon__9293f:has(
+        > path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM16.62 13.17c-.22.29-.65.37-.92.14-.34-.3-.7-.57-1.09-.82-.52-.33-.7-1.05-.47-1.63.11-.27.2-.57.26-.87.11-.54.55-1 1.1-.92 1.6.2 3.04.92 4.15 1.98.3.27-.25.95-.65.95a3 3 0 0 0-2.38 1.17ZM15.19 15.61c.13.16.02.39-.19.39a3 3 0 0 0-1.52 5.59c.2.12.26.41.02.41h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5a7.5 7.5 0 0 1 13.19-4.89ZM9.5 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM15.5 22Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-997.svg);
         /* Subtitle - Add to DM */
     }
 
-    .icon__9293f:has(>path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]) {
+    .icon__9293f:has(
+        > path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1000.svg);
         /* Subtitle - User Profile Sidebar */
     }
 
-    .icon__9293f:has(>path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]) {
+    .icon__9293f:has(
+        > path[d="M23 12.38c-.02.38-.45.58-.78.4a6.97 6.97 0 0 0-6.27-.08.54.54 0 0 1-.44 0 8.97 8.97 0 0 0-11.16 3.55c-.1.15-.1.35 0 .5.37.58.8 1.13 1.28 1.61.24.24.64.15.8-.15.19-.38.39-.73.58-1.02.14-.21.43-.1.4.15l-.19 1.96c-.02.19.07.37.23.47A8.96 8.96 0 0 0 12 21a.4.4 0 0 1 .38.27c.1.33.25.65.4.95.18.34-.02.76-.4.77L12 23a11 11 0 1 1 11-10.62ZM15.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1000.svg);
         /* Subtitle - User Profile Sidebar */
     }
 
-    .icon__9293f:has(>path[d="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36ZM15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z"]) {
+    .icon__9293f:has(
+        > path[d="M12 2.81a1 1 0 0 1 0-1.41l.36-.36a1 1 0 0 1 1.41 0l9.2 9.2a1 1 0 0 1 0 1.4l-.7.7a1 1 0 0 1-1.3.13l-9.54-6.72a1 1 0 0 1-.08-1.58l1-1L12 2.8ZM12 21.2a1 1 0 0 1 0 1.41l-.35.35a1 1 0 0 1-1.41 0l-9.2-9.19a1 1 0 0 1 0-1.41l.7-.7a1 1 0 0 1 1.3-.12l9.54 6.72a1 1 0 0 1 .07 1.58l-1 1 .35.36ZM15.66 16.8a1 1 0 0 1-1.38.28l-8.49-5.66A1 1 0 1 1 6.9 9.76l8.49 5.65a1 1 0 0 1 .27 1.39ZM17.1 14.25a1 1 0 1 0 1.11-1.66L9.73 6.93a1 1 0 0 0-1.11 1.66l8.49 5.66Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-1383.svg);
         /* Subtitle - Threads */
     }
 
-    .icon__9293f:has(>path[d="M9.7 2.89c.18-.07.32-.24.37-.43a2 2 0 0 1 3.86 0c.05.2.19.36.38.43A7 7 0 0 1 19 9.5v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-4.05 0-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3 3 0 0 1 .77-2l1.1-1.23a.5.5 0 0 0 .13-.33V9.5a7 7 0 0 1 4.7-6.61ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.86 24.86 0 0 1-5.64 0Z"]) {
+    .icon__9293f:has(
+        > path[d="M9.7 2.89c.18-.07.32-.24.37-.43a2 2 0 0 1 3.86 0c.05.2.19.36.38.43A7 7 0 0 1 19 9.5v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-4.05 0-6.74-.91-8.05-1.5-.61-.28-.95-.9-.95-1.57v-.28a3 3 0 0 1 .77-2l1.1-1.23a.5.5 0 0 0 .13-.33V9.5a7 7 0 0 1 4.7-6.61ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.86 24.86 0 0 1-5.64 0Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-738.svg);
         /* Subtitle - Notifications (on) */
     }
 
-    .icon__9293f:has(>path[d="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20ZM3.13 16.13c.11.27.46.28.66.08L15.73 4.27a.47.47 0 0 0-.07-.74 6.97 6.97 0 0 0-1.35-.64.62.62 0 0 1-.38-.43 2 2 0 0 0-3.86 0 .62.62 0 0 1-.38.43A7 7 0 0 0 5 9.5v2.09a.5.5 0 0 1-.13.33l-1.1 1.22A3 3 0 0 0 3 15.15v.28c0 .24.04.48.13.7ZM18.64 9.36c.13-.13.36-.05.36.14v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-.46 0-.9-.01-1.33-.03a.48.48 0 0 1-.3-.83l8.27-8.28ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.84 24.84 0 0 1-5.64 0Z"]) {
+    .icon__9293f:has(
+        > path[d="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1 1 0 0 0-1.4-1.4l-20 20ZM3.13 16.13c.11.27.46.28.66.08L15.73 4.27a.47.47 0 0 0-.07-.74 6.97 6.97 0 0 0-1.35-.64.62.62 0 0 1-.38-.43 2 2 0 0 0-3.86 0 .62.62 0 0 1-.38.43A7 7 0 0 0 5 9.5v2.09a.5.5 0 0 1-.13.33l-1.1 1.22A3 3 0 0 0 3 15.15v.28c0 .24.04.48.13.7ZM18.64 9.36c.13-.13.36-.05.36.14v2.09c0 .12.05.24.13.33l1.1 1.22a3 3 0 0 1 .77 2.01v.28c0 .67-.34 1.29-.95 1.56-1.31.6-4 1.51-8.05 1.51-.46 0-.9-.01-1.33-.03a.48.48 0 0 1-.3-.83l8.27-8.28ZM9.18 19.84A.16.16 0 0 0 9 20a3 3 0 1 0 6 0c0-.1-.09-.17-.18-.16a24.84 24.84 0 0 1-5.64 0Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-742.svg);
         /* Subtitle - Notifications (off) */
     }
 
-    .icon__9293f:has(>path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]) {
+    .icon__9293f:has(
+        > path[d="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-993.svg);
         /* Subtitle - Show Memberlist */
     }
 
-    .icon__9293f:has(>path[d="M10.99 3.16A1 1 0 1 0 9 2.84L8.15 8H4a1 1 0 0 0 0 2h3.82l-.67 4H3a1 1 0 1 0 0 2h3.82l-.8 4.84a1 1 0 0 0 1.97.32L8.85 16h4.97l-.8 4.84a1 1 0 0 0 1.97.32l.86-5.16H20a1 1 0 1 0 0-2h-3.82l.67-4H21a1 1 0 1 0 0-2h-3.82l.8-4.84a1 1 0 1 0-1.97-.32L15.15 8h-4.97l.8-4.84ZM14.15 14l.67-4H9.85l-.67 4h4.97Z"]) {
+    .icon__9293f:has(
+        > path[d="M10.99 3.16A1 1 0 1 0 9 2.84L8.15 8H4a1 1 0 0 0 0 2h3.82l-.67 4H3a1 1 0 1 0 0 2h3.82l-.8 4.84a1 1 0 0 0 1.97.32L8.85 16h4.97l-.8 4.84a1 1 0 0 0 1.97.32l.86-5.16H20a1 1 0 1 0 0-2h-3.82l.67-4H21a1 1 0 1 0 0-2h-3.82l.8-4.84a1 1 0 1 0-1.97-.32L15.15 8h-4.97l.8-4.84ZM14.15 14l.67-4H9.85l-.67 4h4.97Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-900.svg);
         /* Subtitle - Text */
     }
 
-    .icon__9293f:has(>path[d="M11.45 8c.35 0 .6.35.55.7-.02.2-.02.4 0 .6.04.35-.2.7-.55.7h-1.6l-.67 4h4.97l.26-1.55c.05-.27.31-.45.59-.45h.92c.31 0 .55.28.5.58L16.18 14H20a1 1 0 1 1 0 2h-4.15l-.86 5.16a1 1 0 0 1-1.98-.32l.8-4.84H8.86l-.86 5.16A1 1 0 0 1 6 20.84L6.82 16H3a1 1 0 1 1 0-2h4.15l.67-4H4a1 1 0 0 1 0-2h4.15l.86-5.16a1 1 0 1 1 1.98.32L10.19 8h1.26Z"]) {
+    .icon__9293f:has(
+        > path[d="M11.45 8c.35 0 .6.35.55.7-.02.2-.02.4 0 .6.04.35-.2.7-.55.7h-1.6l-.67 4h4.97l.26-1.55c.05-.27.31-.45.59-.45h.92c.31 0 .55.28.5.58L16.18 14H20a1 1 0 1 1 0 2h-4.15l-.86 5.16a1 1 0 0 1-1.98-.32l.8-4.84H8.86l-.86 5.16A1 1 0 0 1 6 20.84L6.82 16H3a1 1 0 1 1 0-2h4.15l.67-4H4a1 1 0 0 1 0-2h4.15l.86-5.16a1 1 0 1 1 1.98.32L10.19 8h1.26Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-798.svg);
         /* Subtitle - NSFW Text */
     }
 
-    .icon__9293f:has(>path[d="M18.91 12.98a5.45 5.45 0 0 1 2.18 6.2c-.1.33-.09.68.1.96l.83 1.32a1 1 0 0 1-.84 1.54h-5.5A5.6 5.6 0 0 1 10 17.5a5.6 5.6 0 0 1 5.68-5.5c1.2 0 2.32.36 3.23.98Z"]) {
+    .icon__9293f:has(
+        > path[d="M18.91 12.98a5.45 5.45 0 0 1 2.18 6.2c-.1.33-.09.68.1.96l.83 1.32a1 1 0 0 1-.84 1.54h-5.5A5.6 5.6 0 0 1 10 17.5a5.6 5.6 0 0 1 5.68-5.5c1.2 0 2.32.36 3.23.98Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-315.svg);
         /* Subtitle - Forum */
     }
 
     /* ~~~~ */
 
-    .icon__9293f:has(>path[d="M5.1 1a2.1 2.1 0 0 1 1.8 3.14h14.05c.84 0 1.34.94.87 1.63L19.1 9.85c-.23.35-.23.8 0 1.16l2.72 4.08c.47.7-.03 1.62-.87 1.62H6.15v5.24a1.05 1.05 0 0 1-2.1 0V4.91A2.1 2.1 0 0 1 5.1 1ZM16.3 7.6c-.4-.42-1.07-.42-1.48 0l-3.45 3.44-1.35-1.35a1.05 1.05 0 0 0-1.48 1.48l2.1 2.1c.4.4 1.06.4 1.47 0l4.2-4.2c.4-.4.4-1.07 0-1.48Z"]) {
+    .icon__9293f:has(
+        > path[d="M5.1 1a2.1 2.1 0 0 1 1.8 3.14h14.05c.84 0 1.34.94.87 1.63L19.1 9.85c-.23.35-.23.8 0 1.16l2.72 4.08c.47.7-.03 1.62-.87 1.62H6.15v5.24a1.05 1.05 0 0 1-2.1 0V4.91A2.1 2.1 0 0 1 5.1 1ZM16.3 7.6c-.4-.42-1.07-.42-1.48 0l-3.45 3.44-1.35-1.35a1.05 1.05 0 0 0-1.48 1.48l2.1 2.1c.4.4 1.06.4 1.47 0l4.2-4.2c.4-.4.4-1.07 0-1.48Z"]
+    ) {
         background: transparent;
         mask-image: none;
         /* Titlebar - Checkpoint */
     }
 
-    .icon__9293f:has(>path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"]) {
+    .icon__9293f:has(
+        > path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"]
+    ) {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-777.svg);
         /* Titlebar - Help */
     }
 
-    .vc-toolbox-btn>.icon__9293f {
+    .vc-toolbox-btn > .icon__9293f {
         background: transparent;
         mask-image: none;
         /* Titlebar - Vencord Toolbox */
@@ -1236,22 +1555,27 @@ div[data-debug-key="design_tools"] {
 /* Debug ----------- */
 
 [data-debug-key="highlight_void_components"] {
->.stack_dbd263 {
-    display: none;
-}
+    > .stack_dbd263 {
+        display: none;
+    }
     &::before {
         content: "Icons Loaded!";
         order: 1;
     }
 }
+
 /* //////// sidebar.css //////// */
 .sidebarList__5e434 {
-    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
+    background: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), white 5%),
+        var(--background-base-lower)
+            calc(var(--custom-channel-header-height) / 2)
+    ) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
-
 
 .privateChannels_e6b769,
 .scroller__99e7c,
@@ -1306,12 +1630,11 @@ div[data-debug-key="design_tools"] {
 
 /* Guilds -------------- */
 
-
 .shiftSVG_cc5dd2 {
     contain: none;
     overflow: visible;
 
-    >foreignObject {
+    > foreignObject {
         mask: none;
         contain: none;
         overflow: visible;
@@ -1323,9 +1646,11 @@ div[data-debug-key="design_tools"] {
             width: 100%;
             height: 100%;
 
-
             border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
-            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+                inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
             font-weight: 450;
             color: white;
         }
@@ -1361,12 +1686,13 @@ div[data-debug-key="design_tools"] {
 
 .numberBadge__2b1f5 {
     border: 1px solid var(--red-700);
-    box-shadow: inset 0px 0px 0px 1px var(--red-360), 0px 0px 7px -1px var(--red-500);
+    box-shadow:
+        inset 0px 0px 0px 1px var(--red-360),
+        0px 0px 7px -1px var(--red-500);
     padding: 0.3px !important;
     box-sizing: content-box;
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
 }
-
 
 /* Userpanel ------------------------------------ */
 .panels__5e434 {
@@ -1400,15 +1726,45 @@ div[data-debug-key="design_tools"] {
             .button__67645 {
                 flex: 1;
                 border-radius: 0px;
-                background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), white 5%), var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
-                border: 1px solid color-mix(in srgb, var(--background-base-lowest), transparent);
+                background: linear-gradient(
+                    to bottom,
+                    color-mix(in oklab, var(--background-base-lower), white 5%),
+                    var(--background-base-lower)
+                        calc(var(--custom-channel-header-height) / 2)
+                ) !important;
+                border: 1px solid
+                    color-mix(
+                        in srgb,
+                        var(--background-base-lowest),
+                        transparent
+                    );
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                 transition: all 0.3s ease;
 
                 &.redGlow__67645 {
-                    background: linear-gradient(to bottom, color-mix(in oklab, var(--background-base-lower), var(--red-400) 35%), color-mix(in oklab, var(--background-base-lower), var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
-                    border: 1px solid color-mix(in srgb, var(--red-800), transparent);
-                    box-shadow: 0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%), 0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%), 0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
+                    background: linear-gradient(
+                        to bottom,
+                        color-mix(
+                            in oklab,
+                            var(--background-base-lower),
+                            var(--red-400) 35%
+                        ),
+                        color-mix(
+                                in oklab,
+                                var(--background-base-lower),
+                                var(--red-600) 35%
+                            )
+                            calc(var(--custom-channel-header-height) / 2)
+                    ) !important;
+                    border: 1px solid
+                        color-mix(in srgb, var(--red-800), transparent);
+                    box-shadow:
+                        0px 0px 1px 1px inset
+                            color-mix(in srgb, var(--red-300), transparent 80%),
+                        0px -4px 10px -2px
+                            color-mix(in srgb, var(--red-500), transparent 60%),
+                        0px -5px 10px -7px
+                            color-mix(in srgb, var(--red-360), transparent 60%);
                 }
 
                 &:active {
@@ -1432,7 +1788,7 @@ div[data-debug-key="design_tools"] {
     overflow: visible;
     contain: none;
 
-    >foreignObject {
+    > foreignObject {
         mask: none;
         overflow: visible;
         contain: none;
@@ -1444,9 +1800,11 @@ div[data-debug-key="design_tools"] {
             width: 100%;
             height: 100%;
 
-
             border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
-            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25), inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125), inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+            box-shadow:
+                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+                inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
+                inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
             font-weight: 450;
             color: white;
         }
@@ -1456,7 +1814,7 @@ div[data-debug-key="design_tools"] {
         }
     }
 
-    >g>rect {
+    > g > rect {
         position: absolute;
         x: 44;
         y: 10;
@@ -1465,12 +1823,22 @@ div[data-debug-key="design_tools"] {
     }
 }
 
-.layout__20a53:has(.content__20a53>.subText__20a53) .avatar__20a53>.wrapper__44b0c>.mask__44b0c>g>rect,
-.layout__91a9d:has(.content__91a9d>.subText__91a9d>div) .avatar__91a9d>.wrapper__44b0c>.mask__44b0c>g>rect {
+.layout__20a53:has(.content__20a53 > .subText__20a53)
+    .avatar__20a53
+    > .wrapper__44b0c
+    > .mask__44b0c
+    > g
+    > rect,
+.layout__91a9d:has(.content__91a9d > .subText__91a9d > div)
+    .avatar__91a9d
+    > .wrapper__44b0c
+    > .mask__44b0c
+    > g
+    > rect {
     y: 3;
 }
 
-.avatarWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
+.avatarWrapper__37e49 .avatar__37e49 > .mask__44b0c > g > rect {
     y: 1.5;
 }
 
@@ -1478,7 +1846,6 @@ div[data-debug-key="design_tools"] {
 .nameAndDecorators__91a9d {
     margin-left: 14px;
 }
-
 
 .panelTitleContainer__37e49 {
     margin-left: 18px;
@@ -1488,17 +1855,21 @@ div[data-debug-key="design_tools"] {
     display: none;
 }
 
-
 /* channel selected */
 
 .selectedChannel_c69b6d {
-
     .link__2ea32 {
-        background: color-mix(in oklab, transparent 95%, var(--brand-500)) !important;
-        box-shadow: 0px -20px 20px -5px inset color-mix(in oklab, transparent 87.5%, var(--brand-500));
+        background: color-mix(
+            in oklab,
+            transparent 95%,
+            var(--brand-500)
+        ) !important;
+        box-shadow: 0px -20px 20px -5px inset
+            color-mix(in oklab, transparent 87.5%, var(--brand-500));
 
-        >.linkTop__2ea32>* {
-            filter: drop-shadow(0px 0px 5px var(--brand-700)) drop-shadow(0px 0px 1px var(--brand-800));
+        > .linkTop__2ea32 > * {
+            filter: drop-shadow(0px 0px 5px var(--brand-700))
+                drop-shadow(0px 0px 1px var(--brand-800));
         }
     }
 }
@@ -1506,11 +1877,12 @@ div[data-debug-key="design_tools"] {
 /* Debug ----------- */
 
 [data-debug-key="layout_debugging"] {
->.stack_dbd263 {
-    display: none;
-}
+    > .stack_dbd263 {
+        display: none;
+    }
     &::before {
         content: "Sidebar Loaded!";
         order: 1;
     }
 }
+
