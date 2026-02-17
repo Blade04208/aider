@@ -105,6 +105,58 @@
             black 7.5%
         );
     }
+    .content__5e434::before {
+        --custom-notice-background: var(--notice-background-critical);
+        --custom-notice-text: var(--notice-text-critical);
+        --custom-notice-button-hover: var(--notice-text-critical);
+        content: "Light mode is currently VERY UNSUPPORTED!!!! Please switch back to dark mode!";
+    }
+}
+
+.content__5e434::before {
+    border-left: 1px solid var(--app-border-frame);
+    border-top: 1px solid var(--app-border-frame);
+    box-shadow: none;
+    background: var(--custom-notice-background);
+    border-radius: 8px 0 0;
+    color: var(--custom-notice-text);
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    position: relative;
+    left: calc(
+        -1px - var(--custom-guild-sidebar-width) +
+            var(--custom-guild-list-width)
+    ) !important;
+    width: calc(
+        100% + var(--custom-guild-sidebar-width) -
+            var(--custom-guild-list-width)
+    );
+    text-align: center;
+    z-index: 101;
+    animation: swapContent 12s infinite alternate;
+}
+
+@keyframes swapContent {
+    0% {
+        content: inherit;
+    }
+
+    50% {
+        content: "Add --aider-hide-banners: true to your css :root to disable this";
+    }
+
+    75% {
+        content: inherit;
+    }
+}
+
+@container style(--aider-hide-banners: true) {
+    .content__5e434::before {
+        display: none;
+    }
 }
 
 /* Subtitle --------------------------- */
@@ -769,6 +821,25 @@
     }
 }
 
+/*Sliders*/
+.slider_a562c8 {
+    .bar_a562c8 {
+        border-radius: 0px;
+        .barFill_a562c8 {
+            background: linear-gradient(
+                to left,
+                var(--brand-500),
+                var(--brand-600) 80px
+            );
+        }
+    }
+    .grabber_a562c8 {
+        border-radius: 0px;
+        width: calc(var(--grabber-size) / 2);
+        margin-inline-start: calc(0px - 1%);
+    }
+}
+
 /* Settings ------------------------------------------- */
 
 .sidebar__409aa {
@@ -940,6 +1011,7 @@
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
+
 div[role="dialog"] > .recentMentionsPopout__95796 {
     background: linear-gradient(
         to bottom,
@@ -1835,6 +1907,10 @@ div[data-debug-key="design_tools"] {
     > .mask__44b0c
     > g
     > rect {
+    y: 3;
+}
+
+.accountPopoutButtonWrapper__37e49 .avatar__37e49 > .mask__44b0c > g > rect {
     y: 3;
 }
 
