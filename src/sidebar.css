@@ -205,12 +205,12 @@
                 }
             }
 
-            .buttonChevron__37e49 {
-                flex: 0;
+            .buttonChevron__5e764 {
+                flex: 0 !important;
             }
 
-            .micButtonParent__37e49 {
-                display: contents;
+            .audioButtonParent__5e764 {
+                display: contents !important;
             }
         }
     }
