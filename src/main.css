@@ -31,6 +31,17 @@
         white 10%
     );
     --_aider-border-dark: rgba(0, 0, 0, 0.5);
+    --_aider-gradient-subtitle: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), white 5%),
+        var(--background-base-lower)
+            calc(var(--custom-channel-header-height) / 2)
+    ) !important;
+    --_aider-gradient: linear-gradient(
+        to top,
+        var(--background-base-lower),
+        color-mix(in oklab, var(--background-base-lower), white 5%)
+    );
     --font-primary: "Helvetica Neue", gg sans;
     --radius-xxs: 0;
     --radius-xs: 0;
@@ -59,7 +70,7 @@
 }
 
 .theme-light {
-    --custom-theme-base-color: hsl(0, 0%, 3.75%);
+    --custom-theme-base-color: hsl(0, 0%, 100%);
     --custom-theme-base-color-amount: 7.5%;
     --custom-theme-text-color: color-mix(
         in oklab,
@@ -70,16 +81,27 @@
     --border-subtle: color-mix(
         in oklab,
         var(--custom-theme-base-color),
-        white 90%
+        black 3.5%
     );
     --border-faint: color-mix(
         in oklab,
         var(--custom-theme-base-color),
-        blue 90%
+        black 5%
     );
 
     --font-primary: "Helvetica Neue", gg sans;
-    --_aider-border-dark: rgba(0, 0, 0, 0.2);
+    --_aider-border-dark: rgba(0, 0, 0, 0.15);
+    --_aider-gradient-subtitle: linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--background-base-lower), black 5%),
+        var(--background-base-lower)
+            calc(var(--custom-channel-header-height) / 2)
+    ) !important;
+    --_aider-gradient: linear-gradient(
+        to top,
+        var(--background-base-lower),
+        color-mix(in oklab, var(--background-base-lower), black 5%)
+    );
     --radius-xxs: 0;
     --radius-xs: 0;
     --radius-sm: 0;
@@ -90,94 +112,53 @@
 
     nav.guilds__5e434,
     .bg__960e4 {
-        background: color-mix(
-            in oklab,
-            var(--background-base-lower),
-            black 7.5%
-        );
+        background: color-mix(in oklab, var(--background-base-lower), black 8%);
     }
 
     .chatContent_f75fb0 {
         background: color-mix(
             in oklab,
             var(--background-base-lower),
-            black 7.5%
+            white 7.5%
         );
     }
-    .content__5e434::before {
-        --custom-notice-background: var(--notice-background-critical);
-        --custom-notice-text: var(--notice-text-critical);
-        --custom-notice-button-hover: var(--notice-text-critical);
-        content: "Light mode is currently VERY UNSUPPORTED!!!! Please switch back to dark mode!";
-    }
 }
 
-.content__5e434::before {
-    border-left: 1px solid var(--app-border-frame);
-    border-top: 1px solid var(--app-border-frame);
-    box-shadow: none;
-    background: var(--custom-notice-background);
-    border-radius: 8px 0 0;
-    color: var(--custom-notice-text);
-    flex-grow: 0;
-    flex-shrink: 0;
+.theme-light .basicThemeSelectors_fbfab6::after {
+    display: block;
+    content: "While Light Mode does work and is supported, you may experience slight contrast issues that wouldn't happen in dark mode.";
+    margin-top: var(--space-xs);
+    padding: var(--space-xs);
+    background: var(--background-feedback-warning);
     font-size: 14px;
-    font-weight: 500;
-    line-height: 36px;
-    position: relative;
-    left: calc(
-        -1px - var(--custom-guild-sidebar-width) +
-            var(--custom-guild-list-width)
-    ) !important;
-    width: calc(
-        100% + var(--custom-guild-sidebar-width) -
-            var(--custom-guild-list-width)
-    );
-    text-align: center;
-    z-index: 101;
-    animation: swapContent 12s infinite alternate;
+    line-height: 1.2;
 }
 
-@keyframes swapContent {
-    0% {
-        content: inherit;
-    }
-
-    50% {
-        content: "Add --aider-hide-banners: true to your css :root to disable this";
-    }
-
-    75% {
-        content: inherit;
-    }
-}
-
-@container style(--aider-hide-banners: true) {
-    .content__5e434::before {
-        display: none;
-    }
+.theme-light
+    .basicThemeSelectors_fbfab6
+    + .divider__1de9c
+    + .container__5a838::after {
+    display: block;
+    content: "This option has no direct support in Aider. Expect ghouls and misfortune should thy enable this forsakened toggle.";
+    margin-top: var(--space-xs);
+    padding: var(--space-xs);
+    background: var(--background-feedback-critical);
+    font-size: 14px;
+    line-height: 1.2;
 }
 
 /* Subtitle --------------------------- */
 
 .title_f75fb0 {
     padding: 0px;
-    background: linear-gradient(
-        to top,
-        var(--background-base-lower),
-        color-mix(in oklab, var(--background-base-lower), white 5%)
-    ) !important;
+    background: var(--_aider-gradient) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
 .container__9293f,
 .contentHeader_e9e3ed {
-    background: linear-gradient(
-        to top,
-        var(--background-base-lower),
-        color-mix(in oklab, var(--background-base-lower), white 5%)
-    ) !important;
+    background: var(--_aider-gradient) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
@@ -285,11 +266,7 @@
 /* ~~ */
 
 .children__9293f::after {
-    background: linear-gradient(
-        to top,
-        var(--background-base-lower),
-        color-mix(in oklab, var(--background-base-lower), white 5%)
-    ) !important;
+    background: var(--_aider-gradient) !important;
     mask-image: linear-gradient(to left, black, transparent);
 }
 
@@ -783,7 +760,77 @@
         filter: brightness(0.95);
     }
 }
+.theme-light {
+    .button_a22cb0 {
+        border-radius: 0px;
+        transition: all 0.15s ease !important;
 
+        &.primary_a22cb0 {
+            border: 1px solid
+                color-mix(
+                    in oklab,
+                    color-mix(
+                        in oklab,
+                        var(--control-primary-background-default),
+                        black 15%
+                    ),
+                    transparent
+                );
+        }
+
+        &.critical-primary_a22cb0 {
+            border: 1px solid
+                color-mix(
+                    in oklab,
+                    color-mix(
+                        in oklab,
+                        var(--control-critical-primary-background-default),
+                        black 25%
+                    ),
+                    transparent
+                );
+        }
+
+        &.secondary_a22cb0,
+        &.critical-secondary_a22cb0 {
+            background: linear-gradient(
+                to bottom,
+                color-mix(
+                    in oklab,
+                    var(--control-secondary-background-default),
+                    black 5%
+                ),
+                var(--control-secondary-background-default)
+                    calc(var(--custom-channel-header-height) / 2)
+            ) !important;
+            border: 1px solid
+                color-mix(
+                    in oklab,
+                    color-mix(
+                        in oklab,
+                        var(--control-secondary-background-default),
+                        black 50%
+                    ),
+                    transparent
+                );
+            box-shadow: 0px 0px 1px 1px inset
+                color-mix(
+                    in oklab,
+                    color-mix(
+                        in oklab,
+                        var(--control-secondary-background-default),
+                        black 10%
+                    ),
+                    transparent
+                );
+        }
+
+        &:active {
+            transform: translateY(1px);
+            filter: brightness(0.8);
+        }
+    }
+}
 /* Dropdowns */
 .selectField__0edde {
     &.isFocused__0edde {
@@ -845,12 +892,7 @@
     position: relative;
     padding-top: 127px;
 
-    background: linear-gradient(
-        to bottom,
-        color-mix(in oklab, var(--background-base-lower), white 5%),
-        var(--background-base-lower)
-            calc(var(--custom-channel-header-height) / 2)
-    ) !important;
+    background: var(--_aider-gradient-subtitle) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
@@ -1000,24 +1042,14 @@
 }
 /* Modals ------------------*/
 .container__8a031 {
-    background: linear-gradient(
-        to bottom,
-        color-mix(in oklab, var(--background-base-lower), white 5%),
-        var(--background-base-lower)
-            calc(var(--custom-channel-header-height) / 2)
-    ) !important;
+    background: var(--_aider-gradient-subtitle) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
 div[role="dialog"] > .recentMentionsPopout__95796 {
-    background: linear-gradient(
-        to bottom,
-        color-mix(in oklab, var(--background-base-lower), white 5%),
-        var(--background-base-lower)
-            calc(var(--custom-channel-header-height) / 2)
-    ) !important;
+    background: var(--_aider-gradient-subtitle) !important;
     border-radius: 0px;
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);

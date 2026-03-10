@@ -117,7 +117,7 @@
         background-position: 100% 100%;
     }
 }
-
+/* chatbar ---------------------------*/
 .form_f75fb0 {
     padding: 4px;
 
@@ -299,6 +299,102 @@
     }
 }
 
+.theme-light {
+    .form_f75fb0 {
+        .inner__74017 {
+            .textArea__74017 {
+                margin-right: 1px !important;
+                background: linear-gradient(
+                    to bottom,
+                    var(--background-base-lower),
+                    color-mix(
+                        in oklab,
+                        var(--background-base-lower),
+                        black 3.5%
+                    )
+                ) !important;
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: var(--_aider-border-dark);
+                }
+            }
+
+            > .buttons__74017 {
+                > *:not(span, .separator_aa63ab) > .button__74017,
+                > .button__74017 {
+                    background: linear-gradient(
+                        to bottom,
+                        var(--background-base-lower),
+                        color-mix(
+                            in oklab,
+                            var(--background-base-lower),
+                            black 5%
+                        )
+                    ) !important;
+                    &:hover {
+                        filter: brightness(0.9);
+                    }
+
+                    &:active {
+                        transform: translateY(1px);
+                        filter: brightness(0.7);
+                    }
+                }
+
+                > *:not(span, .separator_aa63ab) > .button_e6e74f {
+                    /* i hate the activity launcher */
+                    background: linear-gradient(
+                        to bottom,
+                        var(--background-base-lower),
+                        color-mix(
+                            in oklab,
+                            var(--background-base-lower),
+                            black 5%
+                        )
+                    ) !important;
+
+                    &:hover {
+                        filter: brightness(0.9);
+                    }
+
+                    &:active {
+                        transform: translateY(1px);
+                        filter: brightness(0.7);
+                    }
+                }
+            }
+
+            .attachWrapper__0923f {
+                .attachButton__0923f {
+                    margin-right: 1px !important;
+                    > .attachButtonInner__0923f {
+                        background: linear-gradient(
+                            to bottom,
+                            var(--background-base-lower),
+                            color-mix(
+                                in oklab,
+                                var(--background-base-lower),
+                                black 5%
+                            )
+                        ) !important;
+                        border: 1px solid var(--_aider-border-dark);
+                        box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+                        &:hover {
+                            filter: brightness(0.9);
+                        }
+
+                        &:active {
+                            transform: translateY(1px);
+                            filter: brightness(0.7);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* tags -------------------------------*/
 .botTag__5d473.botTag__82f07.px__82f07 {
     border-radius: 20px;
     padding: 1px 5px 0px;
@@ -345,4 +441,12 @@
     box-shadow:
         0px 0px 1px 1px inset var(--border-subtle),
         2px 2px 10px black !important;
+}
+.theme-light {
+    .popover_f84418,
+    .menu_c1e9c4 {
+        box-shadow:
+            0px 0px 1px 1px inset var(--border-subtle),
+            2px 2px 10px rgba(0, 0, 0, 0.2) !important;
+    }
 }
