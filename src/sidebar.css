@@ -5,6 +5,18 @@
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
+.container__2637a[aria-label="Blade0's Index (server)"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: url(https://blade04208.github.io/site/src/jump.png);
+    background-size: cover;
+    background-position: center;
+    mask-image: radial-gradient(circle at 0% 0%, black, transparent 80%);
+    opacity: 1;
+}
 .privateChannels_e6b769,
 .scroller__99e7c,
 .container__2637a {
@@ -112,14 +124,17 @@
     box-shadow: 7px 0px 14px 0.5px white;
 }
 
-.numberBadge__2b1f5 {
+.numberBadge__2b1f5,
+.unreadMentionsBar_ef3116 {
     border: 1px solid var(--red-700);
     box-shadow:
         inset 0px 0px 0px 1px var(--red-360),
         0px 0px 7px -1px var(--red-500);
-    padding: 0.3px !important;
     box-sizing: content-box;
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
+    &.numberBadge__2b1f5 {
+        padding: 0.3px !important;
+    }
 }
 
 /* Userpanel ------------------------------------ */
@@ -140,7 +155,7 @@
         padding: 4px;
         gap: 4px;
 
-        .avatarWrapper__37e49 {
+        .accountPopoutButtonWrapper__37e49 {
             padding: var(--space-xs) calc(var(--space-xs) * 1.25);
             width: calc(100% + var(--space-xs));
             box-sizing: border-box;

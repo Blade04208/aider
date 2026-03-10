@@ -651,11 +651,15 @@
 /* Components --------------------------------------- */
 
 /* Buttons */
-.button_a22cb0 {
+.button_a22cb0,
+.item__133bf,
+.button__201d5 {
     border-radius: 0px;
     transition: all 0.15s ease !important;
 
-    &.primary_a22cb0 {
+    &.primary_a22cb0,
+    &.addFriend__133bf,
+    &.lookFilled__201d5.colorBrand__201d5 {
         background: linear-gradient(
             to bottom,
             color-mix(
@@ -885,6 +889,25 @@
         margin-inline-start: calc(0px - 1%);
     }
 }
+/*switches*/
+.switchIndicator_a28278 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(0, 0, 0, 0.25)
+        );
+        box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+    }
+    .thumb_a28278 > rect {
+        rx: 0;
+    }
+}
 
 /* Settings ------------------------------------------- */
 
@@ -1074,6 +1097,11 @@ div[role="dialog"] > .recentMentionsPopout__95796 {
 .scrim__40128 {
     backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
     background: transparent;
+}
+
+/*i dont know what to call this category*/
+.info_f4bc97 {
+    margin-left: 16px;
 }
 
 /* Debug ----------- */

@@ -652,11 +652,15 @@
 /* Components --------------------------------------- */
 
 /* Buttons */
-.button_a22cb0 {
+.button_a22cb0,
+.item__133bf,
+.button__201d5 {
     border-radius: 0px;
     transition: all 0.15s ease !important;
 
-    &.primary_a22cb0 {
+    &.primary_a22cb0,
+    &.addFriend__133bf,
+    &.lookFilled__201d5.colorBrand__201d5 {
         background: linear-gradient(
             to bottom,
             color-mix(
@@ -886,6 +890,25 @@
         margin-inline-start: calc(0px - 1%);
     }
 }
+/*switches*/
+.switchIndicator_a28278 {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(0, 0, 0, 0.25)
+        );
+        box-shadow: inset 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+    }
+    .thumb_a28278 > rect {
+        rx: 0;
+    }
+}
 
 /* Settings ------------------------------------------- */
 
@@ -1075,6 +1098,11 @@ div[role="dialog"] > .recentMentionsPopout__95796 {
 .scrim__40128 {
     backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
     background: transparent;
+}
+
+/*i dont know what to call this category*/
+.info_f4bc97 {
+    margin-left: 16px;
 }
 
 /* Debug ----------- */
@@ -1780,6 +1808,18 @@ div[data-debug-key="design_tools"] {
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
+.container__2637a[aria-label="Blade0's Index (server)"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: url(https://blade04208.github.io/site/src/jump.png);
+    background-size: cover;
+    background-position: center;
+    mask-image: radial-gradient(circle at 0% 0%, black, transparent 80%);
+    opacity: 1;
+}
 .privateChannels_e6b769,
 .scroller__99e7c,
 .container__2637a {
@@ -1887,14 +1927,17 @@ div[data-debug-key="design_tools"] {
     box-shadow: 7px 0px 14px 0.5px white;
 }
 
-.numberBadge__2b1f5 {
+.numberBadge__2b1f5,
+.unreadMentionsBar_ef3116 {
     border: 1px solid var(--red-700);
     box-shadow:
         inset 0px 0px 0px 1px var(--red-360),
         0px 0px 7px -1px var(--red-500);
-    padding: 0.3px !important;
     box-sizing: content-box;
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
+    &.numberBadge__2b1f5 {
+        padding: 0.3px !important;
+    }
 }
 
 /* Userpanel ------------------------------------ */
@@ -1915,7 +1958,7 @@ div[data-debug-key="design_tools"] {
         padding: 4px;
         gap: 4px;
 
-        .avatarWrapper__37e49 {
+        .accountPopoutButtonWrapper__37e49 {
             padding: var(--space-xs) calc(var(--space-xs) * 1.25);
             width: calc(100% + var(--space-xs));
             box-sizing: border-box;
