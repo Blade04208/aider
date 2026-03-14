@@ -50,6 +50,11 @@
     --radius-lg: 0;
     --radius-xl: 0;
     --radius-xxl: 0;
+    --_aider-color-chat: color-mix(
+        in oklab,
+        var(--background-base-lower),
+        black 15%
+    );
 
     nav.guilds__5e434,
     .bg__960e4 {
@@ -61,11 +66,7 @@
     }
 
     .chatContent_f75fb0 {
-        background: color-mix(
-            in oklab,
-            var(--background-base-lower),
-            black 15%
-        );
+        background: var(--_aider-color-chat);
     }
 }
 
@@ -102,6 +103,11 @@
         var(--background-base-lower),
         color-mix(in oklab, var(--background-base-lower), black 5%)
     );
+    --_aider-color-chat: color-mix(
+        in oklab,
+        var(--background-base-lower),
+        white 7.5%
+    );
     --radius-xxs: 0;
     --radius-xs: 0;
     --radius-sm: 0;
@@ -116,11 +122,7 @@
     }
 
     .chatContent_f75fb0 {
-        background: color-mix(
-            in oklab,
-            var(--background-base-lower),
-            white 7.5%
-        );
+        background: var(--_aider-color-chat);
     }
 }
 
