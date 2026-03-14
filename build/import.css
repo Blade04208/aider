@@ -1463,15 +1463,16 @@ div[data-debug-key="design_tools"] {
             display: flex;
             align-items: center;
             @supports (corner-shape: bevel) {
-                padding-left: 24px !important;
+                padding-left: 32px !important;
                 margin-left: -32px;
             }
         }
         .wrapper__4d3a9 {
             z-index: 20;
+            margin-right: 1px;
         }
         .icon__4d3a9 {
-            padding: 7px 22px 6px 8px;
+            padding: 7px 7px 6px 7px;
             background: linear-gradient(
                 to top,
                 var(--background-base-lower),
@@ -1484,6 +1485,7 @@ div[data-debug-key="design_tools"] {
                 corner-bottom-right-shape: bevel;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
+                padding: 7px 22px 6px 8px !important;
             }
         }
     }
