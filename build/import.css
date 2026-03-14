@@ -1353,7 +1353,7 @@ div[data-debug-key="design_tools"] {
 
         > .buttons__74017 {
             gap: 1px !important;
-
+            margin-top: 1px;
             > *:not(span, .separator_aa63ab) > .button__74017,
             > .button__74017 {
                 background: linear-gradient(
