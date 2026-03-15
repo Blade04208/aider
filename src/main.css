@@ -126,7 +126,7 @@
     }
 }
 
-.theme-light .basicThemeSelectors_fbfab6fbfab6::after {
+.theme-light .basicThemeSelectors_fbfab6::after {
     display: block;
     content: "While Light Mode does work and is supported, you may experience slight contrast issues that wouldn't happen in dark mode.";
     margin-top: var(--space-xs);
@@ -137,7 +137,7 @@
 }
 
 .theme-light
-    .basicThemeSelectors_fbfab6fbfab6
+    .basicThemeSelectors_fbfab6
     + .divider__44f7f
     + .container__5a838::after {
     display: block;
