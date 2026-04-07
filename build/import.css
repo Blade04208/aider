@@ -127,7 +127,7 @@
     }
 }
 
-.theme-light .basicThemeSelectors_c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6::after {
+.theme-light .basicThemeSelectors_c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6::after {
     display: block;
     content: "While Light Mode does work and is supported, you may experience slight contrast issues that wouldn't happen in dark mode.";
     margin-top: var(--space-xs);
@@ -138,8 +138,8 @@
 }
 
 .theme-light
-    .basicThemeSelectors_c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6
-    + .divider__44f7f
+    .basicThemeSelectors_c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6fbfab6
+    + .divider__1de9c
     + .container__5a838::after {
     display: block;
     content: "This option has no direct support in Aider. Expect ghouls and misfortune should thy enable this forsakened toggle.";
@@ -984,7 +984,7 @@
     border: 0px;
 }
 
-.container_a244c3 > .content_e9e3ed {
+.container__23ba6 > .content_e9e3ed {
     background: color-mix(in oklab, var(--background-base-lower), black 5%);
     border-right: 1px solid var(--_aider-border-dark);
     border-bottom: 1px solid var(--_aider-border-dark);
