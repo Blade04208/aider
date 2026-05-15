@@ -17,6 +17,7 @@
     mask-image: radial-gradient(circle at 0% 0%, black, transparent 80%);
     opacity: 1;
 }
+
 .privateChannels_e6b769,
 .scroller__99e7c,
 .container__2637a {
@@ -74,7 +75,7 @@
     contain: none;
     overflow: visible;
 
-    > foreignObject {
+    >foreignObject {
         mask: none;
         contain: none;
         overflow: visible;
@@ -106,7 +107,7 @@
     border-radius: 0px !important;
 }
 
-.folderButton__48112 > .wrapper_cc5dd2 {
+.folderButton__48112>.wrapper_cc5dd2 {
     &::after {
         content: "";
         position: absolute;
@@ -119,7 +120,8 @@
         color: white;
     }
 }
-.svg_cc5dd2 > foreignObject {
+
+.svg_cc5dd2>foreignObject {
     mask: none;
 }
 
@@ -154,6 +156,7 @@
         0px 0px 7px -1px var(--red-500);
     box-sizing: content-box;
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
+
     &.numberBadge__2b1f5 {
         padding: 0.3px !important;
     }
@@ -191,45 +194,28 @@
             .button__67645 {
                 flex: 1;
                 border-radius: 0px;
-                background: linear-gradient(
-                    to bottom,
-                    color-mix(in oklab, var(--background-base-lower), white 5%),
-                    var(--background-base-lower)
-                        calc(var(--custom-channel-header-height) / 2)
-                ) !important;
-                border: 1px solid
-                    color-mix(
-                        in srgb,
+                background: linear-gradient(to bottom,
+                        color-mix(in oklab, var(--background-base-lower), white 5%),
+                        var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
+                border: 1px solid color-mix(in srgb,
                         var(--background-base-lowest),
-                        transparent
-                    );
+                        transparent);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
                 transition: all 0.3s ease;
 
                 &.redGlow__67645 {
-                    background: linear-gradient(
-                        to bottom,
-                        color-mix(
-                            in oklab,
-                            var(--background-base-lower),
-                            var(--red-400) 35%
-                        ),
-                        color-mix(
-                                in oklab,
+                    background: linear-gradient(to bottom,
+                            color-mix(in oklab,
                                 var(--background-base-lower),
-                                var(--red-600) 35%
-                            )
-                            calc(var(--custom-channel-header-height) / 2)
-                    ) !important;
-                    border: 1px solid
-                        color-mix(in srgb, var(--red-800), transparent);
+                                var(--red-400) 35%),
+                            color-mix(in oklab,
+                                var(--background-base-lower),
+                                var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
+                    border: 1px solid color-mix(in srgb, var(--red-800), transparent);
                     box-shadow:
-                        0px 0px 1px 1px inset
-                            color-mix(in srgb, var(--red-300), transparent 80%),
-                        0px -4px 10px -2px
-                            color-mix(in srgb, var(--red-500), transparent 60%),
-                        0px -5px 10px -7px
-                            color-mix(in srgb, var(--red-360), transparent 60%);
+                        0px 0px 1px 1px inset color-mix(in srgb, var(--red-300), transparent 80%),
+                        0px -4px 10px -2px color-mix(in srgb, var(--red-500), transparent 60%),
+                        0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
                 }
 
                 &:active {
@@ -253,54 +239,32 @@
         .container__37e49 {
             .buttons__37e49 {
                 .button__67645 {
-                    background: linear-gradient(
-                        to bottom,
-                        color-mix(
-                            in oklab,
-                            var(--background-base-lower),
-                            black 3.5%
-                        ),
-                        var(--background-base-lower)
-                            calc(var(--custom-channel-header-height) / 2)
-                    ) !important;
+                    background: linear-gradient(to bottom,
+                            color-mix(in oklab,
+                                var(--background-base-lower),
+                                black 3.5%),
+                            var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
                     border: 1px solid var(--_aider-border-dark);
 
                     &.redGlow__67645 {
-                        background: linear-gradient(
-                            to bottom,
-                            color-mix(
-                                in oklab,
-                                var(--background-base-lower),
-                                var(--red-400) 35%
-                            ),
-                            color-mix(
-                                    in oklab,
+                        background: linear-gradient(to bottom,
+                                color-mix(in oklab,
                                     var(--background-base-lower),
-                                    var(--red-600) 35%
-                                )
-                                calc(var(--custom-channel-header-height) / 2)
-                        ) !important;
-                        border: 1px solid
-                            color-mix(in srgb, var(--red-500), transparent);
+                                    var(--red-400) 35%),
+                                color-mix(in oklab,
+                                    var(--background-base-lower),
+                                    var(--red-600) 35%) calc(var(--custom-channel-header-height) / 2)) !important;
+                        border: 1px solid color-mix(in srgb, var(--red-500), transparent);
                         box-shadow:
-                            0px 0px 1px 1px inset
-                                color-mix(
-                                    in srgb,
-                                    var(--red-100),
-                                    transparent 80%
-                                ),
-                            0px -4px 10px -2px
-                                color-mix(
-                                    in srgb,
-                                    var(--red-300),
-                                    transparent 60%
-                                ),
-                            0px -5px 10px -7px
-                                color-mix(
-                                    in srgb,
-                                    var(--red-360),
-                                    transparent 60%
-                                );
+                            0px 0px 1px 1px inset color-mix(in srgb,
+                                var(--red-100),
+                                transparent 80%),
+                            0px -4px 10px -2px color-mix(in srgb,
+                                var(--red-300),
+                                transparent 60%),
+                            0px -5px 10px -7px color-mix(in srgb,
+                                var(--red-360),
+                                transparent 60%);
                     }
                 }
             }
@@ -313,7 +277,7 @@
     overflow: visible;
     contain: none;
 
-    > foreignObject {
+    >foreignObject {
         mask: none;
         overflow: visible;
         contain: none;
@@ -339,7 +303,7 @@
         }
     }
 
-    > g > rect {
+    >g>rect {
         position: absolute;
         x: 44;
         y: 10;
@@ -348,26 +312,16 @@
     }
 }
 
-.layout__20a53:has(.content__20a53 > .subText__20a53)
-    .avatar__20a53
-    > .wrapper__44b0c
-    > .mask__44b0c
-    > g
-    > rect,
-.layout__91a9d:has(.content__91a9d > .subText__91a9d > div)
-    .avatar__91a9d
-    > .wrapper__44b0c
-    > .mask__44b0c
-    > g
-    > rect {
+.layout__20a53:has(.content__20a53 > .subText__20a53) .avatar__20a53>.wrapper__44b0c>.mask__44b0c>g>rect,
+.layout__91a9d:has(.content__91a9d > .subText__91a9d > div) .avatar__91a9d>.wrapper__44b0c>.mask__44b0c>g>rect {
     y: 3;
 }
 
-.accountPopoutButtonWrapper__37e49 .avatar__37e49 > .mask__44b0c > g > rect {
+.accountPopoutButtonWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
     y: 3;
 }
 
-.avatarWrapper__37e49 .avatar__37e49 > .mask__44b0c > g > rect {
+.avatarWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
     y: 1.5;
 }
 
@@ -388,17 +342,13 @@
 
 .selectedChannel_c69b6d {
     .link__2ea32 {
-        background: color-mix(
-            in oklab,
-            transparent 95%,
-            var(--brand-500)
-        ) !important;
-        box-shadow: 0px -20px 20px -5px inset
-            color-mix(in oklab, transparent 87.5%, var(--brand-500));
+        background: color-mix(in oklab,
+                transparent 95%,
+                var(--brand-500)) !important;
+        box-shadow: 0px -20px 20px -5px inset color-mix(in oklab, transparent 87.5%, var(--brand-500));
 
-        > .linkTop__2ea32 > * {
-            filter: drop-shadow(0px 0px 5px var(--brand-700))
-                drop-shadow(0px 0px 1px var(--brand-800));
+        >.linkTop__2ea32>* {
+            filter: drop-shadow(0px 0px 5px var(--brand-700)) drop-shadow(0px 0px 1px var(--brand-800));
         }
     }
 }
@@ -406,17 +356,13 @@
 .theme-light {
     .selectedChannel_c69b6d {
         .link__2ea32 {
-            background: color-mix(
-                in oklab,
-                transparent 95%,
-                var(--brand-500)
-            ) !important;
-            box-shadow: 0px -20px 20px -5px inset
-                color-mix(in oklab, transparent 87.5%, var(--brand-500));
+            background: color-mix(in oklab,
+                    transparent 95%,
+                    var(--brand-500)) !important;
+            box-shadow: 0px -20px 20px -5px inset color-mix(in oklab, transparent 87.5%, var(--brand-500));
 
-            > .linkTop__2ea32 > * {
-                filter: drop-shadow(0px 0px 5px var(--brand-200))
-                    drop-shadow(0px 0px 1px var(--brand-100));
+            >.linkTop__2ea32>* {
+                filter: drop-shadow(0px 0px 5px var(--brand-200)) drop-shadow(0px 0px 1px var(--brand-100));
             }
         }
     }
@@ -431,9 +377,10 @@
 /* Debug ----------- */
 
 [data-debug-key="layout_debugging"] {
-    > .stack_dbd263 {
+    >.stack_dbd263 {
         display: none;
     }
+
     &::before {
         content: "Sidebar Loaded!";
         order: 1;
