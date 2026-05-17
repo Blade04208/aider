@@ -478,6 +478,36 @@ svg:not(.avatarDecoration__44b0c) .avatarStack__44b0c,
     }
 }
 
+.dm__972a0 {
+    margin: 0px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+
+    .unreadPill__972a0 {
+        left: 0px;
+    }
+}
+
+.containerDefault_c69b6d {
+    margin: 0px !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+
+    &:hover {
+        backdrop-filter: brightness(110%);
+    }
+
+    .link__2ea32 {
+        background: transparent !important;
+    }
+
+    .unreadPill__972a0 {
+        left: 0px;
+    }
+}
+
 /* Debug ----------- */
 
 [data-debug-key="layout_debugging"] {
