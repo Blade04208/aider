@@ -80,7 +80,7 @@
         contain: none;
         overflow: visible;
 
-        .wrapper__6e9f8::after {
+        /*.wrapper__6e9f8::after {
             content: "";
             position: absolute;
             inset: -1px;
@@ -94,7 +94,7 @@
                 inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
             font-weight: 450;
             color: white;
-        }
+        }*/
     }
 }
 
@@ -305,33 +305,137 @@
 
     >g>rect {
         position: absolute;
-        x: 44;
-        y: 10;
-        rx: 10;
-        ry: 10;
     }
 }
 
-.layout__20a53:has(.content__20a53 > .subText__20a53) .avatar__20a53>.wrapper__44b0c>.mask__44b0c>g>rect,
-.layout__91a9d:has(.content__91a9d > .subText__91a9d > div) .avatar__91a9d>.wrapper__44b0c>.mask__44b0c>g>rect {
-    y: 3;
+.link__972a0,
+.userInfo__0a06e,
+.memberInner__5d473,
+.inner_c0bea0 {
+
+    &:has(.svg__44b0c rect[fill="#45a366"],
+        .status_a423bd[style="background-color: rgb(67, 162, 90);"]) {
+
+        .name__20a53,
+        .displayNameRow__26b1f,
+        .username__5d473,
+        .usernameRow__63ed3 div.defaultColor__4bd52 {
+            &::before {
+                content: "";
+                display: block;
+                min-width: 0.7rem;
+                min-height: 0.7rem;
+                max-width: 0.7rem;
+                max-height: 0.7rem;
+                background: green;
+                background: linear-gradient(0deg, #75D063 0%, #75D063 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
+                background-blend-mode: color, normal, normal, normal, normal;
+                box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
+                margin-right: 4px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &:has(.svg__44b0c rect[fill="#da3e44"]) {
+
+        .name__20a53,
+        .displayNameRow__26b1f,
+        .username__5d473,
+        .usernameRow__63ed3 div.defaultColor__4bd52 {
+            &::before {
+                content: "";
+                display: block;
+                min-width: 0.7rem;
+                min-height: 0.7rem;
+                max-width: 0.7rem;
+                max-height: 0.7rem;
+                background: linear-gradient(0deg, #F00 0%, #F00 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
+                background-blend-mode: color, normal, normal, normal, normal;
+                box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
+                margin-right: 4px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &:has(.svg__44b0c rect[fill="#84858d"]) {
+
+        .name__20a53,
+        .displayNameRow__26b1f,
+        .username__5d473,
+        .usernameRow__63ed3 div.defaultColor__4bd52 {
+            &::before {
+                content: "";
+                display: block;
+                min-width: 0.7rem;
+                min-height: 0.7rem;
+                max-width: 0.7rem;
+                max-height: 0.7rem;
+                background: radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
+                box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
+                margin-right: 4px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &:has(.svg__44b0c rect[fill="#ffc04e"]) {
+
+        .name__20a53,
+        .displayNameRow__26b1f,
+        .username__5d473,
+        .usernameRow__63ed3 div.defaultColor__4bd52 {
+            &::before {
+                content: "";
+                display: block;
+                min-width: 0.7rem;
+                min-height: 0.7rem;
+                max-width: 0.7rem;
+                max-height: 0.7rem;
+                background: linear-gradient(0deg, #FFA600 0%, #FFA600 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
+                background-blend-mode: color, normal, normal, normal, normal;
+                box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
+                margin-right: 4px;
+                border-radius: 50%;
+            }
+        }
+    }
 }
 
-.accountPopoutButtonWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
-    y: 3;
+.mask__44b0c {
+    >foreignObject {
+        mask: none;
+    }
+
+    /* rect {
+        visibility: hidden;
+    } */
 }
 
-.avatarWrapper__37e49 .avatar__37e49>.mask__44b0c>g>rect {
-    y: 1.5;
+.name__20a53 {
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+
+    .overflow__82b15 {
+        flex: 0 9999 auto;
+    }
 }
 
-.nameAndDecorators__20a53,
-.nameAndDecorators__91a9d {
-    margin-left: 14px;
-}
+svg:not(.avatarDecoration__44b0c) .avatarStack__44b0c,
+.wrapper__6e9f8 {
+    overflow: hidden;
 
-.panelTitleContainer__37e49 {
-    margin-left: 18px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(173.7% 64.13% at 50% 0%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.00) 50%);
+        box-shadow: 0 3px 1px -2px rgba(255, 255, 255, 0.25) inset, 0 1px 0 0 rgba(255, 255, 255, 0.10);
+        opacity: 0.75;
+    }
 }
 
 .sidebar__5e434::after {

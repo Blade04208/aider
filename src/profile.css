@@ -222,7 +222,7 @@
         .profileButtons__9c3be {
             position: absolute;
             bottom: calc(100% + var(--space-xs) + 40px - 1rem);
-            right: calc(-400px + var(--space-xxl));
+            right: calc(-400px);
         }
 
         .body__5be3e {
@@ -255,6 +255,7 @@
         max-width: 1000px;
         padding: 0px;
         margin: var(--custom-modal-v2-padding);
+
 
         >.scrim__4c1fe,
         .backgroundImage__9c3be {
@@ -307,13 +308,67 @@
             background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color) var(--custom-user-profile-banner-height), var(--profile-gradient-secondary-color));
         }
     }
+
+    .profileAppConnections__9c3be {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: var(--space-xs);
+
+        .connection__9bfb9 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--_aider-connection-accent);
+        }
+
+        .connection__9bfb9:has(>.platformIconContainer__9bfb9>img[src="/assets/8a42ef6bc4dd4e0d.png"]) {
+            --_aider-connection-accent: #0186ff;
+            /*bluesky*/
+        }
+
+        .connection__9bfb9:has(>.platformIconContainer__9bfb9>img[src="/assets/8d54a5919eb645f9.png"]) {
+            --_aider-connection-accent: #fafafa;
+            /*domain*/
+        }
+
+        .connection__9bfb9:has(>.platformIconContainer__9bfb9>img[src="/assets/1cc92a6d139af44d.png"]) {
+            --_aider-connection-accent: #fafafa;
+            /*gh*/
+        }
+
+    }
 }
 
 .container__37bfc {
     background: var(--background-surface-highest);
     z-index: 300;
-    width: 400px;
+    width: fit-content;
+    min-width: 400px;
+    max-width: 500px;
     margin-top: -4px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        /* background: red; */
+        z-index: 0;
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        inset: -1px;
+        width: 100%;
+        height: 100%;
+        box-shadow:
+            inset 0px 3px 3px -2px rgba(255, 255, 255, 0.125),
+            inset 0px 0px 0px 1px rgba(255, 255, 255, 0.0625),
+            inset 0px 24px 12px -12px rgba(255, 255, 255, 0.0625),
+            inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
+    }
 
     .tabPanelScroller__37bfc {
         padding-bottom: 400px;
@@ -322,6 +377,6 @@
 
 &.custom-theme-background {
     .container__37bfc {
-        background: linear-gradient(hsl(from var(--profile-gradient-button-color) h (s - 25%) (l - 30%) / 1), hsl(from var(--profile-gradient-button-color) h (s - 30%) (l - 15%) / 1));
+        background: linear-gradient(hsl(from var(--profile-gradient-button-color) h (s - 15%) (l - 20%) / 1), hsl(from var(--profile-gradient-button-color) h (s - 30%) (l - 15%) / 1));
     }
 }
