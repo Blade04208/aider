@@ -474,7 +474,7 @@
         display: flex;
         flex-direction: column;
 
-        .searchBarContainer__409aa {
+        .searchBarContainer_fffcb4 {
             border: 1px solid var(--border-subtle);
             border-right: none !important;
             background: linear-gradient(to bottom,
@@ -490,7 +490,7 @@
             }
         }
 
-        >div:not(.searchBarContainer__409aa,
+        >div:not(.searchBarContainer_fffcb4,
             .emptySearchResultsContainer_cf016e) {
             background: linear-gradient(to top,
                     color-mix(in oklab, var(--background-base-lower), black 15%),
@@ -499,6 +499,7 @@
             box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
             padding: 10px 5px 0px;
             margin: -5px 6px 0px 5px;
+            order: 1;
         }
     }
 }
@@ -624,61 +625,16 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
     }
 }
 
+.vc-notification-root {
+    background: var(--_aider-gradient-subtitle) !important;
+    border-radius: 0px;
+    border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
+    box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+}
+
 .scrim__40128 {
     backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
     background: transparent;
-}
-
-
-/* Debug ----------- */
-
-div[data-debug-key="design_tools"] {
-    display: flex;
-    flex-direction: column;
-
-    >.stack_dbd263 {
-        display: contents;
-
-        .headerTitle__450f6 {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-
-            &::after {
-                content: "This page is to figure out which parts of Aider are here, for debug purposes. ";
-                font-size: 16px;
-            }
-        }
-    }
-}
-
-[data-list-item-id="settings-sidebar___design_tools"] {
-    font-size: 0px !important;
-
-    &::after {
-        font-size: 16px;
-        content: "Aider";
-    }
-}
-
-[data-debug-key="design_tools"] .headerTitle__450f6>h1 {
-    font-size: 0px !important;
-
-    &::before {
-        content: "Aider";
-        font-size: 24px;
-    }
-}
-
-[data-debug-key="css_debugging"] {
-    >.stack_dbd263 {
-        display: none;
-    }
-
-    &::before {
-        content: "Main Loaded!";
-        order: 1;
-    }
 }
 
 /* //////// chat.css //////// */
@@ -1176,18 +1132,7 @@ div[data-debug-key="design_tools"] {
     outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%) dashed;
 }
 
-/* Debug ----------- */
-
-[data-debug-key="highlight_mana_components"] {
-    >.stack_dbd263 {
-        display: none;
-    }
-
-    &::before {
-        content: "Chat Loaded!";
-        order: 1;
-    }
-}
+/*context menus -----------------------*/
 
 .popover_f84418,
 .menu_c1e9c4 {
@@ -1352,19 +1297,6 @@ div[data-debug-key="design_tools"] {
         mask-image: url(https://blade04208.github.io/aider/assets/centralicons/icon-535.svg);
 
     } */
-}
-
-/* Debug ----------- */
-
-[data-debug-key="highlight_void_components"] {
-    >.stack_dbd263 {
-        display: none;
-    }
-
-    &::before {
-        content: "Icons Loaded!";
-        order: 1;
-    }
 }
 
 /* //////// profile.css //////// */
@@ -1972,8 +1904,13 @@ div[data-debug-key="design_tools"] {
                         0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
                 }
 
+                &:hover {
+                    filter: brightness(1.4);
+                }
+
                 &:active {
                     transform: translateY(1px);
+                    filter: brightness(0.95);
                 }
             }
 
@@ -1982,7 +1919,8 @@ div[data-debug-key="design_tools"] {
             }
 
             .audioButtonParent__5e764 {
-                display: contents !important;
+                flex: 1;
+                margin-right: 1px;
             }
         }
     }
@@ -2085,7 +2023,7 @@ div[data-debug-key="design_tools"] {
                 background: linear-gradient(0deg, #75D063 0%, #75D063 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }
@@ -2107,7 +2045,7 @@ div[data-debug-key="design_tools"] {
                 background: linear-gradient(0deg, #F00 0%, #F00 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }
@@ -2128,7 +2066,7 @@ div[data-debug-key="design_tools"] {
                 max-height: 0.7rem;
                 background: radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }
@@ -2150,7 +2088,7 @@ div[data-debug-key="design_tools"] {
                 background: linear-gradient(0deg, #FFA600 0%, #FFA600 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }

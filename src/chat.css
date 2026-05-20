@@ -492,18 +492,7 @@
     outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%) dashed;
 }
 
-/* Debug ----------- */
-
-[data-debug-key="highlight_mana_components"] {
-    >.stack_dbd263 {
-        display: none;
-    }
-
-    &::before {
-        content: "Chat Loaded!";
-        order: 1;
-    }
-}
+/*context menus -----------------------*/
 
 .popover_f84418,
 .menu_c1e9c4 {

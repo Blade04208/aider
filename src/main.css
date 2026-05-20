@@ -473,7 +473,7 @@
         display: flex;
         flex-direction: column;
 
-        .searchBarContainer__409aa {
+        .searchBarContainer_fffcb4 {
             border: 1px solid var(--border-subtle);
             border-right: none !important;
             background: linear-gradient(to bottom,
@@ -489,7 +489,7 @@
             }
         }
 
-        >div:not(.searchBarContainer__409aa,
+        >div:not(.searchBarContainer_fffcb4,
             .emptySearchResultsContainer_cf016e) {
             background: linear-gradient(to top,
                     color-mix(in oklab, var(--background-base-lower), black 15%),
@@ -498,6 +498,7 @@
             box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
             padding: 10px 5px 0px;
             margin: -5px 6px 0px 5px;
+            order: 1;
         }
     }
 }
@@ -623,59 +624,14 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
     }
 }
 
+.vc-notification-root {
+    background: var(--_aider-gradient-subtitle) !important;
+    border-radius: 0px;
+    border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
+    box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+}
+
 .scrim__40128 {
     backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
     background: transparent;
-}
-
-
-/* Debug ----------- */
-
-div[data-debug-key="design_tools"] {
-    display: flex;
-    flex-direction: column;
-
-    >.stack_dbd263 {
-        display: contents;
-
-        .headerTitle__450f6 {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-
-            &::after {
-                content: "This page is to figure out which parts of Aider are here, for debug purposes. ";
-                font-size: 16px;
-            }
-        }
-    }
-}
-
-[data-list-item-id="settings-sidebar___design_tools"] {
-    font-size: 0px !important;
-
-    &::after {
-        font-size: 16px;
-        content: "Aider";
-    }
-}
-
-[data-debug-key="design_tools"] .headerTitle__450f6>h1 {
-    font-size: 0px !important;
-
-    &::before {
-        content: "Aider";
-        font-size: 24px;
-    }
-}
-
-[data-debug-key="css_debugging"] {
-    >.stack_dbd263 {
-        display: none;
-    }
-
-    &::before {
-        content: "Main Loaded!";
-        order: 1;
-    }
 }

@@ -218,8 +218,13 @@
                         0px -5px 10px -7px color-mix(in srgb, var(--red-360), transparent 60%);
                 }
 
+                &:hover {
+                    filter: brightness(1.4);
+                }
+
                 &:active {
                     transform: translateY(1px);
+                    filter: brightness(0.95);
                 }
             }
 
@@ -228,7 +233,8 @@
             }
 
             .audioButtonParent__5e764 {
-                display: contents !important;
+                flex: 1;
+                margin-right: 1px;
             }
         }
     }
@@ -331,7 +337,7 @@
                 background: linear-gradient(0deg, #75D063 0%, #75D063 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }
@@ -353,7 +359,7 @@
                 background: linear-gradient(0deg, #F00 0%, #F00 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }
@@ -374,7 +380,7 @@
                 max-height: 0.7rem;
                 background: radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }
@@ -396,7 +402,7 @@
                 background: linear-gradient(0deg, #FFA600 0%, #FFA600 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 4px;
+                margin-right: 6px;
                 border-radius: 50%;
             }
         }
