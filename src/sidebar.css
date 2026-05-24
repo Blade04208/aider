@@ -149,7 +149,8 @@
 }
 
 .numberBadge__2b1f5,
-.unreadMentionsBar_ef3116 {
+.unreadMentionsBar_ef3116,
+.mentionsBar__7aaec {
     border: 1px solid var(--red-700);
     box-shadow:
         inset 0px 0px 0px 1px var(--red-360),
@@ -497,7 +498,7 @@ svg:not(.avatarDecoration__44b0c) .avatarStack__44b0c,
 
 .containerDefault_c69b6d {
     margin: 0px !important;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
     border-radius: 0px;
 
@@ -511,18 +512,5 @@ svg:not(.avatarDecoration__44b0c) .avatarStack__44b0c,
 
     .unreadPill__972a0 {
         left: 0px;
-    }
-}
-
-/* Debug ----------- */
-
-[data-debug-key="layout_debugging"] {
-    >.stack_dbd263 {
-        display: none;
-    }
-
-    &::before {
-        content: "Sidebar Loaded!";
-        order: 1;
     }
 }
