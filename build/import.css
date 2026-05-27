@@ -1,5 +1,5 @@
 /* main.css */
-/* Basic color patchall styles (thank you very much discord) */
+/*todo: have a local copy of the font to stop vencord's CSP having a panic attack*/
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 
 @font-face {
@@ -12,6 +12,7 @@
     src: url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 }
 
+/* Basic color patchall styles (thank you very much discord) */
 .theme-dark {
     --custom-theme-base-color: hsl(0, 0%, 3.75%);
     --custom-theme-base-color-amount: 100%;
@@ -638,6 +639,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
     backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
     background: transparent;
 }
+
 /* //////// chat.css //////// */
 :root {
     --aider-chat-avatars: compact;
@@ -1160,6 +1162,19 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 }
 
 /* //////// icons.css //////// */
+/*
+* Well hi! You've found the icons.css file!
+* Icons are defined here using mask images. Whilst
+* icons are planned for Aider, they are very much
+* a work in progress, and fuel for the lag sun.
+*
+* They can be enabled by setting the `--aider-icons`
+* custom property to `true`, but uh, I don't recommend
+* it. They are not yet ready for production use.
+*/
+
+
+
 :root {
     /* --aider-icons: true; */
 }
@@ -1301,8 +1316,14 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 }
 
 /* //////// profile.css //////// */
-/* Profiles ------------------------------------------------- */
+/* ---TODO---
+* fix non-banner-slant modal profiles
+* fix modal profile buttons on extended sidebars
+*/
+
+
 .animatorLeft_faf9c0 {
+    /*fun fact: this fixes discord's own mistake in the normal client. fun!*/
     transition: none !important;
     transform: none !important;
 }
@@ -1795,6 +1816,59 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
         }
     }
 }
+
+.container_f37cb1[data-has-banner="true"] .header_f37cb1 {
+    overflow: visible;
+
+
+}
+
+.header_f37cb1 {
+    padding: 0px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-subtle);
+
+    .headerContent_f37cb1 {
+        height: 100%;
+
+        >span {
+            display: none;
+        }
+    }
+
+    .guildDropdown_f37cb1 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+
+        .guildIconV2Container__85d16 {
+            position: absolute;
+            scale: 3;
+            bottom: 8px;
+            right: 12px;
+            transform: rotate(-15deg);
+            z-index: 10;
+            opacity: 0.5;
+            mask-image: linear-gradient(to top, black, transparent);
+        }
+
+        .headerChildren_f37cb1 {
+            position: absolute;
+            right: var(--space-xs);
+        }
+
+        .name_f37cb1 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0px auto;
+        }
+    }
+
+    .inviteButton_f37cb1 {
+        display: none;
+    }
+}
+
 
 .scroller__629e4 {
     padding-inline-end: 0px !important;

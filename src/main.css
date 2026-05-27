@@ -1,4 +1,4 @@
-/* Basic color patchall styles (thank you very much discord) */
+/*todo: have a local copy of the font to stop vencord's CSP having a panic attack*/
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 
 @font-face {
@@ -11,6 +11,7 @@
     src: url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 }
 
+/* Basic color patchall styles (thank you very much discord) */
 .theme-dark {
     --custom-theme-base-color: hsl(0, 0%, 3.75%);
     --custom-theme-base-color-amount: 100%;

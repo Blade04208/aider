@@ -1,3 +1,16 @@
+/*
+* Well hi! You've found the icons.css file!
+* Icons are defined here using mask images. Whilst
+* icons are planned for Aider, they are very much
+* a work in progress, and fuel for the lag sun.
+*
+* They can be enabled by setting the `--aider-icons`
+* custom property to `true`, but uh, I don't recommend
+* it. They are not yet ready for production use.
+*/
+
+
+
 :root {
     /* --aider-icons: true; */
 }

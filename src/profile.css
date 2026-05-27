@@ -1,5 +1,11 @@
-/* Profiles ------------------------------------------------- */
+/* ---TODO---
+* fix non-banner-slant modal profiles
+* fix modal profile buttons on extended sidebars
+*/
+
+
 .animatorLeft_faf9c0 {
+    /*fun fact: this fixes discord's own mistake in the normal client. fun!*/
     transition: none !important;
     transform: none !important;
 }

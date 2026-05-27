@@ -89,6 +89,59 @@
     }
 }
 
+.container_f37cb1[data-has-banner="true"] .header_f37cb1 {
+    overflow: visible;
+
+
+}
+
+.header_f37cb1 {
+    padding: 0px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-subtle);
+
+    .headerContent_f37cb1 {
+        height: 100%;
+
+        >span {
+            display: none;
+        }
+    }
+
+    .guildDropdown_f37cb1 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+
+        .guildIconV2Container__85d16 {
+            position: absolute;
+            scale: 3;
+            bottom: 8px;
+            right: 12px;
+            transform: rotate(-15deg);
+            z-index: 10;
+            opacity: 0.5;
+            mask-image: linear-gradient(to top, black, transparent);
+        }
+
+        .headerChildren_f37cb1 {
+            position: absolute;
+            right: var(--space-xs);
+        }
+
+        .name_f37cb1 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0px auto;
+        }
+    }
+
+    .inviteButton_f37cb1 {
+        display: none;
+    }
+}
+
+
 .scroller__629e4 {
     padding-inline-end: 0px !important;
     padding: 0px !important;
