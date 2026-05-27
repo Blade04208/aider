@@ -638,65 +638,6 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
     backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
     background: transparent;
 }
-
-[data-nav-anchor-key="reduced_motion"] {
-    .label__5a838 {
-        font-size: 0px;
-
-        &::before {
-            content: "Super secret EVIL flatism toggle";
-            font-size: 20px;
-            filter: drop-shadow(0px 0px 5px red);
-            font-family: serif;
-            font-weight: 900;
-        }
-    }
-
-    .description__5a838 {
-        font-size: 0px;
-    }
-}
-
-html.reduce-motion>body>div#app-mount * {
-    --_aider-gradient-subtitle: var(--background-base-lower);
-    --_aider-gradient: var(--background-base-lower);
-    box-shadow: none !important;
-    filter: none !important;
-
-    *::after,
-    *:not(.label__5a838)::before {
-        display: none !important;
-        box-shadow: none !important;
-        filter: none !important;
-    }
-
-    .button_a22cb0,
-    .item__133bf,
-    .button__201d5 {
-        border-radius: 0px;
-        transition: all 0.15s ease !important;
-
-        &.primary_a22cb0,
-        &.addFriend__133bf,
-        &.lookFilled__201d5.colorBrand__201d5 {
-            background: var(--control-primary-background-default) !important;
-            border: 1px solid var(--control-primary-background-default);
-        }
-
-        &.critical-primary_a22cb0 {
-            background: var(--control-critical-primary-background-default) !important;
-            border: 1px solid var(--control-critical-primary-background-default);
-        }
-
-        &.secondary_a22cb0,
-        &.critical-secondary_a22cb0 {
-            background: var(--control-secondary-background-default) !important;
-            border: 1px solid var(--control-secondary-background-default);
-        }
-    }
-
-}
-
 /* //////// chat.css //////// */
 :root {
     --aider-chat-avatars: compact;
@@ -1794,24 +1735,64 @@ html.reduce-motion>body>div#app-mount * {
     display: flex;
 
     height: 46px;
-    padding: var(--space-xs) var(--space-xs);
-    gap: var(--space-sm);
-    align-items: center;
-
-    &::after {
-        content: "Direct Messages";
-        color: var(--text-default);
-        font-size: 18px;
-        font-weight: 500;
-        margin-left: var(--space-xxs);
-        width: calc(100% - 32px * 1.75);
-    }
+    padding: 0px;
 
     .button_a22cb0 {
-        width: 32px;
-        max-width: 32px;
-        min-width: 0px;
-        order: 1;
+        min-height: 46px;
+        padding: var(--space-xs) var(--space-xs);
+        background: transparent !important;
+        box-shadow: none;
+        border: none;
+        flex-direction: column;
+        justify-content: start;
+        overflow: hidden;
+
+        &::before {
+            content: "Find or start a conversation";
+            color: var(--text-default);
+            font-size: 1rem;
+            font-weight: 400;
+            position: absolute;
+            top: -1rem;
+            opacity: 0;
+            filter: blur(5px);
+            transition: all 0.4s ease;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: calc(100% - var(--space-xs) * 2);
+        }
+
+        &::after {
+            content: "Direct Messages";
+            color: var(--text-default);
+            font-size: 18px;
+            font-weight: 500;
+            position: absolute;
+            top: 14px;
+            transition: all 0.4s ease;
+        }
+
+        .buttonChildrenWrapper_a22cb0 {
+            display: none;
+        }
+
+        &:hover {
+            filter: brightness(1.1);
+            backdrop-filter: brightness(1.1);
+
+            &::before {
+                opacity: 1;
+                filter: blur(0px);
+                top: 16px;
+            }
+
+            &::after {
+                opacity: 0;
+                top: 50px;
+                filter: blur(5px);
+            }
+        }
     }
 }
 
@@ -2095,17 +2076,10 @@ html.reduce-motion>body>div#app-mount * {
         .usernameRow__63ed3 div.defaultColor__4bd52 {
             &::before {
                 content: "";
-                display: block;
-                min-width: 0.7rem;
-                min-height: 0.7rem;
-                max-width: 0.7rem;
-                max-height: 0.7rem;
                 background: green;
                 background: linear-gradient(0deg, #75D063 0%, #75D063 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 6px;
-                border-radius: 50%;
             }
         }
     }
@@ -2118,16 +2092,9 @@ html.reduce-motion>body>div#app-mount * {
         .usernameRow__63ed3 div.defaultColor__4bd52 {
             &::before {
                 content: "";
-                display: block;
-                min-width: 0.7rem;
-                min-height: 0.7rem;
-                max-width: 0.7rem;
-                max-height: 0.7rem;
                 background: linear-gradient(0deg, #F00 0%, #F00 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 6px;
-                border-radius: 50%;
             }
         }
     }
@@ -2140,15 +2107,8 @@ html.reduce-motion>body>div#app-mount * {
         .usernameRow__63ed3 div.defaultColor__4bd52 {
             &::before {
                 content: "";
-                display: block;
-                min-width: 0.7rem;
-                min-height: 0.7rem;
-                max-width: 0.7rem;
-                max-height: 0.7rem;
                 background: radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 6px;
-                border-radius: 50%;
             }
         }
     }
@@ -2161,18 +2121,26 @@ html.reduce-motion>body>div#app-mount * {
         .usernameRow__63ed3 div.defaultColor__4bd52 {
             &::before {
                 content: "";
-                display: block;
-                min-width: 0.7rem;
-                min-height: 0.7rem;
-                max-width: 0.7rem;
-                max-height: 0.7rem;
                 background: linear-gradient(0deg, #FFA600 0%, #FFA600 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 background-blend-mode: color, normal, normal, normal, normal;
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
-                margin-right: 6px;
-                border-radius: 50%;
             }
         }
+    }
+}
+
+.name__20a53,
+.displayNameRow__26b1f,
+.username__5d473,
+.usernameRow__63ed3 div.defaultColor__4bd52 {
+    &::before {
+        display: block;
+        min-width: 0.7rem;
+        min-height: 0.7rem;
+        max-width: 0.7rem;
+        max-height: 0.7rem;
+        margin-right: 6px;
+        border-radius: 50%;
     }
 }
 
