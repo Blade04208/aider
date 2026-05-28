@@ -4,7 +4,7 @@
 
 .avatar_c19a55,
 .avatar__07f91 {
-    border-radius: 0px;
+    border-radius: var(--radius-xxl);
 }
 
 @container style(--aider-chat-avatars: compact) {
@@ -125,7 +125,7 @@
     .channelTextArea_f75fb0,
     .themedBackground__74017 {
         margin-bottom: 0px;
-        border-radius: 0px;
+        border-radius: var(--radius-xs);
         border: 0;
         background: transparent;
         overflow: visible;
@@ -197,7 +197,7 @@
                         color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                border-radius: 0px;
+                border-radius: var(--radius-xs);
                 min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                 min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                 height: 100%;
@@ -222,7 +222,7 @@
                         color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                border-radius: 0px;
+                border-radius: var(--radius-xs);
                 min-height: var(--custom-channel-textarea-text-area-height);
                 min-width: var(--custom-channel-textarea-text-area-height);
                 height: 100%;
@@ -257,7 +257,7 @@
                                 white 5%)) !important;
                     border: 1px solid var(--_aider-border-dark);
                     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                    border-radius: 0px;
+                    border-radius: var(--radius-xs);
                     min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                     min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                     box-sizing: border-box;
@@ -314,7 +314,7 @@
 }
 
 .optionPill__1464f {
-    border-radius: 0px;
+    border-radius: var(--radius-xs);
 
     .optionPillKey__1464f {
         background: var(--_aider-gradient);
@@ -375,7 +375,7 @@
 }
 
 .autocomplete__13533 {
-    border-radius: 0px;
+    border-radius: var(--radius-sm);
     background: linear-gradient(to bottom,
             color-mix(in oklab, var(--background-base-lower), white 7.5%),
             color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px) !important;
@@ -487,7 +487,7 @@
 }
 
 .chipletContainerInner__10651 {
-    border-radius: 0px;
+    border-radius: var(--radius-xxs);
     background: var(--background-surface-highest);
     outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%) dashed;
 }
@@ -496,7 +496,7 @@
 
 .popover_f84418,
 .menu_c1e9c4 {
-    border-radius: 0px;
+    border-radius: var(--radius-xs);
     background: linear-gradient(to bottom,
             color-mix(in oklab, var(--background-base-lower), white 7.5%),
             color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px) !important;

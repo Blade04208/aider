@@ -1,7 +1,6 @@
 /* main.css */
 /*todo: have a local copy of the font to stop vencord's CSP having a panic attack*/
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
-
 @font-face {
     font-family: "Helvetica Neue";
     -webkit-font-smoothing: antialiased;
@@ -34,13 +33,14 @@
             var(--background-base-lower),
             color-mix(in oklab, var(--background-base-lower), white 5%));
     --font-primary: "Helvetica Neue", gg sans;
-    --radius-xxs: 0;
-    --radius-xs: 0;
-    --radius-sm: 0;
-    --radius-md: 0;
-    --radius-lg: 0;
-    --radius-xl: 0;
-    --radius-xxl: 0;
+    --radius-xxs: calc(var(--radius-md) / 6);
+    --radius-xs: calc(var(--radius-md) / 3);
+    --radius-sm: calc(var(--radius-md) / 1.5);
+    --radius-md: var(--aider-radius, 0);
+    --radius-lg: calc(var(--radius-md) / 0.75);
+    --radius-xl: calc(var(--radius-md) / 0.5);
+    --radius-xxl: calc(var(--radius-md) / 0.375);
+    --radius-round: calc(var(--radius-md) * 32768);
     --_aider-color-chat: color-mix(in oklab,
             var(--background-base-lower),
             black 15%);
@@ -197,21 +197,25 @@
 .children__9293f:has(> div > .avatar_f75fb0 > .svg__44b0c > g > rect[mask="url(#svg-mask-status-dnd)"]) .titleWrapper__9293f::after {
     content: "DO NOT DISTURB";
     background: var(--status-danger);
+    border-radius: var(--radius-sm);
 }
 
 .children__9293f:has(> div > .avatar_f75fb0 > .svg__44b0c > g > rect[fill="#82838b"]) .titleWrapper__9293f::after {
     content: "OFFLINE";
     background: #82838b;
+    border-radius: var(--radius-sm);
 }
 
 .children__9293f:has(> div > .avatar_f75fb0 > .svg__44b0c > g > rect[mask="url(#svg-mask-status-online)"]) .titleWrapper__9293f::after {
     content: "ONLINE";
     background: var(--status-positive);
+    border-radius: var(--radius-sm);
 }
 
 .children__9293f:has(> div > .avatar_f75fb0 > .svg__44b0c > g > rect[mask="url(#svg-mask-status-idle)"]) .titleWrapper__9293f::after {
     content: "IDLE";
     background: var(--status-warning);
+    border-radius: var(--radius-sm);
 }
 
 /* ~~ */
@@ -252,6 +256,8 @@
     }
 }
 
+/* Components --------------------------------------- */
+
 .searchBar_c322aa,
 .wrapper__72c38 {
     background: linear-gradient(to top,
@@ -263,13 +269,11 @@
         0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
 }
 
-/* Components --------------------------------------- */
-
 /* Buttons */
 .button_a22cb0,
 .item__133bf,
 .button__201d5 {
-    border-radius: 0px;
+    border-radius: var(--radius-sm);
     transition: all 0.15s ease !important;
 
     &.primary_a22cb0,
@@ -337,7 +341,7 @@
 
 .theme-light {
     .button_a22cb0 {
-        border-radius: 0px;
+        border-radius: var(--radius-sm);
         transition: all 0.15s ease !important;
 
         &.primary_a22cb0 {
@@ -416,7 +420,7 @@
 /*Sliders*/
 .slider_a562c8 {
     .bar_a562c8 {
-        border-radius: 0px;
+        border-radius: var(--radius-sm);
 
         .barFill_a562c8 {
             background: linear-gradient(to left,
@@ -426,7 +430,7 @@
     }
 
     .grabber_a562c8 {
-        border-radius: 0px;
+        border-radius: var(--radius-sm);
         width: calc(var(--grabber-size) / 2);
         margin-inline-start: calc(0px - 1%);
     }
@@ -458,7 +462,7 @@
     padding-top: 127px;
 
     background: var(--_aider-gradient-subtitle) !important;
-    border-radius: 0px;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 
@@ -526,14 +530,14 @@
 
 /* Guildinvites ------------------- */
 .container_d3846c {
-    border-radius: 0px;
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-high);
 
     .container_dca174 {
         background: linear-gradient(to bottom,
                 color-mix(in oklab, var(--background-base-lower), white 5%),
                 var(--background-base-lower) calc(var(--custom-channel-header-height) / 2 + 120px)) !important;
-        border-radius: 0px;
+        border-radius: var(--radius-md);
         border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
         box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 
@@ -600,14 +604,14 @@
 /* Modals ------------------*/
 .container__8a031 {
     background: var(--_aider-gradient-subtitle) !important;
-    border-radius: 0px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 }
 
 div[role="dialog"]>.recentMentionsPopout__95796 {
     background: var(--_aider-gradient-subtitle) !important;
-    border-radius: 0px;
+    border-radius: var(--radius-md);
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
 
@@ -630,9 +634,23 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 
 .vc-notification-root {
     background: var(--_aider-gradient-subtitle) !important;
-    border-radius: 0px;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+    overflow: visible;
+}
+
+#vc-notification-container:has(>.vc-notification-root):after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(min(50vw, 400px) + 2rem);
+    height: calc(min(25vh, 400px) + 2rem);
+    background: radial-gradient(at left top, transparent, transparent, #000000);
+    z-index: 3;
+    filter: blur(10px);
+    pointer-events: none;
 }
 
 .scrim__40128 {
@@ -647,7 +665,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 
 .avatar_c19a55,
 .avatar__07f91 {
-    border-radius: 0px;
+    border-radius: var(--radius-xxl);
 }
 
 @container style(--aider-chat-avatars: compact) {
@@ -768,7 +786,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
     .channelTextArea_f75fb0,
     .themedBackground__74017 {
         margin-bottom: 0px;
-        border-radius: 0px;
+        border-radius: var(--radius-xs);
         border: 0;
         background: transparent;
         overflow: visible;
@@ -840,7 +858,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
                         color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                border-radius: 0px;
+                border-radius: var(--radius-xs);
                 min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                 min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                 height: 100%;
@@ -865,7 +883,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
                         color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                border-radius: 0px;
+                border-radius: var(--radius-xs);
                 min-height: var(--custom-channel-textarea-text-area-height);
                 min-width: var(--custom-channel-textarea-text-area-height);
                 height: 100%;
@@ -900,7 +918,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
                                 white 5%)) !important;
                     border: 1px solid var(--_aider-border-dark);
                     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                    border-radius: 0px;
+                    border-radius: var(--radius-xs);
                     min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                     min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                     box-sizing: border-box;
@@ -957,7 +975,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 }
 
 .optionPill__1464f {
-    border-radius: 0px;
+    border-radius: var(--radius-xs);
 
     .optionPillKey__1464f {
         background: var(--_aider-gradient);
@@ -1018,7 +1036,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 }
 
 .autocomplete__13533 {
-    border-radius: 0px;
+    border-radius: var(--radius-sm);
     background: linear-gradient(to bottom,
             color-mix(in oklab, var(--background-base-lower), white 7.5%),
             color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px) !important;
@@ -1130,7 +1148,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 }
 
 .chipletContainerInner__10651 {
-    border-radius: 0px;
+    border-radius: var(--radius-xxs);
     background: var(--background-surface-highest);
     outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%) dashed;
 }
@@ -1139,7 +1157,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 
 .popover_f84418,
 .menu_c1e9c4 {
-    border-radius: 0px;
+    border-radius: var(--radius-xs);
     background: linear-gradient(to bottom,
             color-mix(in oklab, var(--background-base-lower), white 7.5%),
             color-mix(in oklab, var(--background-base-lower), white 2.5%) 40px) !important;
@@ -1318,7 +1336,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 /* //////// profile.css //////// */
 /* ---TODO---
 * fix non-banner-slant modal profiles
-* fix modal profile buttons on extended sidebars
+X ~~fix modal profile buttons on extended sidebars~~
 */
 
 
@@ -1421,7 +1439,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
     }
 
     .avatar__75742>* {
-        border-radius: 0px;
+        border-radius: var(--radius-xxl);
         backdrop-filter: blur(20px);
     }
 
@@ -1440,6 +1458,16 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
     .bannerButton_fb7f94 {
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25), inset 0px 1px 1px 0.25px rgba(255, 255, 255, 0.25);
         border: 0px;
+    }
+
+    .container_a99829>.themedBackground__74017 {
+        background: linear-gradient(to top,
+                var(--profile-gradient-primary-color, var(--background-base-lower)),
+                color-mix(in oklab, var(--profile-gradient-primary-color, var(--background-base-lower)), black 5%)) !important;
+        box-shadow:
+            0px 0px 1px 1px inset var(--border-faint),
+            0px 2.5px 7.5px 0px inset var(--profile-gradient-secondary-color, var(--_aider-border-dark));
+        border-radius: var(--radius-xs);
     }
 }
 
@@ -1500,7 +1528,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
             margin-top: 0px !important;
         }
 
-        .wrapper__0c74f {
+        .wrapper__da5890 {
             position: absolute;
             top: calc(0px - var(--custom-user-profile-banner-height) * 0.95 + var(--space-md));
         }
@@ -1920,12 +1948,12 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 }
 
 .folderGroupBackground__48112 {
-    border-radius: 0px;
+    border-radius: var(--radius-md);
 }
 
 .folderPreviewWrapper__48112,
 .folderPreviewGuildIcon__48112 {
-    border-radius: 0px !important;
+    border-radius: var(--radius-sm) !important;
 }
 
 .folderButton__48112>.wrapper_cc5dd2 {
@@ -1986,13 +2014,14 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 
 /* Userpanel ------------------------------------ */
 .panels__5e434 {
-    border-radius: 0px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0 !important;
     border: 0 !important;
     border-top: 1px solid var(--_aider-border-dark) !important;
     box-shadow: inset 0px 1px 0px 0px var(--border-subtle);
     bottom: 0px;
     left: 0px;
     width: calc(100% - 2px);
+    overflow: hidden;
 
     .container__37e49 {
         flex-direction: column;
@@ -2015,7 +2044,7 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 
             .button__67645 {
                 flex: 1;
-                border-radius: 0px;
+                border-radius: var(--radius-xs);
                 background: linear-gradient(to bottom,
                         color-mix(in oklab, var(--background-base-lower), white 5%),
                         var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
@@ -2124,10 +2153,11 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
                 inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
             font-weight: 450;
             color: white;
+            border-radius: var(--radius-xxl);
         }
 
         .avatar__44b0c {
-            border-radius: 0px;
+            border-radius: var(--radius-xxl);
         }
     }
 

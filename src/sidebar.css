@@ -192,12 +192,12 @@
 }
 
 .folderGroupBackground__48112 {
-    border-radius: 0px;
+    border-radius: var(--radius-md);
 }
 
 .folderPreviewWrapper__48112,
 .folderPreviewGuildIcon__48112 {
-    border-radius: 0px !important;
+    border-radius: var(--radius-sm) !important;
 }
 
 .folderButton__48112>.wrapper_cc5dd2 {
@@ -258,13 +258,14 @@
 
 /* Userpanel ------------------------------------ */
 .panels__5e434 {
-    border-radius: 0px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0 !important;
     border: 0 !important;
     border-top: 1px solid var(--_aider-border-dark) !important;
     box-shadow: inset 0px 1px 0px 0px var(--border-subtle);
     bottom: 0px;
     left: 0px;
     width: calc(100% - 2px);
+    overflow: hidden;
 
     .container__37e49 {
         flex-direction: column;
@@ -287,7 +288,7 @@
 
             .button__67645 {
                 flex: 1;
-                border-radius: 0px;
+                border-radius: var(--radius-xs);
                 background: linear-gradient(to bottom,
                         color-mix(in oklab, var(--background-base-lower), white 5%),
                         var(--background-base-lower) calc(var(--custom-channel-header-height) / 2)) !important;
@@ -396,10 +397,11 @@
                 inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
             font-weight: 450;
             color: white;
+            border-radius: var(--radius-xxl);
         }
 
         .avatar__44b0c {
-            border-radius: 0px;
+            border-radius: var(--radius-xxl);
         }
     }
 
