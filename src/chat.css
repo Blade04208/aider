@@ -125,7 +125,7 @@
     .channelTextArea_f75fb0,
     .themedBackground__74017 {
         margin-bottom: 0px;
-        border-radius: var(--radius-xs);
+        border-radius: 0px;
         border: 0;
         background: transparent;
         overflow: visible;
@@ -150,6 +150,7 @@
             box-sizing: content-box;
             max-height: calc(50vh - 16px);
             overflow-y: scroll;
+            border-radius: var(--radius-sm);
 
             &::-webkit-scrollbar-thumb,
             &::-webkit-scrollbar-track {
@@ -197,7 +198,7 @@
                         color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                border-radius: var(--radius-xs);
+                border-radius: var(--radius-sm);
                 min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                 min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                 height: 100%;
@@ -222,7 +223,7 @@
                         color-mix(in oklab, var(--background-base-lower), white 5%)) !important;
                 border: 1px solid var(--_aider-border-dark);
                 box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                border-radius: var(--radius-xs);
+                border-radius: var(--radius-sm);
                 min-height: var(--custom-channel-textarea-text-area-height);
                 min-width: var(--custom-channel-textarea-text-area-height);
                 height: 100%;
@@ -257,7 +258,7 @@
                                 white 5%)) !important;
                     border: 1px solid var(--_aider-border-dark);
                     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
-                    border-radius: var(--radius-xs);
+                    border-radius: var(--radius-sm);
                     min-height: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                     min-width: calc(var(--custom-channel-textarea-text-area-height) + 2px);
                     box-sizing: border-box;

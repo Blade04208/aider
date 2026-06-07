@@ -1,5 +1,6 @@
 /*todo: have a local copy of the font to stop vencord's CSP having a panic attack*/
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+
 @font-face {
     font-family: "Helvetica Neue";
     -webkit-font-smoothing: antialiased;
@@ -50,10 +51,6 @@
                 var(--background-base-lower),
                 black 20%);
     }
-
-    .chatContent_f75fb0 {
-        background: var(--_aider-color-chat);
-    }
 }
 
 
@@ -95,13 +92,15 @@
     .bg__960e4 {
         background: color-mix(in oklab, var(--background-base-lower), black 8%);
     }
-
-    .chatContent_f75fb0 {
-        background: var(--_aider-color-chat);
-    }
 }
 
-.theme-light .basicThemeSelectors_c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7fbfab6::after {
+.chatContent_f75fb0,
+.content_e9e3ed,
+.tabBody__133bf {
+    background: var(--_aider-color-chat);
+}
+
+.theme-light .basicThemeSelectors_fbfab6::after {
     display: block;
     content: "While Light Mode does work and is supported, you may experience slight contrast issues that wouldn't happen in dark mode.";
     margin-top: var(--space-xs);
@@ -111,7 +110,7 @@
     line-height: 1.2;
 }
 
-.theme-light .basicThemeSelectors_c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7c936d7fbfab6+.divider__1de9c+.container__5a838::after {
+.theme-light .basicThemeSelectors_fbfab6+.divider__1de9c+.container__5a838::after {
     display: block;
     content: "This option has no direct support in Aider. Expect ghouls and misfortune should thy enable this forsakened toggle.";
     margin-top: var(--space-xs);
@@ -128,6 +127,7 @@
     background: var(--_aider-gradient) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+    border-radius: var(--radius-sm);
 }
 
 .container__9293f,
@@ -135,6 +135,7 @@
     background: var(--_aider-gradient) !important;
     border: 1px solid var(--_aider-border-dark);
     box-shadow: 0px 0px 1px 1px inset var(--border-subtle);
+    border-radius: var(--radius-sm);
 }
 
 .container__133bf {
@@ -459,7 +460,7 @@
 .sidebar__409aa {
     position: relative;
     padding-top: 127px;
-
+    padding-left: 0px;
     background: var(--_aider-gradient-subtitle) !important;
     border-radius: var(--radius-sm);
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
@@ -508,7 +509,49 @@
             order: 1;
         }
     }
+
+    .thumb_e4d939 {
+        border-radius: 8px;
+        box-shadow: 7px 0px 14px 0.5px white;
+        width: 1.5px;
+    }
+
+    .navScroller__409aa {
+        padding: var(--space-xs) 0px 0px 0px !important;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        .section__409aa {
+            gap: 0px;
+        }
+
+        .item_caf372 {
+            padding: var(--space-xs) var(--space-md);
+            border-top: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+
+            &.active_caf372 {
+                background: color-mix(in oklab,
+                        transparent 95%,
+                        var(--brand-500)) !important;
+                box-shadow: 0px -20px 20px -5px inset color-mix(in oklab, transparent 87.5%, var(--brand-500));
+
+                .itemContent_caf372 {
+                    filter: drop-shadow(0px 0px 5px var(--brand-700)) drop-shadow(0px 0px 1px var(--brand-800));
+                }
+            }
+        }
+
+        .subnavContainer_e4d939 {
+            margin-left: calc(var(--space-xxs) * 1.5);
+        }
+    }
 }
+
+
 
 .modal_e44912 {
     border: 0px;
