@@ -291,7 +291,7 @@ X ~~fix modal profile buttons on extended sidebars~~
         margin: var(--custom-modal-v2-padding);
 
 
-        >.scrim__4c1fe,
+        >.scrim__1d703,
         .backgroundImage__9c3be {
             display: none;
         }
