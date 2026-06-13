@@ -267,7 +267,8 @@
 /* Components --------------------------------------- */
 
 .searchBar_c322aa,
-.wrapper__72c38 {
+.wrapper__72c38,
+.input_ac6cb0 {
     background: linear-gradient(to top,
             var(--background-base-lower),
             color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
@@ -649,7 +650,7 @@
 }
 
 /* Modals ------------------*/
-.container__8a031 {
+.container__8a031:not(:has(>.quickswitcher_ac6cb0)) {
     background: var(--_aider-gradient-subtitle) !important;
     border-radius: var(--radius-md);
     border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
@@ -739,4 +740,36 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
         border-left-style: solid;
         filter: brightness(1.5);
     }
+}
+
+
+.container__8a031:has(>.quickswitcher_ac6cb0),
+.quickswitcher_ac6cb0 {
+    background: transparent;
+    border: none;
+    padding: 0px;
+}
+
+.result__71961 {
+    background: var(--_aider-gradient);
+    border: 1px solid var(--_aider-border-dark);
+    box-shadow: inset 0px 0px 0px 1px var(--border-subtle);
+    transition: transform 2.5s linear(0, 0.029 0.8%, 0.13 1.8%, 0.908 7.2%, 1.051 9.1%, 1.112 11.2%, 1.116 12.2%, 1.106 13.4%, 1.007 19.5%, 0.987 23.1%, 1.001 35%, 1), opacity 0.5s ease, background 0.3s ease;
+    perspective: 400px;
+    opacity: 1;
+
+    &:hover,
+    &[aria-selected="true"] {
+        background: var(--_aider-gradient);
+        filter: brightness(1.4);
+    }
+
+    @starting-style {
+        transform: rotateX(-125deg);
+        opacity: 0;
+    }
+}
+
+.protip_ac6cb0 {
+    display: none;
 }
