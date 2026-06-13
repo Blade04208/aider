@@ -1,5 +1,7 @@
 # Aider
 
+<img src="./assets/thumb.png" alt="screenshot of Aider (build d0c525f)">
+
 the 700th skeuo theme
 
 ## build

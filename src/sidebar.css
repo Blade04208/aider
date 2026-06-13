@@ -425,7 +425,6 @@
         .status_a423bd[style="background-color: rgb(67, 162, 90);"]) {
 
         .name__20a53,
-        .displayNameRow__26b1f,
         .username__5d473,
         .usernameRow__63ed3 div.defaultColor__4bd52 {
             &::before {
@@ -438,7 +437,6 @@
     &:has(.svg__44b0c rect[fill="#da3e44"]) {
 
         .name__20a53,
-        .displayNameRow__26b1f,
         .username__5d473,
         .usernameRow__63ed3 div.defaultColor__4bd52,
         .info_f4bc97 {
@@ -452,7 +450,6 @@
     &:has(.svg__44b0c rect[fill="#84858d"]) {
 
         .name__20a53,
-        .displayNameRow__26b1f,
         .username__5d473,
         .usernameRow__63ed3 div.defaultColor__4bd52,
         .info_f4bc97 {
@@ -467,7 +464,6 @@
     &:has(.svg__44b0c rect[fill="#ffc04e"]) {
 
         .name__20a53,
-        .displayNameRow__26b1f,
         .username__5d473,
         .usernameRow__63ed3 div.defaultColor__4bd52,
         .info_f4bc97 {
@@ -484,15 +480,14 @@
 }
 
 .name__20a53,
-.displayNameRow__26b1f,
 .username__5d473,
 .usernameRow__63ed3 div.defaultColor__4bd52,
 .info_f4bc97 {
     &::before {
         display: block;
-        width: 13px;
-        height: 13px;
-        margin-right: 6px;
+        width: 15px;
+        height: 15px;
+        margin-right: 4px;
         background-size: contain !important;
         background-repeat: no-repeat !important;
     }
