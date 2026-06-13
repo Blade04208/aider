@@ -255,6 +255,7 @@
         0px 0px 7px -1px var(--red-500);
     box-sizing: content-box;
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
+    border-radius: 20px;
 
     &.numberBadge__2b1f5 {
         padding: 0.3px !important;
@@ -429,9 +430,7 @@
         .usernameRow__63ed3 div.defaultColor__4bd52 {
             &::before {
                 content: "";
-                background: green;
-                background: linear-gradient(0deg, #75D063 0%, #75D063 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
-                background-blend-mode: color, normal, normal, normal, normal;
+                background: url(https://blade04208.github.io/aider/assets/status/idle.png);
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
             }
         }
@@ -442,11 +441,11 @@
         .name__20a53,
         .displayNameRow__26b1f,
         .username__5d473,
-        .usernameRow__63ed3 div.defaultColor__4bd52 {
+        .usernameRow__63ed3 div.defaultColor__4bd52,
+        .info_f4bc97 {
             &::before {
                 content: "";
-                background: linear-gradient(0deg, #F00 0%, #F00 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
-                background-blend-mode: color, normal, normal, normal, normal;
+                background: url(https://blade04208.github.io/aider/assets/status/dnd.png);
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
             }
         }
@@ -457,8 +456,10 @@
         .name__20a53,
         .displayNameRow__26b1f,
         .username__5d473,
-        .usernameRow__63ed3 div.defaultColor__4bd52 {
+        .usernameRow__63ed3 div.defaultColor__4bd52,
+        .info_f4bc97 {
             &::before {
+                /*offline*/
                 content: "";
                 background: radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
@@ -471,21 +472,26 @@
         .name__20a53,
         .displayNameRow__26b1f,
         .username__5d473,
-        .usernameRow__63ed3 div.defaultColor__4bd52 {
+        .usernameRow__63ed3 div.defaultColor__4bd52,
+        .info_f4bc97 {
             &::before {
                 content: "";
-                background: linear-gradient(0deg, #FFA600 0%, #FFA600 100%), radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
-                background-blend-mode: color, normal, normal, normal, normal;
+                background: url(https://blade04208.github.io/aider/assets/status/idle.png);
                 box-shadow: 0 -0.9px 0.9px 0 rgba(0, 0, 0, 0.22) inset, 0 0.9px 0.9px 0 rgba(0, 0, 0, 0.47) inset;
             }
         }
     }
 }
 
+.svg__44b0c rect {
+    display: none;
+}
+
 .name__20a53,
 .displayNameRow__26b1f,
 .username__5d473,
-.usernameRow__63ed3 div.defaultColor__4bd52 {
+.usernameRow__63ed3 div.defaultColor__4bd52,
+.info_f4bc97 {
     &::before {
         display: block;
         min-width: 0.7rem;

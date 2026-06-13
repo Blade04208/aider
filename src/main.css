@@ -144,11 +144,15 @@
 
 .upperContainer__9293f,
 .children__9293f {
-    /* overflow: visible; */
+    overflow: visible;
 
     >.iconWrapper__9293f {
         left: 4px !important;
     }
+}
+
+.title_f75fb0 {
+    overflow: hidden;
 }
 
 .children__9293f>div>.avatar_f75fb0 {
@@ -256,6 +260,10 @@
     }
 }
 
+.container__133bf .children__9293f .titleWrapper__9293f {
+    padding-left: 0px !important;
+}
+
 /* Components --------------------------------------- */
 
 .searchBar_c322aa,
@@ -264,8 +272,7 @@
             var(--background-base-lower),
             color-mix(in oklab, var(--background-base-lower), black 5%)) !important;
     border: 1px solid color-mix(in oklab, var(--_aider-border-dark), transparent 90%);
-    box-shadow:
-        0px 0px 1px 1px inset var(--border-faint),
+    box-shadow: 0px 0px 1px 1px inset var(--border-faint),
         0px 2.5px 7.5px 0px inset var(--_aider-border-dark);
 }
 
@@ -598,8 +605,7 @@
             inset: -1px;
             width: 100%;
             height: 100%;
-            box-shadow:
-                inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
+            box-shadow: inset 0px 3px 3px -2px rgba(255, 255, 255, 0.25),
                 inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
                 inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
         }
@@ -625,8 +631,7 @@
                 z-index: 1;
 
                 border: 1px solid var(--_aider-border-dark, rgba(0, 0, 0, 0.5));
-                box-shadow:
-                    inset 0px 5.25px 5.25px -3.5px rgba(255, 255, 255, 0.25),
+                box-shadow: inset 0px 5.25px 5.25px -3.5px rgba(255, 255, 255, 0.25),
                     inset 0px 24px 12px -12px rgba(255, 255, 255, 0.125),
                     inset 0px -3px 3px -2px rgba(0, 0, 0, 0.25);
                 font-weight: 450;
@@ -698,4 +703,40 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
 .scrim__40128 {
     backdrop-filter: blur(1.5px) saturate(50%) brightness(25%);
     background: transparent;
+}
+
+/*Embed*/
+.embedFull__623de {
+    border-width: 0px;
+    overflow: hidden;
+    border-radius: 0px;
+    background: var(--_aider-gradient-subtitle);
+    box-shadow: inset 0px 0px 0px 1px var(--border-subtle);
+    border: 1px solid var(--_aider-border-dark);
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-left-color: inherit;
+        border-left-width: 5px;
+        border-left-style: solid;
+        filter: blur(10px) brightness(0.6);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0px;
+        height: 100%;
+        border-left-color: inherit;
+        border-left-width: 2px;
+        border-left-style: solid;
+        filter: brightness(1.5);
+    }
 }

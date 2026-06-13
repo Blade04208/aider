@@ -493,6 +493,17 @@
     outline: 1px color-mix(in oklab, var(--border-subtle), transparent 25%) dashed;
 }
 
+.newMessagesBar__0f481 {
+    padding: 10px 10px 0px !important;
+    border: 1px solid var(--brand-700);
+    box-shadow:
+        inset 0px 0px 0px 1px var(--brand-360),
+        0px 0px 7px -1px color-mix(in oklab, var(--brand-500), transparent);
+    box-sizing: content-box;
+    background: linear-gradient(to bottom, var(--brand-400), var(--brand-500));
+    margin-top: -10px;
+}
+
 /*context menus -----------------------*/
 
 .popover_f84418,
