@@ -459,7 +459,7 @@
             &::before {
                 /*offline*/
                 content: "";
-                background: radial-gradient(8.46% 11.11% at 50% 16.67%, #FFF 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(14.02% 22.22% at 50% 22.22%, rgba(255, 255, 255, 0.50) 99.9%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(70% 38.89% at 50% 77.78%, #FFF 10%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, #989898 0%, #747474 70%);
+                background: url(https://blade04208.github.io/aider/assets/status/offline.png);
             }
         }
     }
