@@ -246,7 +246,7 @@
     box-shadow: 7px 0px 14px 0.5px white;
 }
 
-.numberBadge__2b1f5,
+.numberBadge__463b7,
 .unreadMentionsBar_ef3116,
 .mentionsBar__7aaec {
     border: 1px solid var(--red-700);
@@ -257,7 +257,7 @@
     background: linear-gradient(to bottom, var(--red-400), var(--red-500));
     border-radius: 20px;
 
-    &.numberBadge__2b1f5 {
+    &.numberBadge__463b7 {
         padding: 0.3px !important;
     }
 }
