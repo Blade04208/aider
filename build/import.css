@@ -12,6 +12,195 @@
     src: url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 }
 
+@property --aider-chat-avatars {
+    syntax: "<custom-ident>";
+    options: "compact | normal";
+    inherits: true;
+    initial-value: compact;
+    name: "Chat Avatars";
+    note: "Choose if you wish to make chat avatars inline with the username or normal.";
+}
+
+@property --aider-banner-slant {
+    syntax: "<boolean>";
+    inherits: true;
+    initial-value: true;
+    name: "Banner Slant";
+    note: "Should Profile popouts and modals have a slanted banner background?";
+}
+
+@property --aider-bubbles {
+    syntax: "<boolean>";
+    inherits: true;
+    initial-value: true;
+    name: "Bubbles";
+    note: "Should messages have bubble backgrounds?";
+}
+
+@property --aider-bubble-you-bg {
+    syntax: "<custom-ident> | <color>";
+    options: "blurple | aqua | purple | pink | orange | lemon | graphite | custom";
+    inherits: true;
+    initial-value: graphite;
+    name: "Your Color";
+}
+
+@property --_aider-bubble-you-custom-bg {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ff0000;
+    name: "Custom Color";
+}
+
+@container style(--aider-bubble-you-bg: custom) {
+    #app-mount {
+        --aider-bubble-you-bg: var(--_aider-bubble-you-custom-bg);
+    }
+}
+
+@property --aider-bubble-others-bg {
+    syntax: "<custom-ident> | <color>";
+    options: "blurple | aqua | purple | pink | orange | lemon | graphite | custom";
+    inherits: true;
+    initial-value: blurple;
+    name: "Others' Color";
+}
+
+@property --_aider-bubble-others-custom-bg {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #ff0000;
+    name: "Custom Color";
+}
+
+.bd-setting-item:has(.bd-setting-header>label[for="_aider-bubble-others-custom-bg"]),
+.bd-setting-item:has(.bd-setting-header>label[for="_aider-bubble-you-custom-bg"]),
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubble-you-bg"]),
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubble-others-bg"]) {
+    display: none;
+}
+
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubble-others-bg"] ~ .bd-select-options>.bd-select-option:last-child.selected)~.bd-setting-item:has(.bd-setting-header>label[for="_aider-bubble-others-custom-bg"]),
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubble-you-bg"] ~ .bd-select-options>.bd-select-option:last-child.selected)~.bd-setting-item:has(.bd-setting-header>label[for="_aider-bubble-you-custom-bg"]),
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubbles"] ~ .bd-switch-checked)~.bd-setting-item:has(.bd-setting-header>label[for="aider-bubble-you-bg"]),
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubbles"] ~ .bd-switch-checked)~.bd-setting-item:has(.bd-setting-header>label[for="aider-bubble-others-bg"]) {
+    display: flex;
+}
+
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubbles"] ~ .bd-switch:not(.bd-switch-checked))~.bd-setting-item:has(.bd-setting-header>label[for="_aider-bubble-you-custom-bg"]),
+.bd-setting-item:has(.bd-setting-header>label[for="aider-bubbles"] ~ .bd-switch:not(.bd-switch-checked))~.bd-setting-item:has(.bd-setting-header>label[for="_aider-bubble-others-custom-bg"]) {
+    display: none !important;
+}
+
+@container style(--aider-bubble-others-bg: blurple) {
+    #app-mount {
+        --aider-bubble-others-bg: var(--brand-400);
+    }
+}
+
+@container style(--aider-bubble-others-bg: aqua) {
+    #app-mount {
+        --aider-bubble-others-bg: #7aaffa;
+    }
+}
+
+@container style(--aider-bubble-others-bg: purple) {
+    #app-mount {
+        --aider-bubble-others-bg: #c79cee;
+    }
+}
+
+@container style(--aider-bubble-others-bg: pink) {
+    #app-mount {
+        --aider-bubble-others-bg: #f888c6;
+    }
+}
+
+@container style(--aider-bubble-others-bg: orange) {
+    #app-mount {
+        --aider-bubble-others-bg: #ffb834;
+    }
+}
+
+@container style(--aider-bubble-others-bg: lemon) {
+    #app-mount {
+        --aider-bubble-others-bg: #ffed4c;
+    }
+}
+
+@container style(--aider-bubble-others-bg: lime) {
+    #app-mount {
+        --aider-bubble-others-bg: #7eca41;
+    }
+}
+
+@container style(--aider-bubble-others-bg: graphite) {
+    #app-mount {
+        --aider-bubble-others-bg: #afafaf;
+    }
+}
+
+@container style(--aider-bubble-you-bg: blurple) {
+    #app-mount {
+        --aider-bubble-you-bg: var(--brand-400);
+    }
+}
+
+@container style(--aider-bubble-you-bg: aqua) {
+    #app-mount {
+        --aider-bubble-you-bg: #7aaffa;
+    }
+}
+
+@container style(--aider-bubble-you-bg: purple) {
+    #app-mount {
+        --aider-bubble-you-bg: #c79cee;
+    }
+}
+
+@container style(--aider-bubble-you-bg: pink) {
+    #app-mount {
+        --aider-bubble-you-bg: #f888c6;
+    }
+}
+
+@container style(--aider-bubble-you-bg: orange) {
+    #app-mount {
+        --aider-bubble-you-bg: #ffb834;
+    }
+}
+
+@container style(--aider-bubble-you-bg: lemon) {
+    #app-mount {
+        --aider-bubble-you-bg: #ffed4c;
+    }
+}
+
+@container style(--aider-bubble-you-bg: lime) {
+    #app-mount {
+        --aider-bubble-you-bg: #7eca41;
+    }
+}
+
+@container style(--aider-bubble-you-bg: graphite) {
+    #app-mount {
+        --aider-bubble-you-bg: #afafaf;
+    }
+}
+
+
+@container style(--aider-bubble-others-bg: custom) {
+    #app-mount {
+        --aider-bubble-others-bg: var(--_aider-bubble-others-custom-bg);
+    }
+}
+
+@container style(--aider-bubble-you-bg: custom) {
+    #app-mount {
+        --aider-bubble-you-bg: var(--_aider-bubble-you-custom-bg);
+    }
+}
+
 /* Basic color patchall styles (thank you very much discord) */
 .theme-dark {
     --custom-theme-base-color: hsl(0, 0%, 3.75%);
@@ -190,8 +379,7 @@
         line-height: 1;
         padding: var(--space-xxs) var(--space-xxs) calc(var(--space-xxs) / 1.25);
         border: 1px solid var(--_aider-border-dark);
-        box-shadow:
-            inset 0px 4px 6px -3px rgba(255, 255, 255, 0.5),
+        box-shadow: inset 0px 4px 6px -3px rgba(255, 255, 255, 0.5),
             inset 0px -1px 2px var(--_aider-border-dark);
         font-weight: 450;
         color: white;
@@ -1308,102 +1496,6 @@ div[role="dialog"]>.recentMentionsPopout__95796 {
         box-shadow:
             0px 0px 1px 1px inset var(--border-subtle),
             2px 2px 10px rgba(0, 0, 0, 0.2) !important;
-    }
-}
-
-@container style(--aider-bubble-others-bg: blurple) {
-    #app-mount {
-        --aider-bubble-others-bg: var(--brand-400);
-    }
-}
-
-@container style(--aider-bubble-others-bg: aqua) {
-    #app-mount {
-        --aider-bubble-others-bg: #7aaffa;
-    }
-}
-
-@container style(--aider-bubble-others-bg: purple) {
-    #app-mount {
-        --aider-bubble-others-bg: #c79cee;
-    }
-}
-
-@container style(--aider-bubble-others-bg: pink) {
-    #app-mount {
-        --aider-bubble-others-bg: #f888c6;
-    }
-}
-
-@container style(--aider-bubble-others-bg: orange) {
-    #app-mount {
-        --aider-bubble-others-bg: #ffb834;
-    }
-}
-
-@container style(--aider-bubble-others-bg: lemon) {
-    #app-mount {
-        --aider-bubble-others-bg: #ffed4c;
-    }
-}
-
-@container style(--aider-bubble-others-bg: lime) {
-    #app-mount {
-        --aider-bubble-others-bg: #7eca41;
-    }
-}
-
-@container style(--aider-bubble-others-bg: graphite) {
-    #app-mount {
-        --aider-bubble-others-bg: #afafaf;
-    }
-}
-
-@container style(--aider-bubble-you-bg: blurple) {
-    #app-mount {
-        --aider-bubble-you-bg: var(--brand-400);
-    }
-}
-
-@container style(--aider-bubble-you-bg: aqua) {
-    #app-mount {
-        --aider-bubble-you-bg: #7aaffa;
-    }
-}
-
-@container style(--aider-bubble-you-bg: purple) {
-    #app-mount {
-        --aider-bubble-you-bg: #c79cee;
-    }
-}
-
-@container style(--aider-bubble-you-bg: pink) {
-    #app-mount {
-        --aider-bubble-you-bg: #f888c6;
-    }
-}
-
-@container style(--aider-bubble-you-bg: orange) {
-    #app-mount {
-        --aider-bubble-you-bg: #ffb834;
-    }
-}
-
-@container style(--aider-bubble-you-bg: lemon) {
-    #app-mount {
-        --aider-bubble-you-bg: #ffed4c;
-    }
-}
-
-@container style(--aider-bubble-you-bg: lime) {
-    #app-mount {
-        --aider-bubble-you-bg: #7eca41;
-    }
-}
-
-@container style(--aider-bubble-you-bg: graphite) {
-    #app-mount {
-        --aider-bubble-you-bg: #afafaf;
     }
 }
 
