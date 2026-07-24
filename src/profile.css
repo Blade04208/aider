@@ -416,3 +416,31 @@ X ~~fix modal profile buttons on extended sidebars~~
         background: linear-gradient(hsl(from var(--profile-gradient-button-color) h (s - 15%) (l - 20%) / 1), hsl(from var(--profile-gradient-button-color) h (s - 30%) (l - 15%) / 1));
     }
 }
+
+#user-profile-editing-panel {
+    position: absolute;
+    left: 200px;
+    bottom: -40px;
+}
+
+div>.container__9c314 {
+    position: absolute;
+    top: -85px;
+    left: 128px;
+
+    &.compact__9c314 {
+        position: relative;
+        inset: 0;
+    }
+}
+
+.profileHeaderBannerContainer__9c3be {
+    overflow: visible;
+    .mask__68edb {
+        min-width: 100%!important;
+        left: 50%!important;
+        transform-origin: top left!important;
+        scale: 2.25!important;
+        margin-left: 30px;
+    }
+}
